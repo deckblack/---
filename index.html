@@ -5,25 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+    
     <title>Cheat Sheet</title>
+
   </head>
-  <body>
+  
     <h1>Шпаргалка</h1>
 
-    <h2>Строительные HTML теги:</h2>
+    <h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">Строительные HTML теги:</h2>
 
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
       <span>Header</span> - используется на странице один раз, для верхней части
       сайта, шапки.
     </p>
+    </div>
 
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
       <span>Footer</span> - используется на странице один раз, для нижней части
       сайта, подвала.
     </p>
+    </div>
 
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p><span>Nav</span> - используется на странице для меню навигации сайта.</p>
+    </div>
 
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
       <span>Div</span> - элемент является блочным элементом и предназначен для
       выделения фрагмента документа с целью изменения вида содержимого. Как
@@ -32,23 +45,31 @@
       для тега добавить атрибут <span>Class</span> или <span>Id</span> с именем
       селектора.
     </p>
+    </div>
 
-    <h2>HTML теги для работы с контентом:</h2>
+    <h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">HTML теги для работы с контентом:</h2>
 
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
       <span>H1, H2, H3, H4, H5, H6</span> - теги заголовков, тег
       <span>H1</span> используется один раз на странице, остальные теги можно
       использовать многократно, не рекомендуется использовать более 3-х разных
       заголовков на странице.
     </p>
+    </div>
 
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p><span>P</span> - тег абзаца, в него помещается обычный текст.</p>
+    </div>
 
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
       <span>Span</span> - строчный тег для выделения текста и применения к нему
       каких либо атрибутов.
     </p>
+    </div>
 
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
       <span>A</span> - тег создает ссылку которая
       помещается в атрибут <span>href</span>. Внутри элемента может быть как
@@ -56,13 +77,17 @@
       новой вкладке. Атрибут <span>download</span> предлагает скачать то что
       находится по ссылке.
     </p>
+    </div>
 
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
       <span>Img</span> элемент отвечающий за вставку картинки. Атрибут
       <span>src=""</span> это ссылка на картинку, <span>alt=""</span> - описание
       картинки.
     </p>
+    </div>
 
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
         <span>Ul</span> - маркированный список. Внутри располагается тег <span>Li</span>, в котором
         перечисляется содержимое списка.<br>
@@ -70,21 +95,29 @@
         <Li>Пункт 2</Li>
         <Li>Пункт 3</Li>
     </p>
+    </div>
 
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p><span>Ol</span> - нумерованный список. Внутри располагается тег <span>Li</span>, в котором
         перечисляется содержимое списка.<br>
         <Li>Пункт 1</Li>
         <Li>Пункт 2</Li>
         <Li>Пункт 3</Li>
     </p>
+    </div>
 
-    <p><span>Br</span> - тег переноса строки.</p>
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p><span>Br</span> - тег переноса строки.
+    <p>Пример <br> переноса <br> строки.</p>
+    </p>
+    </div>
 
 /*------------------------------------------------------------------------------------------------------*/
 
-<h2>Формы ввода:</h2>
+<h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">Формы ввода:</h2>
 
-    <p>
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">  
+<p>
       Все теги для ввода данных помещаются внутри элемента
       <span>Form</span> который имеет обязательный атрибут
       <span>Action=""</span> в котором указывается ссылка на адрес сервера, где
@@ -95,7 +128,9 @@
       файлы. При это обязательно использовать
       <span>enctype="multipart/form-data"</span>. Все элементы внутри <span>form</span> можно блокировать атрибутом <span>disabled</span> делая их серыми и неактивными. 
     </p>
+</div>
 
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
       <span>Input</span> - поле для ввода каких либо данных пользователем.
       Содержит в себе атрибуты <span>Name</span> - название для элемента,
@@ -151,12 +186,16 @@
         </li>
     </ul>
     </p>
+    </div>
 
-    <p>
-        <span>Textarea</span> - позволяет вводить многострочный текст. Атрибуты <span>Cols, Rows</span> можно не использовать если вы будете задавать размеры используя <span>CSS</span>. Атрибут <span>Placeholder</span> задает для формы ввода отображаемое название подсказку. <br> <br>
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>
+            <span>Textarea</span> - позволяет вводить многострочный текст. Атрибуты <span>Cols, Rows</span> можно не использовать если вы будете задавать размеры используя <span>CSS</span>. Атрибут <span>Placeholder</span> задает для формы ввода отображаемое название подсказку. <br> <br>
         <textarea name="text" placeholder="Введите сюда текст"></textarea></p>
+    </div>
 
-    <p>
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>
         <span>Select</span> - выпадающий список, должен содержать в себе тег <span>Option</span>, внутри которого перечисляются все пункты выпадающего списка. У <span>select</span> может быть атрибут <span>multiple</span> позволяющий выбирать из списка сразу несколько пунктов с зажатым ctrl. У <span>option</span> может быть атрибут <span>selected</span> который задает какой либо пункт списка по умолчанию. 
         <br>
         <br>
@@ -167,7 +206,9 @@
             <option value="black">Черный</option>
         </select>
     </p>
+    </div>
 
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p><Span>Button</Span> - создает кнопку. Тип кнопки задается атрибутом <span>Type</span> и может быть:
         <ul>
             <li><span>Submit</span> - отправляет всю форму.</li>
@@ -175,12 +216,14 @@
         </ul>
         <button type="reset">Сбросить</button>
     </p>
+    </div>
 
 /*------------------------------------------------------------------------------------------------------*/
 
-<h2>CSS - каскадные таблицы стилей:</h2>
+<h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">CSS - каскадные таблицы стилей:</h2>
 
-<p><span>CSS</span> записываются в отдельном файле с расширением .css и зыписываются в виде:</p>
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p><span>CSS</span> записываются в отдельном файле с расширением .css и зыписываются в виде:</p>
     <p>
         <span>
             селектор { <br>
@@ -202,114 +245,243 @@
             <li><span>тег, тег, .класс, .класс</span> - обращение сразу к нескольким тегам или классам</li>
         </ul>
     </p>
-<p>
-    Подключаются CSS с помощью тега <span>Link</span> который располагается в <span>Head</span> и имеет атрибут <span>rel="stylesheet"</span> обозначающий что это CSS, а так же атрибут <span>href=""</span> указывающий ссылку на CSS файл.
-</p>
+    <p>
+        Подключаются CSS с помощью тега <span>Link</span> который располагается в <span>Head</span> и имеет атрибут <span>rel="stylesheet"</span> обозначающий что это CSS, а так же атрибут <span>href=""</span> указывающий ссылку на CSS файл.
+    </p>
+</div>
 
 /*------------------------------------------------------------------------------------------------------*/
 
-<h2>CSS параметры для работы со шрифтом и текстом:</h2>
+<h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">CSS параметры для работы со шрифтом и текстом:</h2>
 
-<p>
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
     <span>font-family: имяшрифта, "имя шрифта", тип шрифта;</span> - задает тексту шрифт, названия шрифтов перечисляются через запятую, если в названии есть проблел название заключается в кавычки. В конце указывается тип шрифта: serif, sans-serif, monospace, cursive, fantasy. <br>
     Атрибут <span>inherit</span> указывает наследуется ли шрифт от родительского элемента.
 </p>
 
-<p>
+<p class="font">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptate ad fuga veniam maxime nisi. Molestias officiis, dolores, sed vero ut dignissimos ipsam facilis eveniet soluta delectus dolor explicabo quod.
+</p></div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
     <span>font-size: размер;</span> - указывается размер шрифта в различных единицах.
 </p>
 
-<p>
+<p style="font-size: 40px;">Размер шрифта.</p></div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
     <span>font-style: стиль;</span> - указывает стиль шрифта:
     <ul>
-        <li>italic - курсивный</li>
-        <li>oblique - наклонный</li>
-        <li>normal - обычный</li>
+        <li style="font-style: italic;">italic - курсивный</li>
+        <li style="font-style: oblique;">oblique - наклонный</li>
+        <li style="font-style: normal;">normal - обычный</li>
     </ul> 
-</p>
+</p></div>
 
-<p>
-    <span>font-weight: толщина;</span> - указывает на толщину шрифта: 
-    <ul>
-       <li>100 - thin</li>
-       <li>300 - lite</li>
-       <li>400 - normal</li>
-       <li>500 - medium</li>
-       <li>600 - semibold</li>
-       <li>700 - bold</li>
-       <li>900 - black</li>
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
+    <span>font-weight: толщина;</span> - указывает на толщину шрифта, работает не со всеми шрифтами: 
+    <ul style="font-size: 20px;">
+       <li style="font-weight: 100;">100 - thin</li>
+       <li style="font-weight: 300;">300 - lite</li>
+       <li style="font-weight: 400;">400 - normal</li>
+       <li style="font-weight: 500;">500 - medium</li>
+       <li style="font-weight: 600;">600 - semibold</li>
+       <li style="font-weight: 700;">700 - bold</li>
+       <li style="font-weight: 900;">900 - black</li>
     </ul>
-</p>
+</p></div>
 
-<p>
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
     <span>color: цвет;</span> - указывает на цвет шрифта.
-    <ul>
-        <li>#000000 - шестнадцатеричный код</li>
-        <li>rgb (0, 0, 0) - rgb </li>
-        <li>black - просто указание цвета</li>
+    <ul style="background-color: rgb(31, 31, 31);">
+        <li style="color: #00FF00">#00FF00 - шестнадцатеричный код</li>
+        <li style="color: rgb(255, 0, 0)">rgb(255, 0, 0) - rgb </li>
+        <li style="color: yellow">yellow - просто указание цвета</li>
     </ul>
-</p>
+</p></div>
 
-<p>
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
     <span>text-align: выравнивание;</span> - горизонтальное выравнивание текста:
-    <ul>
-        <li>center - по центру</li>
-        <li>justify - по всей ширине</li>
-        <li>left - слева</li>
-        <li>right - справа</li>
+    <ul style="border: 1px solid #000; max-width: 400px; padding: 10px; margin: 30px; list-style-type: none;">
+        <li style="text-align: center;"> center - по центру</li>
+        <li style="text-align: justify;"> justify - по всей ширине блока, если в тексте достаточно слов. Три слова растягиваться по всей ширине блока не будут.</li>
+        <li style="text-align: left;"> left - слева</li>
+        <li style="text-align: right;"> right - справа</li>
     </ul>
-</p>
+</p></div>
 
-<p>
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
 <span>text-decoration: значение1 значение2;</span> - декорирование текста, можно применять сразу несколько зачений:
 <ul>
-    <li>line-through - перечеркнутый текст</li>
-    <li>overline - линия проходит над текстом</li>
-    <li>underline - линия подчеркивает текст</li>
-    <li>none - убирает декорирование, в том числе у ссылок</li>
+    <li style="text-decoration: overline;">overline - линия проходит над текстом</li>
+    <li style="text-decoration: line-through;">line-through - перечеркнутый текст</li>
+    <li style="text-decoration: underline;">underline - линия подчеркивает текст</li>
+    <li style="text-decoration: none;">none - убирает декорирование, в том числе у ссылок</li>
 </ul>
-</p>
+</p></div>
 
-<p>
-    <span>text-shadow: x, y, размытие, цвет;</span> - создает тень у текста, например text-shadow: 1px, 1px, 10px, #000000;
-</p>
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
+    <span>text-shadow: x y размытие цвет;</span> - создает тень у текста, например text-shadow: 1px 1px 10px #000000; Запятые ставить между значениями не надо!
+    <p style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; text-shadow: 4px 4px 10px black;">Тень у текста</p>
+</p></div>
 
-<p>
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
     <span>text-transform: значение;</span> - указывает прописные или строчные символы:
     <ul>
-        <li>capitalize - первый символ кажодого слова будет заглавным</li>
-        <li>lowercase - все символы строчные</li>
-        <li>uppercase - все символы прописные</li>
-        <li>none - обычное поведение символов</li>
+        <li style="text-transform: capitalize;">capitalize - Первый символ кажодого слова будет заглавным</li>
+        <li style="text-transform: lowercase;">lowercase - Все символы строчные</li>
+        <li style="text-transform: uppercase;">uppercase - Все символы прописные</li>
+        <li style="text-transform: none;">none - Обычное поведение символов</li>
     </ul>
-</p>
+</p></div>
 
-<p>
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
     <span>text-indent: отступ;</span> - размер красной строки у текста.
-</p>
+    <p style="text-indent: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam harum itaque libero ad. Iusto a quibusdam cum ullam repellat error ut, consequuntur accusantium eaque alias fugiat doloremque consectetur sit!</p>
+</p></div>
 
-<p>
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
     <span>letter-spacing: значение;</span> - устанавливает отступы между символами.
-</p>
+    <p style="letter-spacing: 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam harum itaque libero ad. Iusto a quibusdam cum ullam repellat error ut, consequuntur accusantium eaque alias fugiat doloremque consectetur sit!</p>
+</p></div>
 
-<p>
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
     <span>word-spacing: значение;</span> - устанавливает расстояние между словами.
-</p>
+    <p style="word-spacing: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam harum itaque libero ad. Iusto a quibusdam cum ullam repellat error ut, consequuntur accusantium eaque alias fugiat doloremque consectetur sit!</p>
+</p></div>
 
-<p>
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
     <span>white-space: nowrap;</span> - запрещает перенос строки, значение normal разрешает перенос строки.
-</p>
+    <p style="white-space: nowrap;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam harum itaque libero ad. Iusto a quibusdam cum ullam repellat error ut, consequuntur accusantium eaque alias fugiat doloremque consectetur sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magni a corporis distinctio porro sunt animi pariatur laudantium. Non qui architecto eos totam voluptate neque voluptas tenetur amet ab ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto consequatur saepe quo omnis. Possimus adipisci error minima autem recusandae asperiores rem iure accusamus, quod beatae ad, ipsa earum exercitationem laboriosam!</p>
+</p></div>
 
-<p>
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
     <span>line-height: значение;</span> - устанавливает межстрочный интервал текста.
-</p>
+    <p style="line-height: 40px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam harum itaque libero ad. Iusto a quibusdam cum ullam repellat error ut, consequuntur accusantium eaque alias fugiat doloremque consectetur sit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, aut eligendi. Ex architecto consequatur veniam reprehenderit illo possimus ipsam! In omnis optio dolore mollitia iusto laboriosam. Natus nam tenetur aut?</p>
+</p></div>
 
 /*------------------------------------------------------------------------------------------------------*/
 
-<h2>CSS параметры для работы с блоками:</h2>
+<h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">CSS параметры для работы с блоками:</h2>
 
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+<p>Представленные ниже параметры работают только с блочными элементами страницы и изображениями, на строчных элементах они работают некорректно.</p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
 <p>
-    <span></span>
+    <span>Padding</span> - указывает внутренный отступ у блочного элемента и может записываться несколькими способами (единицы измерения могут быть разными): 
+    <br>
+    <ul>
+        <li> <span>padding: 10px, 10px, 10px, 10px;</span> - отступ сверху, справа, снизу, слева. </li>
+        <li> <span>padding: 10px, 10px, 10px;</span> - отступ сверху, слева-справа, снизу.</li>
+        <li> <span>padding: 10px, 10px;</span> отступ сверху-снизу, справа-слева.</li>
+        <li> <span>padding: 10px;</span> - отступ сверху-снизу-справа-слева.</li>
+    </ul>
+    <p style="border: 1px solid black; padding: 20px 20px 30px 40px; margin-bottom: 5px; width: 300px;">Пример отступа</p>
 </p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+<p>
+    <span>Margin</span> - указывает внешний отступ блочного элемента, записываятся по аналогии с padding.
+    <p style="border: 1px solid black; padding: 10px; margin: 45px 100px 35px 60px;">Пример отступа</p>
+</p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+<p>
+    <span>Width</span> - строго фиксирует ширину блочного элемента если используется точное числовое значение, не важно какой размер будет у окна браузера, границы блока не изменятся.
+    <p style="border: 1px solid black; padding: 10px; margin-bottom: 5px; width: 2000px;">Пример фиксированной ширины в 2000px</p>
+</p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>Max-width</span> - устанавливает максимальную ширину блока, но в отличии от фиксированного width может принимать и меньшие значения, подстраиваясь под ширину окна браузера. 
+        <p style="border: 1px solid black; padding: 10px; margin-bottom: 5px; max-width: 12100px;">
+            Пример ограничения максимальной ширины в 12100px
+        </p>
+    </p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>Min-width</span> - устанавливает минимальную ширину блока.
+        <p style="border: 1px solid black; padding: 10px; margin-bottom: 5px; min-width: 2000px;">Пример ограничения минимальной ширины в 2000px</p>
+    </p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>Height</span> - устанавливает фиксированную высоту для блока.
+        <p style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 100px;">Фиксированная высота в 100px</p>
+    </p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>Max-height</span> - устанавливает максимальную высоту для блока.
+        <p style="border: 1px solid black; padding: 10px; margin-bottom: 5px; max-height: 30px;">Максимальная высота в 30 px. <br>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi odit unde velit. Reprehenderit, debitis saepe voluptatem laborum hic quibusdam quasi tempora, aliquid asperiores reiciendis laboriosam, ad sequi obcaecati doloribus eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt et totam iusto laudantium possimus? Nobis odio hic perferendis omnis.</p>
+    </p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>Min-height</span> - устанавливает минимальную высоту для блока.
+        <p style="border: 1px solid black; padding: 10px; margin-bottom: 5px; min-height: 30px;">Минимальная высота в 30 px. <br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus perferendis eum enim pariatur est placeat hic reiciendis veniam sint ex, consequatur minus quasi in maiores quod ullam iure unde vero. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit esse nihil, maiores voluptates eligendi itaque dolore quos, tempora, quod natus inventore quae tempore magnam deleniti iste? Iste quisquam exercitationem nam?</p>
+    </p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>Overflow: значение;</span> - может принимать такие значения:
+        <ul>
+            <li>
+                <span>Visible</span> - стандартное поведение блока.
+                <p style="border: 1px solid black; padding: 10px; margin-bottom: 15px; height: 20px; overflow: visible;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eaque alias aut tempore eos ullam architecto molestiae, dolores quasi, ad facere! Id, repellat. Adipisci id cumque autem iusto dolorem sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ea exercitationem? Quasi eum nesciunt praesentium commodi aspernatur, adipisci vel hic.</p>
+            </li>
+            <li>
+                <span>Hidden</span> - скрывает в блоке вылезающий текст, если он выходит за пределы блока.  
+                <p style="border: 1px solid black; padding: 10px; margin-bottom: 15px; height: 20px; overflow: hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eaque alias aut tempore eos ullam architecto molestiae, dolores quasi, ad facere! Id, repellat. Adipisci id cumque autem iusto dolorem sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ea exercitationem? Quasi eum nesciunt praesentium commodi aspernatur, adipisci vel hic.</p>
+            </li>
+            <li>
+                <span>Scroll</span> - позволяет скролить не влезающий в блок текст по горизонтали и вертикали.
+                <p style="border: 1px solid black; padding: 10px; margin-bottom: 15px; height: 20px; overflow: scroll;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eaque alias aut tempore eos ullam architecto molestiae, dolores quasi, ad facere! Id, repellat. Adipisci id cumque autem iusto dolorem sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ea exercitationem? Quasi eum nesciunt praesentium commodi aspernatur, adipisci vel hic.</p>
+            </li>
+            <li>
+                <span>Auto</span> - делает тоже самое что и scroll, но в отличии от него не добавляет лишнюю полосу прокрутки если она не нужна.
+                <p style="border: 1px solid black; padding: 10px; margin-bottom: 15px; height: 20px; overflow: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eaque alias aut tempore eos ullam architecto molestiae, dolores quasi, ad facere! Id, repellat. Adipisci id cumque autem iusto dolorem sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ea exercitationem? Quasi eum nesciunt praesentium commodi aspernatur, adipisci vel hic.</p>
+            </li>
+        </ul>
+    </p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>Box-sizing: border-box;</span> - по стандарту в браузерах расчет размеров блока расчитывается так: width + padding + margin + border. <br>
+        Из за чего размеры коробок на самом деле больше чем вы им указываете. Если включить <span>box-sizing</span> то формула поменяется на: width + margin. <br>
+        И вам придется учитывать меньшее количество переменных. <br>
+        Это свойство не поддерживается по всех браузерах, в других браузерах оно записывается иначе:
+        <ul>
+            <li> <span>-Webkit-box-sizing: border-box;</span> </li>
+            <li> <span>-Moz-box-sizing: border-box;</span> </li>
+        </ul>
+    </p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>Display: зачение;</span> - принимает множество значений (пока что тут будут расписаны не все из них).
+        <ul>
+            <li><span>Block</span> - превращает строчный элемент в блочный, тем самым позволяя влиять на него выше описанными стилями.</li>
+            <li><span>Inline</span> - превращает блочный элемент в строчный.</li>
+            <li><span>Inline-block</span> - строчный элемент остается строчным, но на него начинают влиять стили для блочных элементов.</li>
+            <li><span>None</span> - удаляет блок со страницы, перестраивая при этом верстку сайта так, как будто этого блока не существует.</li>
+        </ul>
+    </p>
+</div>
   </body>
 </html>
