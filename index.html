@@ -91,18 +91,22 @@
     <p>
         <span>Ul</span> - маркированный список. Внутри располагается тег <span>Li</span>, в котором
         перечисляется содержимое списка.<br>
-        <Li>Пункт 1</Li>
-        <Li>Пункт 2</Li>
-        <Li>Пункт 3</Li>
+        <ul>
+            <Li>Пункт 1</Li>
+            <Li>Пункт 2</Li>
+            <Li>Пункт 3</Li>
+        </ul>
     </p>
     </div>
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p><span>Ol</span> - нумерованный список. Внутри располагается тег <span>Li</span>, в котором
         перечисляется содержимое списка.<br>
-        <Li>Пункт 1</Li>
-        <Li>Пункт 2</Li>
-        <Li>Пункт 3</Li>
+        <ol>
+            <Li>Пункт 1</Li>
+            <Li>Пункт 2</Li>
+            <Li>Пункт 3</Li>
+        </ol>
     </p>
     </div>
 
@@ -255,7 +259,7 @@
 <h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">CSS параметры для работы со шрифтом и текстом:</h2>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>font-family: имяшрифта, "имя шрифта", тип шрифта;</span> - задает тексту шрифт, названия шрифтов перечисляются через запятую, если в названии есть проблел название заключается в кавычки. В конце указывается тип шрифта: serif, sans-serif, monospace, cursive, fantasy. <br>
+    <span>Font-family: имяшрифта, "имя шрифта", тип шрифта;</span> - задает тексту шрифт, названия шрифтов перечисляются через запятую, если в названии есть проблел название заключается в кавычки. В конце указывается тип шрифта: serif, sans-serif, monospace, cursive, fantasy. <br>
     Атрибут <span>inherit</span> указывает наследуется ли шрифт от родительского элемента.
 </p>
 
@@ -264,13 +268,13 @@
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>font-size: размер;</span> - указывается размер шрифта в различных единицах.
+    <span>Font-size: размер;</span> - указывается размер шрифта в различных единицах.
 </p>
 
 <p style="font-size: 40px;">Размер шрифта.</p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>font-style: стиль;</span> - указывает стиль шрифта:
+    <span>Font-style: стиль;</span> - указывает стиль шрифта:
     <ul>
         <li style="font-style: italic;">italic - курсивный</li>
         <li style="font-style: oblique;">oblique - наклонный</li>
@@ -279,7 +283,7 @@
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>font-weight: толщина;</span> - указывает на толщину шрифта, работает не со всеми шрифтами: 
+    <span>Font-weight: толщина;</span> - указывает на толщину шрифта, работает не со всеми шрифтами: 
     <ul style="font-size: 20px;">
        <li style="font-weight: 100;">100 - thin</li>
        <li style="font-weight: 300;">300 - lite</li>
@@ -292,7 +296,7 @@
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>color: цвет;</span> - указывает на цвет шрифта.
+    <span>Color: цвет;</span> - указывает на цвет шрифта.
     <ul style="background-color: rgb(31, 31, 31);">
         <li style="color: #00FF00">#00FF00 - шестнадцатеричный код</li>
         <li style="color: rgb(255, 0, 0)">rgb(255, 0, 0) - rgb </li>
@@ -301,17 +305,17 @@
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>text-align: выравнивание;</span> - горизонтальное выравнивание текста:
+    <span>Text-align: выравнивание;</span> - горизонтальное выравнивание текста:
     <ul style="border: 1px solid #000; max-width: 400px; padding: 10px; margin: 30px; list-style-type: none;">
-        <li style="text-align: center;"> center - по центру</li>
-        <li style="text-align: justify;"> justify - по всей ширине блока, если в тексте достаточно слов. Три слова растягиваться по всей ширине блока не будут.</li>
-        <li style="text-align: left;"> left - слева</li>
-        <li style="text-align: right;"> right - справа</li>
+        <li style="text-align: center;"> <span>center</span> - по центру</li>
+        <li style="text-align: justify;"> <span>justify</span> - по всей ширине блока, если в тексте достаточно слов. Три слова растягиваться по всей ширине блока не будут.</li>
+        <li style="text-align: left;"> <span>left</span> - слева</li>
+        <li style="text-align: right;"> <span>right</span> - справа</li>
     </ul>
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-<span>text-decoration: значение1 значение2;</span> - декорирование текста, можно применять сразу несколько зачений:
+<span>Text-decoration: значение1 значение2;</span> - декорирование текста, можно применять сразу несколько зачений:
 <ul>
     <li style="text-decoration: overline;">overline - линия проходит над текстом</li>
     <li style="text-decoration: line-through;">line-through - перечеркнутый текст</li>
@@ -321,42 +325,42 @@
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>text-shadow: x y размытие цвет;</span> - создает тень у текста, например text-shadow: 1px 1px 10px #000000; Запятые ставить между значениями не надо!
+    <span>Text-shadow: x y размытие цвет;</span> - создает тень у текста, например text-shadow: 1px 1px 10px #000000; Запятые ставить между значениями не надо!
     <p style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; text-shadow: 4px 4px 10px black;">Тень у текста</p>
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>text-transform: значение;</span> - указывает прописные или строчные символы:
+    <span>Text-transform: значение;</span> - указывает прописные или строчные символы:
     <ul>
-        <li style="text-transform: capitalize;">capitalize - Первый символ кажодого слова будет заглавным</li>
-        <li style="text-transform: lowercase;">lowercase - Все символы строчные</li>
-        <li style="text-transform: uppercase;">uppercase - Все символы прописные</li>
-        <li style="text-transform: none;">none - Обычное поведение символов</li>
+        <li style="text-transform: capitalize;"> <span>capitalize</span> - Первый символ кажодого слова будет заглавным</li>
+        <li style="text-transform: lowercase;"><span>lowercase</span> - Все символы строчные</li>
+        <li style="text-transform: uppercase;"><span>uppercase</span> - Все символы прописные</li>
+        <li style="text-transform: none;"><span>none</span> - Обычное поведение символов</li>
     </ul>
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>text-indent: отступ;</span> - размер красной строки у текста.
+    <span>Text-indent: отступ;</span> - размер красной строки у текста.
     <p style="text-indent: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam harum itaque libero ad. Iusto a quibusdam cum ullam repellat error ut, consequuntur accusantium eaque alias fugiat doloremque consectetur sit!</p>
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>letter-spacing: значение;</span> - устанавливает отступы между символами.
+    <span>Letter-spacing: значение;</span> - устанавливает отступы между символами.
     <p style="letter-spacing: 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam harum itaque libero ad. Iusto a quibusdam cum ullam repellat error ut, consequuntur accusantium eaque alias fugiat doloremque consectetur sit!</p>
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>word-spacing: значение;</span> - устанавливает расстояние между словами.
+    <span>Word-spacing: значение;</span> - устанавливает расстояние между словами.
     <p style="word-spacing: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam harum itaque libero ad. Iusto a quibusdam cum ullam repellat error ut, consequuntur accusantium eaque alias fugiat doloremque consectetur sit!</p>
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>white-space: nowrap;</span> - запрещает перенос строки, значение normal разрешает перенос строки.
+    <span>White-space: nowrap;</span> - запрещает перенос строки, значение normal разрешает перенос строки.
     <p style="white-space: nowrap;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam harum itaque libero ad. Iusto a quibusdam cum ullam repellat error ut, consequuntur accusantium eaque alias fugiat doloremque consectetur sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magni a corporis distinctio porro sunt animi pariatur laudantium. Non qui architecto eos totam voluptate neque voluptas tenetur amet ab ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto consequatur saepe quo omnis. Possimus adipisci error minima autem recusandae asperiores rem iure accusamus, quod beatae ad, ipsa earum exercitationem laboriosam!</p>
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>line-height: значение;</span> - устанавливает межстрочный интервал текста.
+    <span>Line-height: значение;</span> - устанавливает межстрочный интервал текста.
     <p style="line-height: 40px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam harum itaque libero ad. Iusto a quibusdam cum ullam repellat error ut, consequuntur accusantium eaque alias fugiat doloremque consectetur sit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, aut eligendi. Ex architecto consequatur veniam reprehenderit illo possimus ipsam! In omnis optio dolore mollitia iusto laboriosam. Natus nam tenetur aut?</p>
 </p></div>
 
@@ -375,7 +379,7 @@
     <ul>
         <li> <span>padding: 10px, 10px, 10px, 10px;</span> - отступ сверху, справа, снизу, слева. </li>
         <li> <span>padding: 10px, 10px, 10px;</span> - отступ сверху, слева-справа, снизу.</li>
-        <li> <span>padding: 10px, 10px;</span> отступ сверху-снизу, справа-слева.</li>
+        <li> <span>padding: 10px, 10px;</span> - отступ сверху-снизу, справа-слева.</li>
         <li> <span>padding: 10px;</span> - отступ сверху-снизу-справа-слева.</li>
     </ul>
     <p style="border: 1px solid black; padding: 20px 20px 30px 40px; margin-bottom: 5px; width: 300px;">Пример отступа</p>
