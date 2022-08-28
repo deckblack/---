@@ -487,5 +487,191 @@
         </ul>
     </p>
 </div>
+
+/*--------------------------------------------------------------------------------------------------*/
+
+<h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">Свойства с стили оформления CSS блоков:</h2>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>Border: размер стиль цвет;</span> - устанавливает вокруг блочного элемента или картинки границу. Некоторые виды стилей у границ:
+        <ul>
+            <li style="border: 2px solid black; padding: 5px; margin-bottom: 5px; max-width: 250px;"><span>Solid</span></li>
+            <li style="border: 2px dotted black; padding: 5px; margin-bottom: 5px; max-width: 250px;"><span>Dotted</span></li>
+            <li style="border: 2px dashed black; padding: 5px; margin-bottom: 5px; max-width: 250px;"><span>Dashed</span></li>
+        </ul>
+
+        <p>Так же граница может устанавливаться отдельно для каждой стороны:
+            <ul>
+                <li style="border-top: 2px solid black; padding: 5px; margin-bottom: 5px; max-width: 250px;"><span>Border-top: 2px solid black;</span></li>
+                <li style="border-right: 2px solid black; padding: 5px; margin-bottom: 5px; max-width: 250px;"><span>Border-right: 2px solid black;</span></li>
+                <li style="border-bottom: 2px solid black; padding: 5px; margin-bottom: 5px; max-width: 250px;"><span>Border-bottom: 2px solid black;</span></li>
+                <li style="border-left: 2px solid black; padding: 5px; margin-bottom: 5px; max-width: 250px;"><span>Border-left: 2px solid black;</span></li>
+            </ul>
+        
+            <p>И так же удаляться отдельно для каждой из сторон.</p>
+
+            <p>
+                <ul>
+                    <li  style="border: 2px solid black; padding: 5px; margin-bottom: 5px; max-width: 250px; border-right: none;">
+                        <span>
+                            Border: 2px solid black; <br>
+                            Border-right: none;
+                        </span>
+                    </li>
+                </ul>
+            </p>
+        </p>
+    </p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>Border-radius: радиус;</span> - закругляет концы блока или картинки. Радиус записывается по аналогии с отступами в 4 разных вариантах. <br>
+        <div style="border: 1px solid black; border-radius: 40px; padding: 20px; max-width: 400px; display: block;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus assumenda beatae illo aliquam obcaecati dolores deleniti exercitationem vero magni officia nulla harum natus ratione nemo rerum sequi, libero, facilis dignissimos.</p></div>
+        <img src="https://oboi-ma.ru/f/product/93582_4.jpg" alt="img" style="border-radius: 40px; max-width: 300px; margin-top: 15px;">
+    </p>
+    <p>
+        <span>Overflow: hidden;</span> - скрывает выступающие за границы буквы. Visible - делает их снова видимыми.
+        <div style="border: 1px solid black; border-radius: 150px; max-width: 400px; display: block; overflow:hidden;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus assumenda beatae illo aliquam obcaecati dolores deleniti exercitationem vero magni officia nulla harum natus ratione nemo rerum sequi, libero, facilis dignissimos.</p></div>
+    </p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>Outline: размер стиль цвет;</span> - в отличии от border является внешней границей,указывается сразу для 4-х сторон. (Почему у них разная высота я не понял)
+    </p>
+    <div style="outline: 2px solid black; width: 300px;">
+        <p>
+            <p style="text-align: center;">Outline</p>
+        </p>
+    </div>
+    <div style="border: 2px solid black; width: 300px;">
+        <p>
+            <p style="text-align: center;">Border</p>
+        </p>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>Box-shadow: "x" "y" "радиус-тени" "расстояние-тени" "цвет";</span> - задает тень для блока. Расстояние является опциональным свойством. 
+        <div style="box-shadow: 0px 0px 15px black; padding: 10px; margin-bottom: 30px;">Пример тени у блока.</div>
+        <div style="box-shadow: inset 0px 0px 15px black; padding: 10px;">Если перед свойствами записать <span>Inset</span>, то тень будет падать внутрь блока.</div>
+    </p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>Opacity: значение;</span> - задает прозрачность элемента от 0 до 1, где 0 полностью прозрачный, а 1 полностью видимый. С полностью прозрачными элементами все равно можно взаимодействовать.
+        <div style="border: 10px solid black; padding: 10px; margin-bottom: 5px; opacity: 0.5;">
+            <p>Прозрачность 0.5</p>
+        </div>
+    </p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>Visibility: значение;</span> - блок может быть видимым <span>Visible</span> или полностью скрытым <span>Hidden</span>. С полностью скрытым блоком нельзя взаимодействовать и он не исчезает со страницы, занимая свое место.
+        <div style="border: 10px solid black; padding: 10px; margin-bottom: 5px; visibility: hidden;">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci architecto libero eligendi quod delectus ipsum? Possimus, impedit at illo accusamus, magni sunt cumque deserunt aperiam beatae, eligendi eum perferendis alias.</p>
+        </div>
+    </p>
+</div>
+
+/*----------------------------------------------------------------------------------------------*/
+
+<h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">CSS свойство Background:</h2>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>Background: цвет;</span> или <span> Background-color: цвет;</span> - устанавливает у блока фон выбранным цветом. Цвет указывается словом, шестнадцатеричным кодом, ргб кодом или ргб кодом с альфа каналом.
+    </p>
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 150px; background: rgb(195, 199, 142);">
+        Пример покраски фона.
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>Background: url("ссылка");</span> или <span>Background-image: url("ссылка");</span> - устанавливает на фон выбранную картинку.
+    </p>
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg');"> </div>
+
+    <p>
+        <span>Background: url("ссылка") no-repeat;</span> или <span>Background-repeat: no-repeat;</span> - задает фоновой картинке свойство не повторяться.
+    </p>
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') no-repeat;"> </div>
+
+    <p>
+        <span>Background: url("ссылка") repeat-x;</span> или <span>Background-repeat: repeat-x;</span> - задает фоновой картинке свойство повторяться по оси x.
+    </p>
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') repeat-x;"> </div>
+
+    <p>
+        <span>Background: url("ссылка") repeat-y;</span> или <span>Background-repeat: repeat-y;</span> - задает фоновой картинке свойство повторяться по оси y.
+    </p>
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') repeat-y;"> </div>
+
+    <p>
+        <span>Background: url("ссылка") space;</span> или <span>Background-repeat: space;</span> - задает фоновой картинке свойство помещать картинку в пространство только целиком и вставлять между картинками пробелы.
+    </p>
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') space;"> </div>
+
+    <p>
+        <span>Background: url("ссылка") round;</span> или <span>Background-repeat: round;</span> - задает фоновой картинке свойство растягиваться и сужаться чтобы заполнить все пространство не обрезая картинку по краям.
+    </p>
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') round;"> </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>Background: "цвет";</span> - устанавливает градиент для старых браузеров? <br>
+        <span>Background: -moz-linear-gradient("направление-градиента",  "цвет1" 1%, "цвет2" 70%, "цвет3" 100%);</span> - градиаент для FF3.6-15. % - это промежутки на которых цвет будет меняться, можно указывать любое количество точек в пределах 1-100%. <br>
+        <span>Background: -webkit-linear-gradient("направление-градиента",  "цвет1" 1%, "цвет2" 70%, "цвет3" 100%);</span> - градиент для Chrome10-25, Safari5.1-6. <br>
+        <span>Background: linear-gradient(to "направление-градиента",  "цвет1" 1%, "цвет2" 70%, "цвет3" 100%);</span> - градиент для W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+. <br>
+        <span>Filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=' "цвет1" ', endColorstr=' "цвет2" ',GradientType=1 );</span> - градиент для IE6-9. 
+    </p>
+    <div style="
+    background: #ffffff;
+    background: -moz-linear-gradient(left,  #ffffff 1%, #8f0222 70%, #6d0019 100%);
+    background: -webkit-linear-gradient(left,  #ffffff 1%,#8f0222 70%,#6d0019 100%);
+    background: linear-gradient(to right,  #ffffff 1%,#8f0222 70%,#6d0019 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#6d0019',GradientType=1 );
+    border: 1px solid black; padding: 10px; margin-bottom: 5px;
+    ">
+        <p>
+            <span> 
+                background: #ffffff;  <br>
+                background: -moz-linear-gradient(left,  #ffffff 1%, #8f0222 70%, #6d0019 100%); <br>
+                background: -webkit-linear-gradient(left,  #ffffff 1%,#8f0222 70%,#6d0019 100%);  <br>
+                background: linear-gradient(to right,  #ffffff 1%,#8f0222 70%,#6d0019 100%); <br>
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#6d0019',GradientType=1 ); 
+            </span>
+        </p>
+    </div>
+    <p>Чтобы не тратить много времени на написание этого кода, можно воспользоваться: <a href="https://www.colorzilla.com/gradient-editor/" target="_blank" style="display: block; border: 1px solid black; height: 50px; width: 200px; text-align: center; text-decoration: none; margin-top: 30px; border-radius: 34px; font-size:17px; padding: 5px 5px 0px 5px; background: #aac0aa; color:rgb(75, 69, 69)!important;">онлайн генератором градиента</a>.</p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>Background: url("Ссылка") "x" "y" no-repeat;</span> или <span>Background-position: "x" "y";</span> - устанавливает положение картинки на экране.
+    </p>
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') 50% 50% no-repeat; "></div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>Background-attachment: </span>
+    </p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span></span>
+    </p>
+</div>
+
+
   </body>
 </html>
