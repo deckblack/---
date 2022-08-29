@@ -585,47 +585,6 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Background: цвет;</span> или <span> Background-color: цвет;</span> - устанавливает у блока фон выбранным цветом. Цвет указывается словом, шестнадцатеричным кодом, ргб кодом или ргб кодом с альфа каналом.
-    </p>
-    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 150px; background: rgb(195, 199, 142);">
-        Пример покраски фона.
-    </div>
-</div>
-
-<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
-    <p>
-        <span>Background: url("ссылка");</span> или <span>Background-image: url("ссылка");</span> - устанавливает на фон выбранную картинку.
-    </p>
-    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg');"> </div>
-
-    <p>
-        <span>Background: url("ссылка") no-repeat;</span> или <span>Background-repeat: no-repeat;</span> - задает фоновой картинке свойство не повторяться.
-    </p>
-    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') no-repeat;"> </div>
-
-    <p>
-        <span>Background: url("ссылка") repeat-x;</span> или <span>Background-repeat: repeat-x;</span> - задает фоновой картинке свойство повторяться по оси x.
-    </p>
-    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') repeat-x;"> </div>
-
-    <p>
-        <span>Background: url("ссылка") repeat-y;</span> или <span>Background-repeat: repeat-y;</span> - задает фоновой картинке свойство повторяться по оси y.
-    </p>
-    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') repeat-y;"> </div>
-
-    <p>
-        <span>Background: url("ссылка") space;</span> или <span>Background-repeat: space;</span> - задает фоновой картинке свойство помещать картинку в пространство только целиком и вставлять между картинками пробелы.
-    </p>
-    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') space;"> </div>
-
-    <p>
-        <span>Background: url("ссылка") round;</span> или <span>Background-repeat: round;</span> - задает фоновой картинке свойство растягиваться и сужаться чтобы заполнить все пространство не обрезая картинку по краям.
-    </p>
-    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') round;"> </div>
-</div>
-
-<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
-    <p>
         <span>Background: "цвет";</span> - устанавливает градиент для старых браузеров? <br>
         <span>Background: -moz-linear-gradient("направление-градиента",  "цвет1" 1%, "цвет2" 70%, "цвет3" 100%);</span> - градиаент для FF3.6-15. % - это промежутки на которых цвет будет меняться, можно указывать любое количество точек в пределах 1-100%. <br>
         <span>Background: -webkit-linear-gradient("направление-градиента",  "цвет1" 1%, "цвет2" 70%, "цвет3" 100%);</span> - градиент для Chrome10-25, Safari5.1-6. <br>
@@ -654,24 +613,124 @@
 </div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Все ниже рассмотренные примеры могут записываться двумя способами, либо с записыванием каждого параметра отдельно в виде <span>Background-свойство:</span> и потом записывать значение только для данного свойства. Либо через универсальной свойство <span>Background:</span> с дальнейшим приписыванием любых значений в любом порядке. Второй вариант является более предпочтительным.</p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Background: url("Ссылка") "x" "y" no-repeat;</span> или <span>Background-position: "x" "y";</span> - устанавливает положение картинки на экране.
+        <span> Background-color: цвет;</span> или <span>Background: цвет;</span> - устанавливает у блока фон выбранным цветом. Цвет указывается словом, шестнадцатеричным кодом, rgb кодом или rgb кодом с альфа каналом.
+    </p>
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 150px; background: rgb(195, 199, 142);">
+        Пример покраски фона.
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>Background-image: url("ссылка");</span> или <span>Background: url("ссылка");</span> - устанавливает на фон выбранную картинку.
+    </p>
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg');"> </div>
+
+    <p>
+        <span>Background-repeat: no-repeat;</span> или <span>Background: url("ссылка") no-repeat;</span> - задает фоновой картинке свойство не повторяться.
+    </p>
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') no-repeat;"> </div>
+
+    <p>
+        <span>Background-repeat: repeat-x;</span> или <span>Background: url("ссылка") repeat-x;</span> - задает фоновой картинке свойство повторяться по оси x.
+    </p>
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') repeat-x;"> </div>
+
+    <p>
+        <span>Background-repeat: repeat-y;</span> или <span>Background: url("ссылка") repeat-y;</span> - задает фоновой картинке свойство повторяться по оси y.
+    </p>
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') repeat-y;"> </div>
+
+    <p>
+        <span>Background-repeat: space;</span> или <span>Background: url("ссылка") space;</span> - задает фоновой картинке свойство помещать картинку в пространство только целиком и вставлять между картинками пробелы.
+    </p>
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') space;"> </div>
+
+    <p>
+        <span>Background-repeat: round;</span> или <span>Background: url("ссылка") round;</span> - задает фоновой картинке свойство растягиваться и сужаться чтобы заполнить все пространство не обрезая картинку по краям.
+    </p>
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') round;"> </div>
+</div>
+
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>Background-position: "x" "y";</span> или <span>Background: url("Ссылка") "x" "y" </span> no-repeat<span>;</span> - устанавливает положение картинки на экране.
     </p>
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') 50% 50% no-repeat; "></div>
 </div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Background-attachment: </span>
+        <span>Background-attachment: прокрутка;</span> или <span>Background: url('ссылка') прокрутка;</span> - задает значения прокрутки для фона на странице сайта. По умолчанию стоит <span>Scroll</span> - фоновое изображение прокручивается вместе со страницей. Но существуют так же значения:
     </p>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>
+            <span>Background-attachment: fixed;</span> или <span>Background: url('ссылка') fixed;</span> - фон независимо от прокрутки страницы всегда находится на экране браузера в фиксированном месте.
+        </p>
+
+        <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; Background: url('NewCanvas1.jpg') fixed; height: 200px;">
+        </div>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>
+            <span>Background-attachment: local;</span> или <span>Background: url('ссылка') local;</span> - фон фиксируется с учётом поведения элемента.
+        </p>
+
+        <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; Background: url('NewCanvas1.jpg') local; height: 200px; overflow: auto;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, odio. Consectetur aspernatur dolorum voluptate fugiat debitis eius recusandae praesentium veritatis delectus expedita? Reprehenderit perferendis dolore aliquid similique ad tenetur quos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem quaerat itaque porro est, atque vel libero, eaque repudiandae, et fuga harum explicabo odio! Id voluptas fugit repudiandae debitis possimus est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsum quibusdam maxime cupiditate culpa eos facere delectus velit porro iste. Repudiandae, earum autem commodi deserunt provident ratione quam voluptatum debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aliquid nam omnis soluta quaerat aut doloremque in, dolores numquam molestiae officiis excepturi adipisci nobis? Magni sequi fuga velit saepe earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta blanditiis velit quas expedita mollitia corporis excepturi vel at nemo magni enim, quia doloremque dolorem suscipit ratione voluptatum debitis molestiae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui aspernatur, doloribus corrupti odit eveniet, totam vel officia eum voluptatibus nostrum sapiente dolor aliquid quo debitis ad dolores? Quia, voluptatibus accusantium. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat porro voluptatem placeat veniam, soluta nostrum maiores esse, iusto, distinctio perspiciatis expedita. Quos eos repellendus quas culpa consectetur impedit, similique expedita. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, suscipit alias. Laudantium saepe voluptas illum aliquid facilis beatae, blanditiis pariatur nesciunt sapiente incidunt amet iure provident, suscipit, perferendis et numquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga provident quo repudiandae suscipit deserunt atque veniam nulla placeat at, doloribus dicta quos nemo dolor quibusdam commodi assumenda corporis dolorem harum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto animi reprehenderit cumque laudantium amet voluptates, ullam quam harum ab deleniti commodi minus aperiam reiciendis veritatis velit sint at ex odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nemo consequuntur incidunt, voluptatibus dignissimos minima laudantium temporibus. Aspernatur iure hic fugit et, enim doloremque, harum eos ad earum cupiditate cum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam nemo natus architecto iusto voluptate aperiam vero velit ullam, tempore modi enim culpa quos? Totam repudiandae beatae et quasi aspernatur ex. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci accusamus voluptate reprehenderit aperiam assumenda natus veritatis vero voluptates totam sunt esse exercitationem eum, ab nemo, deleniti porro. Dolores, nesciunt harum?</p>
+        </div>
+    </div>
 </div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span></span>
+        <span>Background-size: "x" "y";</span> или <span>Background: url('ссылка') "x" "y" /"x" "y";</span> - позволяет задавать фоновому изображению размеры по ширине и высоте. У картинки должны быть заданы изначальные координаты.
     </p>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; Background: url('NewCanvas1.jpg') 0 0 /30px 100px local; height: 200px;">
+    </div>
+ 
+    <p>
+        <span>Background-size: "x" "y";</span> или <span>Background: url('ссылка') "x" "y" / Contain;</span> - подстраивает картинку под контейнер по меньшей стороне контейнера.
+    </p>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; Background: url('NewCanvas1.jpg') 0 0/ contain; height: 200px;">
+    </div>
+
+    <p>
+        <span>Background-size: "x" "y";</span> или <span>Background: url('ссылка') "x" "y" / Cover;</span> - подстраивает картинку под контейнер по большей стороне контейнера.
+    </p>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; Background: url('NewCanvas1.jpg') 0 0/ cover; height: 200px;">
+    </div>
 </div>
 
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Так же с приходом <span>CSS 3</span> можно вставлять сразу несколько картинок для фона записывая для каждой собственные значения, разделяя картинки запятой.</p>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; Background: url('NewCanvas1.jpg') 0 0 no-repeat, url('NewCanvas1.jpg') 400px 0 no-repeat; height: 200px;"></div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        Так же можно использовать фон для того чтобы сделать маркированный список более красивым. Для этого изображение с иконкой ставится на фон у тега <span>Li</span> и ставятся отступы <span>Padding</span>. А к <span>Ul</span> применяется <span>list-style-type: none;</span> чтобы убрать стандартные точки нумерованного списка.
+    </p>
+
+    <ul>
+        <li>Пример один</li>
+        <li>Пример два</li>
+        <li>Пример три</li>
+        <li>Пример четыре</li>
+    </ul>
+</div>
 
   </body>
 </html>

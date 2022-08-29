@@ -9,3 +9,12 @@ span {
 .font {
   font-family: "DynaPuff", cursive;
 }
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 0 0 0 20px;
+  background: url("icon.png") 0 1px/ 15px 15px no-repeat;
+}
