@@ -724,12 +724,148 @@
         Так же можно использовать фон для того чтобы сделать маркированный список более красивым. Для этого изображение с иконкой ставится на фон у тега <span>Li</span> и ставятся отступы <span>Padding</span>. А к <span>Ul</span> применяется <span>list-style-type: none;</span> чтобы убрать стандартные точки нумерованного списка.
     </p>
 
-    <ul>
+    <ul class="list">
         <li>Пример один</li>
         <li>Пример два</li>
         <li>Пример три</li>
         <li>Пример четыре</li>
     </ul>
+</div>
+
+<h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">CSS Псевдоклассы:</h2>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>
+            Тег или класс:HOVER {параметры}
+        </span> - этот псевдокласс начинает включать заданные параметры когда пользователь наводит на элемент мышью и перестает работать с параметрами когда мышь с элемента убирается.
+    </p>
+
+    <div class="hover" style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 50px;">
+    <p> <span>Наведите сюда мышью и подключится background: black;</span> </p>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>
+            Тег или класс:VISITED {параметры}
+        </span> - этот псевдокласс задает параметры по уже пройденным ссылкам.
+    </p>
+
+    <a class="visited" href="https://ya.ru/" target="_blank">Перейдите по ссылке и она станет темно красной.</a>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>
+            Тег или класс:ACTIVE {параметры}
+        </span> - псевдокласс срабатывает в момент нажатия мышью на элемент.
+    </p>
+
+    <div class="active" style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 50px;">
+    <p><span>Нажатие мышью подключит параметр background: black;</span></p>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>
+            Тег или класс:FOCUS {параметры}
+        </span> - псевдокласс срабатывает на элементах которые могут получить фокус путем нажатия кнопки TAB и работает пока они находятся в фокусе.
+    </p>
+
+    <input class="focus" type="text" placeholder="Нажми сюда мышью" style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 50px;">
+    
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>
+            "Тег или класс" "Тег2":FIRST-CHILD {параметры}
+        </span> - позволяет применить параметры к первому Тегу2 из множества Тегов2 вложенных внутрь тега или класса. Не работает если внутри тега или класса, на первом месте перед Тегом2, находится еще какой то отличный от Тега2 элемент.
+    </p>
+
+    <ul class="first-child">
+        <li>Первый</li>
+        <li>Второй</li>
+        <li>Третий</li>
+        <li>Четвертый</li>
+    </ul>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>
+            "Тег или класс" "Тег2":LAST-CHILD {параметры}
+        </span> - позволяет применить параметры к последнему Тегу2 из множества Тегов2 вложенных внутрь тега или класса. Не работает если внутри тега или класса, на последнем месте после Тега2, находится еще какой то отличный от Тега2 элемент.
+    </p>
+
+    <ul class="last-child">
+        <li>Первый</li>
+        <li>Второй</li>
+        <li>Третий</li>
+        <li>Четвертый</li>
+    </ul>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>
+            "Тег или класс" "Тег2":NTH-CHILD('Значение') {параметры}
+        </span> - позволяет применить параметры к выбранному значению из множества Тегов2 вложенных внутрь тега или класса. Значения могут быть:
+    </p>
+
+    
+    <ul style="list-style-type: none;">
+        <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+            <li>
+                <span>nth-child(3)</span> - цифрой, указывающей на нужный элемент.
+            <br><br>
+                <ul class="nth-child-number">
+                    <li>Первый</li>
+                    <li>Второй</li>
+                    <li>Третий</li>
+                    <li>Четвертый</li>
+                </ul>
+            </li>
+        </div>
+
+        <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+            <li>
+                <span>nth-child(odd)</span> - нечетным значением указывающим на все нечетные элементы.
+            <br><br>
+                <ul class="nth-child-odd">
+                    <li>Первый</li>
+                    <li>Второй</li>
+                    <li>Третий</li>
+                    <li>Четвертый</li>
+                </ul>
+            </li>
+        </div>
+
+        <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+            <li>
+                <span>nth-child(even)</span> - четным значением указывающим на все четные элементы.
+            <br><br>
+                <ul class="nth-child-even">
+                    <li>Первый</li>
+                    <li>Второй</li>
+                    <li>Третий</li>
+                    <li>Четвертый</li>
+            </li>
+        </div>
+    </ul>
+</div>
+
+<h2  style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">CSS Псевдоклассы:</h2>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>
+
+        </span>
+    </p>
 </div>
 
   </body>

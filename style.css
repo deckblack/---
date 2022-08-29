@@ -10,11 +10,44 @@ span {
   font-family: "DynaPuff", cursive;
 }
 
-ul {
+.list li {
   list-style-type: none;
-}
-
-li {
   padding: 0 0 0 20px;
   background: url("icon.png") 0 1px/ 15px 15px no-repeat;
+}
+
+.hover:hover {
+  background: black;
+}
+
+.visited:visited {
+  color: brown;
+}
+
+.active:active {
+  background: black;
+}
+
+.focus:focus {
+  background: black;
+}
+
+.first-child li:first-child {
+  color: brown;
+}
+
+.last-child li:last-child {
+  color: brown;
+}
+
+.nth-child-number li:nth-child(3) {
+  color: brown;
+}
+
+.nth-child-odd li:nth-child(odd) {
+  color: brown;
+}
+
+.nth-child-even li:nth-child(even) {
+  color: brown;
 }
