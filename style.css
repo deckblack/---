@@ -51,3 +51,42 @@ span {
 .nth-child-even li:nth-child(even) {
   color: brown;
 }
+
+.first-line:first-line {
+  color: brown;
+}
+
+.first-letter:first-letter {
+  font-size: 50px;
+  color: brown;
+}
+
+.before li:before {
+  content: "$ ";
+}
+
+.after li:after {
+  content: "";
+  margin-left: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: brown;
+  border-radius: 50%;
+  border-color: black;
+  display: inline-block;
+}
+
+.list2 li {
+  position: relative;
+  list-style-type: none;
+}
+
+.list2 li:before {
+  content: "";
+  background: url("icon.png") 0 0/ 15px no-repeat;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: -20px;
+}

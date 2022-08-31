@@ -724,7 +724,17 @@
         Так же можно использовать фон для того чтобы сделать маркированный список более красивым. Для этого изображение с иконкой ставится на фон у тега <span>Li</span> и ставятся отступы <span>Padding</span>. А к <span>Ul</span> применяется <span>list-style-type: none;</span> чтобы убрать стандартные точки нумерованного списка.
     </p>
 
-    <ul class="list">
+    <p style="background-color: #aaa6b8; width:400px; padding: 10px; margin-bottom: 5px;">
+        <span>
+            .list li { <br>
+                list-style-type: none; <br>
+                padding: 0 0 0 20px; <br>
+                background: url("icon.png") 0 1px/ 15px 15px no-repeat; <br>
+              }
+        </span>
+    </p>
+
+    <ul  style="border: 1px solid black; padding: 10px; margin-bottom: 5px;" class="list">
         <li>Пример один</li>
         <li>Пример два</li>
         <li>Пример три</li>
@@ -858,14 +868,240 @@
     </ul>
 </div>
 
-<h2  style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">CSS Псевдоклассы:</h2>
+<h2  style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">CSS Псевдоэлементы:</h2>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
         <span>
+            Тег или класс:FIRST-LINE {параметры}
+        </span> - применяет параметры к первой строке в тексте. 
 
+        <p class="first-line">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nam aliquam quidem nostrum debitis rem obcaecati, nobis alias earum architecto sunt laboriosam quisquam repellat iste excepturi enim odit provident repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sit nemo nobis, reiciendis maiores magni ratione omnis distinctio, nisi unde culpa debitis nihil, et libero iste totam ex voluptas atque.</p>
+    </p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>
+            Тег или класс:FIRST-LETTER {параметры}
+        </span> - применяет параметры к первому символу в тексте. 
+
+        <p class="first-letter">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nam aliquam quidem nostrum debitis rem obcaecati, nobis alias earum architecto sunt laboriosam quisquam repellat iste excepturi enim odit provident repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sit nemo nobis, reiciendis maiores magni ratione omnis distinctio, nisi unde culpa debitis nihil, et libero iste totam ex voluptas atque.</p>
+    </p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>
+            Тег или класс:BEFORE {content: 'значение'; параметры}
+        </span> - ставит перед обернутым тегом или классом значение content и применяет к нему параметры. Значение может быть пустым, как и параметры.
+
+        <p>Например к классу <span>before</span> у списка, можно применить <span>.before li:before {content: '$ '; }</span></p>
+
+        <ul class="before">
+            <li>Пример 1</li>
+            <li>Пример 2</li>
+            <li>Пример 3</li>
+            <li>Пример 4</li>
+        </ul>
+    </p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>
+            Тег или класс:AFTER {content: 'значение'; параметры}
+        </span> - ставит после обернутого тега или класса значение content и применяет к нему параметры. Значение может быть пустым, как и параметры.
+
+        <p>Например к классу <span>after</span> у списка, можно применить: <br>
+            <span  style="display: inline-block; padding: 10px; margin-bottom: 5px; background-color: #aaa6b8; width: 200px;"> 
+                .after li:after { <br>
+                    content: ""; <br>
+                    margin-left: 10px; <br>
+                    width: 10px; <br>
+                    height: 10px; <br>
+                    background-color: brown; <br>
+                    border-radius: 50%; <br>
+                    border-color: black; <br>
+                    display: inline-block; <br>
+                  }
+            </span></p>
+
+        <ul class="after">
+            <li>Пример 1</li>
+            <li>Пример 2</li>
+            <li>Пример 3</li>
+            <li>Пример 4</li>
+        </ul>
+    </p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        Псевдоэлементы можно комбинировать с псевдоклассами, записывается это в виде: <span>Тег или класс:псевдокласс:псевдоэлемент {параметры}</span>
+    </p>
+</div>
+
+<h2  style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">CSS Позиционирование:</h2>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>
+            Position: значение;
+        </span> - задает для контейнера свойство расположения на сайте. По умолчанию у всех контейнеров значение <span>Static</span>, но существуют так же значения:
+    </p>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>
+            <span>Position: Relative; <br>
+                Top: 0; <br>
+                Left: 0; <br> 
+                Right: 0; <br>
+                Bottom: 0; <br>
+            </span> Позволяет сдвигать блок сверху, слева, справа с снизу на указанную длину относительно его изначального расположения. Все 4 стороны применять не обязательно, достаточно только двух по оси x и y. При этом изначальное место занимаемое блоком, все равно считается занятым им же, но визуально блок начинает располагаться в другом месте.
+        </p>
+
+        <div style="border: 1px solid black; margin-bottom: 5px; width:500px;">
+            <div style="border: 1px solid black; height: 50px; background-color: #8f354a;"></div>
+            <div style="border: 1px solid black; height: 50px; background-color: #77358b; Position: Relative; Top: 20px; Left: 40px;">
+                <p style="text-align: center;">
+                    <span>Position: Relative; Top: 20px; Left: 40px;</span>
+                </p>
+            </div>
+            <div style="border: 1px solid black; height: 50px; background-color: #448d75;"></div>
+        </div>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>
+            <span>
+                Z-index: значение;
+            </span> - используется со свойством <span>Position</span> и задает для блока слой по оси <span>Z</span> на котором он будет находится. Чем больше, тем выше будет расположен блок.
+        </p>
+
+        <div style="border: 1px solid black; margin-bottom: 5px; width:500px;">
+            <div style="border: 1px solid black; height: 50px; background-color: #8f354a;"></div>
+            <div style="border: 1px solid black; height: 50px; background-color: #77358b; Position: Relative; Top: 20px; Left: 40px;">
+                <p style="text-align: center;">
+                    <span>Position: Relative; Top: 20px; Left: 40px;</span>
+                </p>
+            </div>
+            <div style="border: 1px solid black; height: 50px; background-color: #448d75; position: relative; z-index: 1;">
+                <p style="text-align: center;">
+                    <span>Position: Relative; Z-index: 1;</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>
+            <span>Position: Absolute; <br>
+                Top: 0; <br>
+                Left: 0; <br> 
+                Right: 0; <br>
+                Bottom: 0; <br>
+            </span> Полностью вынимает блок из верстки, сдвигая все блоки ниже на его место. Сам же блок прилипает к выбранным координатам на сайте поверх остального содержимого и становится строчным блоком. <p style="background-color:rgb(219, 164, 164)">В примере ниже, блок не прилип к верхушке сайта только потому что находится внутри блока который сам по себе имеет параметр <span>position: relative;</span></p>
+        </p>
+
+        <div style="border: 1px solid black; margin-bottom: 5px; width:500px; position: relative;">
+            <div style="border: 1px solid black; height: 50px; background-color: #8f354a;"></div>
+            <div style="border: 1px solid black; height: 50px; background-color: #77358b; Position: Absolute; Top: 5px; Left: 5px;">
+                <p style="text-align: center;">
+                    <span>Position: Absolute; Top: 5px; Left: 5px;</span>
+                </p>
+            </div>
+            <div style="border: 1px solid black; height: 50px; background-color: #448d75;"></div>
+        </div>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>
+            <span>Position: Fixed; <br>
+                Top: 0; <br>
+                Left: 0; <br> 
+                Right: 0; <br>
+                Bottom: 0; <br>
+            </span> Полностью вынимает блок из верстки, сдвигая все блоки ниже на его место. Сам же блок прилипает к выбранным координатам на странице браузера поверх остального содержимого и становится строчным блоком. Теперь при прокрутке страницы, блок всегда будет закрплен в окне браузера. <p style="background-color:rgb(219, 164, 164)">В примере ниже, блок не прилип к окну браузера только потому что тут используется не настоящий <span>position: fixed;</span>, вместо него используется другой параметр о котором речь будет идти ниже. Если использовать настоящий <span>position: fixed;</span> то блок бы прилип ко всему сайту, так как параметр <span>Position: Relative;</span> у родителя, никак не влияет на параметр <span>Fixed</span>.</p>
+        </p>
+
+        <p style="width: 550px; text-align: center;"><span>Окно браузера:</span></p>
+
+        <div>
+            <div style="border: 1px solid black; margin-bottom: 5px; width:550px; position: relative; Overflow: auto;">
+                <div style="border: 1px solid black; height: 50px; background-color: #8f354a; width: 500px; Position: Sticky; Top: 0; Left: 0;">
+                    <p style="text-align: center;">
+                        <span>Position: Fixed; Top: 0; Left: 0;</span>
+                    </p>
+                </div>
+                <div style="border: 1px solid black; height: 50px; background-color: #77358b; width: 500px;">
+                </div>
+                <div style="border: 1px solid black; height: 50px; background-color: #448d75; width: 500px;"></div>
+                <div style="border: 1px solid black; height: 50px; background-color: #54448d; position: absolute; top: 2000px; width: 500px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>
+            <span>Position: Sticky; <br>
+                Top: 0; <br>
+                Left: 0; <br> 
+                Right: 0; <br>
+                Bottom: 0; <br>
+            </span> Блок начинает прилипать к окну браузера по аналогии с <span>Fixed</span> во время того как страница скролится. Линии прилипания задаются сверху, слева, справа или снизу.
+        </p>
+
+        <div style="border: 1px solid black; margin-bottom: 5px; width:500px; position: relative;">
+            <div style="border: 1px solid black; height: 50px; background-color: #8f354a; Position: Sticky; top: 0px;">
+                <p style="text-align: center;">
+                    <span>Position: Sticky; Top: 0px;</span>
+                </p>
+            </div>
+            <div style="border: 1px solid black; height: 50px; background-color: #77358b;"></div>
+            <div style="border: 1px solid black; height: 50px; background-color: #448d75;"></div>
+            <div style="border: 1px solid black; height: 50px; background-color: #538d44;"></div>
+            <div style="border: 1px solid black; height: 50px; background-color: #8f4573; Position: Sticky; bottom: 0px;">
+                <p style="text-align: center;">
+                    <span>Position: Sticky; Bottom: 0px;</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        Например, используя позиционирование, можно добавлять к спискам иконки. Каждому тегу <span>Li</span> внутри <span>Ul</span> следует не забыть задать <span>Position: Relative;</span> А после воспользоваться псевдоэлементом <span>Before</span>. <br> 
+        Выглядит это будет так:
+    </p>
+
+    <p style="padding: 10px; margin-bottom: 5px; background-color: #aaa6b8; width: 200px;">
+        <span>
+            .list2 li { <br>
+                position: relative; <br>
+                list-style-type: none; <br>
+              } <br>
+              <br>
+              .list2 li:before { <br>
+                content: ""; <br>
+                background: url("icon.png") 0 0/ 15px no-repeat; <br>
+                width: 15px; <br>
+                height: 15px; <br>
+                position: absolute; <br>
+                top: 0; <br>
+                left: -20px; <br>
+              }
         </span>
     </p>
+
+    <ul class="list2">
+        <li>Пример</li>
+        <li>Пример</li>
+        <li>Пример</li>
+        <li>Пример</li>
+    </ul>
 </div>
 
   </body>
