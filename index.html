@@ -242,7 +242,7 @@
         <ul>
             <li><span>тег</span> - обращение ко всем тегам</li>
             <li><span>.класс</span> - обращение ко всем классам</li>
-            <li><span>тег.класс</span> - обращение ко всем классам внутри тега</li>
+            <li><span>тег .класс</span> - обращение ко всем классам внутри тега</li>
             <li><span>.класс тег</span> - обращение ко всем тегам внутри класса</li>
             <li><span>.класс>тег</span> - обращение ко всем тегам на первом уровне класса</li>
             <li><span>*</span> - обращение вообще ко всем тегам независимо от названия</li>
@@ -1102,6 +1102,323 @@
         <li>Пример</li>
         <li>Пример</li>
     </ul>
+</div>
+
+<h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">Препроцессоры SASS, SCSS:</h2>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        Для работы с препроцессорами <span>SASS</span> или <span>SCSS</span> понадобятся сторонние программы, например <a href="https://www.youtube.com/watch?v=BqO5Pj26om8"><span>Prepros</span></a>.
+    </p>
+    <p>
+        Синтаксис <span>SASS, SCSS, CSS</span> отличается друг от друга. <span>SASS</span> и <span>SCSS</span> созданы для упрощения работы с <span>CSS</span>, при этом <span>SCSS</span> более привычен для тех кто переходит с <span>CSS</span>, чем <span>SASS</span>. Так как <span>SASS</span> не использует скобки и точки с запятой, отступы в нем играют обязательную роль для вложенности элементов. Наглядная разница синтаксисов показана в табличке:
+    </p>
+
+    <div style="white-space: nowrap; text-align: center; background-color: #424e85; color: white; padding-bottom: 10px;">
+        <div style="display: inline-block; min-width: 30%;">
+            <p>
+                <span>CSS</span>
+            </p>
+            <img src="css.jpg" alt="css">
+        </div>
+        <div style="display: inline-block; min-width: 30%;">
+            <p>
+                <span>SCSS</span>
+            </p>
+            <img src="scss.jpg" alt="scss">
+        </div>
+        <div style="display: inline-block; min-width: 30%;">
+            <p>
+                <span>SASS</span>
+            </p>
+            <img src="sass.jpg" alt="sass">
+        </div>
+    </div>
+
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+
+    <h3>Вложенность</h3>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        В отличии от <span>CSS</span> к тегам и классам в <span>SCSS</span> можно обращаться прямо внутри других тегов или классов.
+    </p>
+
+    <div style="white-space: nowrap; color: white; padding-bottom: 10px; Line-height: 5px;">
+        <div style="display: inline-block; min-width: 30%; font-weight: 700; padding: 0 30px; background-color: #424e85;">
+            <p style="text-align: center;">CSS</p>
+            <p>.class span {</p>
+            <p style="Text-indent: 25px;">color: red;</p>
+            <p>}</p>
+            <p><br></p>
+            <p><br></p>
+        </div>
+
+        <div style="display: inline-block; min-width: 30%; font-weight: 700; padding: 0 30px;  background-color: #424e85;">
+            <p style="text-align: center;">SCSS</p>
+            <p>.class {</p>
+            <p style="Text-indent: 25px;">span {</p>
+            <p style="Text-indent: 50px;">color: red;</p>
+            <p style="Text-indent: 25px;">}</p>
+            <p>}</p>
+        </div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        В <span>SCSS</span> можно обращаться к первому уровню вложенности используя знакомый из <span>CSS</span> знак '>'
+    </p>
+
+    <div style="white-space: nowrap; color: white; padding-bottom: 10px; Line-height: 5px;">
+        <div style="display: inline-block; min-width: 30%; font-weight: 700; padding: 0 30px; background-color: #424e85;">
+            <p style="text-align: center;">CSS</p>
+            <p>.class > p {</p>
+            <p style="Text-indent: 25px;">color: red;</p>
+            <p>}</p>
+            <p>.class span {</p>
+            <p style="Text-indent: 25px;">color: blue;</p>
+            <p>}</p>
+            <p><br></p>
+            <p><br></p>
+        </div>
+
+        <div style="display: inline-block; min-width: 30%; font-weight: 700; padding: 0 30px;  background-color: #424e85;">
+            <p style="text-align: center;">SCSS</p>
+            <p>.class {</p>
+            <p style="Text-indent: 25px;">> p {</p>
+            <p style="Text-indent: 50px;">color: red;</p>
+            <p style="Text-indent: 25px;">}</p>
+            <p style="Text-indent: 25px;">span {</p>
+            <p style="Text-indent: 50px;">color: blue;</p>
+            <p style="Text-indent: 25px;">}</p>
+            <p>}</p>
+        </div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>&</span> - используется внутри тегов или классов чтобы обращаться к родителю и использовать его для классов, псевдоклассов, псевдоэлементов.
+    </p>
+
+    <div style="white-space: nowrap; color: white; padding-bottom: 10px; Line-height: 5px;">
+        <div style="display: inline-block; min-width: 30%; font-weight: 700; padding: 0 30px; background-color: #424e85;">
+            <p style="text-align: center;">CSS</p>
+            <p>.link:hover {</p>
+            <p style="Text-indent: 25px;">color: red;</p>
+            <p>}</p>
+            <p><br></p>
+            <p><br></p>
+        </div>
+
+        <div style="display: inline-block; min-width: 30%; font-weight: 700; padding: 0 30px;  background-color: #424e85;">
+            <p style="text-align: center;">SCSS</p>
+            <p>.link {</p>
+            <p style="Text-indent: 25px;">&:hover {</p>
+            <p style="Text-indent: 50px;">color: red;</p>
+            <p style="Text-indent: 25px;">}</p>
+            <p>}</p>
+        </div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>&</span> - можно использовать в любом месте кода, не только в начале как на примере выше, но и в конце.
+    </p>
+
+    <div style="white-space: nowrap; color: white; padding-bottom: 10px; Line-height: 5px;">
+        <div style="display: inline-block; min-width: 30%; font-weight: 700; padding: 0 30px; background-color: #424e85;">
+            <p style="text-align: center;">CSS</p>
+            <p>.block .link {</p>
+            <p style="Text-indent: 25px;">color: red;</p>
+            <p>}</p>
+            <p><br></p>
+            <p><br></p>
+        </div>
+
+        <div style="display: inline-block; min-width: 30%; font-weight: 700; padding: 0 30px;  background-color: #424e85;">
+            <p style="text-align: center;">SCSS</p>
+            <p>.link {</p>
+            <p style="Text-indent: 25px;">.block & {</p>
+            <p style="Text-indent: 50px;">color: red;</p>
+            <p style="Text-indent: 25px;">}</p>
+            <p>}</p>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <h3>Переменные</h3>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p><span>$name</span> - с помощью это знака задаются переменные которые потом можно использовать в <span>CSS</span> коде. Например:</p>
+
+        <div style="white-space: nowrap; color: white; padding-bottom: 10px; Line-height: 5px;">
+
+        <div style="display: inline-block; min-width: 30%; font-weight: 700; padding: 0 30px;  background-color: #424e85;">
+            <p style="text-align: center;">CSS</p>
+            <p>.block {</p>
+            <p style="Text-indent: 25px;">height: 100px;</p>
+            <p>}</p>
+            <p><br></p>
+            <p><br></p>
+        </div>
+
+        <div style="display: inline-block; min-width: 30%; font-weight: 700; padding: 0 30px;  background-color: #424e85;">
+            <p style="text-align: center;">SCSS</p>
+            <p>$height: 100px;</p>
+            <p><br></p>
+            <p>.block {</p>
+            <p style="Text-indent: 25px;">height: $height;</p>
+            <p>}</p>
+        </div>
+
+        </div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <h3>Импорт других файлов стилей</h3>
+
+        <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+            <p><span>@import "имя файла";</span> - с помощью этой записи можно подключать к одному собираемому файлу <span>CSS</span> несколько <span>SCSS</span> файлов.</p>
+
+        </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <h3>Шаблоны:</h3>
+    
+        <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+            <p><span>%name {параметры}</span> - с помощью данной записи в <span>SCSS</span> можно писать шаблоны, которые потом можно вставлять в теги или классы используя <span>@extend %name;</span>. выглядит это так:</p>
+
+            <div style="white-space: nowrap; color: white; padding-bottom: 10px; Line-height: 5px;">
+
+                <div style="display: inline-block; min-width: 30%; font-weight: 700; padding: 0 30px;  background-color: #424e85;">
+                    <p style="text-align: center;">CSS</p>
+                    <p>.link {</p>
+                    <p style="Text-indent: 25px;">color: red;</p>
+                    <p>}</p>
+                    <p><br></p>
+                    <p><br></p>
+                    <p><br></p>
+                    <p><br></p>
+                </div>
+        
+                <div style="display: inline-block; min-width: 30%; font-weight: 700; padding: 0 30px;  background-color: #424e85;">
+                    <p style="text-align: center;">SCSS</p>
+                    <p>%link-color {</p>
+                    <p style="Text-indent: 25px;">color: red;</p>
+                    <p>}</p>
+                    <p><br></p>
+                    <p>.link {</p>
+                    <p style="Text-indent: 25px;">@extend %link-color;</p>
+                    <p>}</p>
+                </div>
+        
+            </div>
+
+            <p>Вместо <span>%name {параметры}</span> можно использовать и обычный класс <span>.name {параметры}</span>. А потом подключать его так же через <span>@extend .name;</span></p>
+    
+        </div>
+</div>
+    
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <h3>Миксины:</h3>
+    
+        <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+            <p><span>@mixin name($переменная) {параметры}</span> - запись миксина выглядит так. Используется вместе с переменной или переменными через запятую. Позволяет записывать в себе различные параметры со значениями переменной, а после использовать это в других частях кода для быстрого заполнения всех переменных. Выглядит это так:</p>
+
+            <div style="white-space: nowrap; color: white; padding-bottom: 10px; Line-height: 5px;">
+
+                <div style="display: inline-block; min-width: 30%; font-weight: 700; padding: 0 30px;  background-color: #424e85;">
+                    <p style="text-align: center;">CSS</p>
+                    <p>.block {</p>
+                    <p style="Text-indent: 25px;">font-size: 20px;</p>
+                    <p style="Text-indent: 25px;">font-weight: 700;</p>
+                    <p style="Text-indent: 25px;">color: red;</p>
+                    <p>}</p>
+                    <p><br></p>
+                    <p><br></p>
+                    <p><br></p>
+                    <p><br></p>
+                </div>
+        
+                <div style="display: inline-block; min-width: 30%; font-weight: 700; padding: 0 30px;  background-color: #424e85;">
+                    <p style="text-align: center;">SCSS</p>
+                    <p>@mixin font-s($fs, $fw, $color) {</p>
+                    <p style="Text-indent: 25px;">font-size: $fs;</p>
+                    <p style="Text-indent: 25px;">font-weight: $fw;</p>
+                    <p style="Text-indent: 25px;">color: $color;</p>
+                    <p>}</p>
+                    <p><br></p>
+                    <p>.block {</p>
+                    <p style="Text-indent: 25px;">@include font-s(20px, 700, red);</p>
+                    <p>}</p>
+                </div>
+        
+            </div>
+        </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <h3>Математика:</h3>
+    
+        <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+            <p>Препроцессор может использовать математические расчеты. Пример:</p>
+
+            <div style="white-space: nowrap; color: white; padding-bottom: 10px; Line-height: 5px;">
+
+                <div style="display: inline-block; min-width: 30%; font-weight: 700; padding: 0 30px;  background-color: #424e85;">
+                    <p style="text-align: center;">CSS</p>
+                    <p>.block {</p>
+                    <p style="Text-indent: 25px;">width: 60%;</p>
+                    <p>}</p>
+                </div>
+        
+                <div style="display: inline-block; min-width: 30%; font-weight: 700; padding: 0 30px;  background-color: #424e85;">
+                    <p style="text-align: center;">SCSS</p>
+                    <p>.block {</p>
+                    <p style="Text-indent: 25px;">width: 30px / 10px * 20%;</p>
+                    <p>}</p>
+                </div>
+        
+            </div>
+        </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <h3>Комментарии:</h3>
+    
+        <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+            <p><span>// Комментарий</span> - позволяет писать комментарии в <span>SCSS</span> не выводя их в <span>CSS</span>.</p>
+
+            <div style="white-space: nowrap; color: white; padding-bottom: 10px; Line-height: 5px;">
+
+                <div style="display: inline-block; min-width: 30%; font-weight: 700; padding: 0 30px;  background-color: #424e85;">
+                    <p style="text-align: center;">CSS</p>
+                    <p>.block {</p>
+                    <p style="Text-indent: 25px;">width: 300px;</p>
+                    <p>}</p>
+                    <p><br></p>
+                </div>
+        
+                <div style="display: inline-block; min-width: 30%; font-weight: 700; padding: 0 30px;  background-color: #424e85;">
+                    <p style="text-align: center;">SCSS</p>
+                    <p>// Не очень длинный комментарий.</p>
+                    <p>.block {</p>
+                    <p style="Text-indent: 25px;">width: 300px;</p>
+                    <p>}</p>
+                </div>
+        
+            </div>
+        </div>
 </div>
 
   </body>
