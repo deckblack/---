@@ -1421,5 +1421,478 @@
         </div>
 </div>
 
+
+<h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">FlexBox:</h2>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: rgb(61, 55, 55);">
+
+    <p style="color:rgb(255, 255, 255); padding: 5px;">Все свойства <span>FlexBox</span> будут применяться на данном ниже примере, состоящим из невидимой обертки дива <span>Block</span>, содержащим в себе один див <span style="color: #ece89d;">Row</span> внутри которого находятся три дива 
+    <span style="color: #8166b4;">Column</span>, каждый из которых содержит в себе див <span style="color: #18b5a4;">Item</span>.</p>
+
+    <div class="block">
+        <div class="block__row">
+            <div class="block__column">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">2</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: rgb(61, 55, 55);">
+
+    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>Display: flex;</span> - параметр примененный к диву <span style="color: #ece89d;">Row</span>. Выстраивает все блочные элементы внутри в колонку, сам <span style="color: #ece89d;">Row</span> при этом все еще остается блочным элементом и растягивается на всю ширину экрана.</p>
+
+    <div class="block">
+        <div class="block__row1">
+            <div class="block__column">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">2</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: rgb(61, 55, 55);">
+
+    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>Display: inline-flex;</span> - параметр примененный к диву <span style="color: #ece89d;">Row</span>. Выстраивает все блочные элементы внутри в колонку, при этом <span style="color: #ece89d;">Row</span> становится блочно строчным элементом.</p>
+
+    <div class="block">
+        <div class="block__row2">
+            <div class="block__column">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">2</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+
+    <p style="color:rgb(255, 255, 255); padding: 5px;">Если теперь применить к диву <span>Block</span> например <span>text-align: center;</span> то весь <span style="color: #ece89d;">Row</span> выровняется по центру.</p>
+
+    <div class="block2">
+        <div class="block__row2">
+            <div class="block__column">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">2</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: rgb(61, 55, 55);">
+
+    <p style="color:rgb(255, 255, 255); padding: 5px;">Для <span>display: flex;</span> по умолчанию применено значение <span>justify-content: flex-start;</span>, но можно применить значение <span>justify-content: flex-end;</span>. Выглядеть это будет так:</p>
+
+    <div class="block">
+        <div class="block__row3">
+            <div class="block__column">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">2</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+
+    <p style="color:rgb(255, 255, 255); padding: 5px;">Но есть и такие значения как <span>justify-content: center;</span></p>
+
+    <div class="block">
+        <div class="block__row4">
+            <div class="block__column">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">2</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+
+    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>justify-content: space-between;</span> - между каждым содержимым добавляется равное пространство. В данном случае между тремя содержимыми добавилось 2 равных промежутка.</p>
+
+    <div class="block">
+        <div class="block__row5">
+            <div class="block__column">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">2</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+
+    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>justify-content: space-around;</span> - слева и справа от каждого содержимого, добавляется равное пространство. В данном случае справа и слева от каждого содержимого добавилось равнозначное пространство, всего их 6.</p>
+
+    <div class="block">
+        <div class="block__row6">
+            <div class="block__column">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">2</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+
+    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>justify-content: space-evenly;</span> - между границами и содержимым добавляется равнозначное пространство. В данном случае таких пространств 4 штуки.</p>
+
+    <div class="block">
+        <div class="block__row7">
+            <div class="block__column">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">2</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: rgb(61, 55, 55);">
+
+    <p style="color:rgb(255, 255, 255); padding: 5px;">Если содержимое в ячейках не равно друг другу, это может выглядеть таким образом. За подобный внешний вид по умолчанию отвечает параметр <span>align-items: stretch;</span></p>
+
+    <div class="block">
+        <div class="block__row1">
+            <div class="block__column">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">2 <br> 4</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+
+    <p style="color:rgb(255, 255, 255); padding: 5px;">Существуют так же параметры: <br>
+        <span>align-items: flex-start;</span></p>
+
+    <div class="block">
+        <div class="block__row8">
+            <div class="block__column">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">2 <br> 4</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+
+    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>align-items: flex-end;</span></p>
+
+    <div class="block">
+        <div class="block__row9">
+            <div class="block__column">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">2 <br> 4</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+
+    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>align-items: center;</span></p>
+
+    <div class="block">
+        <div class="block__row10">
+            <div class="block__column">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">2 <br> 4</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+
+    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>align-items: baseline;</span></p>
+
+    <div class="block">
+        <div class="block__row11">
+            <div class="block__column">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column">
+                <div style="font-size: 50px;" class="block__item">2 <br> 4</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: rgb(61, 55, 55);">
+    <p style="color:rgb(255, 255, 255); padding: 5px;">По умолчанию колонки внутри склеены, если уменьшит размеры окна, то они уйдут за его пределы. За это отвечает значение по умолчанию <span>flex-wrap: nowrap;</span></p>
+
+    <div class="block1">
+        <div class="block__row1">
+            <div class="block__column">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">2</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+
+    <p style="color:rgb(255, 255, 255); padding: 5px;">Но существуют так же значения: <br> <span>flex-wrap: wrap;</span></p>
+
+    <div class="block1">
+        <div class="block__row12">
+            <div class="block__column">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">2</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+
+    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>flex-wrap: wrap-reverse;</span></p>
+
+    <div class="block1">
+        <div class="block__row13">
+            <div class="block__column">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">2</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: rgb(61, 55, 55);">
+    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>Align-self: зачение;</span> - позволяет точечно поменять у одной нужной <span style="color:#8166b4">Column</span> параметр <span>align-items: значение;</span>. <br>
+    <span>Align-self</span> имеет все те же значения что и <span>align-items</span>. <br>
+    Вот один из примеров: <span>align-self: stretch;</span></p>
+
+    <div class="block">
+        <div class="block__row11">
+            <div class="block__column" style="align-self: stretch;">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column">
+                <div style="font-size: 50px;" class="block__item">2 <br> 4</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: rgb(61, 55, 55);">
+    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>Order: номер;</span> - позволяет точечно поменять у <span style="color:#8166b4">Column</span> порядковый номер расположения в верстке. Этот параметр обязательно должен применяться ко всем <span style="color:#8166b4">Column</span> если применен хотя бы к одной. Выглядит это так:</p>
+
+    <div class="block">
+        <div class="block__row1">
+            <div class="block__column" style="order: 2;">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column" style="order: 1;">
+                <div class="block__item">2</div>
+            </div>
+            <div class="block__column" style="order: 3;">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: rgb(61, 55, 55);">
+    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>Flex: grow shrink basis;</span> <br> 
+        <span>Basis</span> отвечает за базовую ширину колонки, по умолчанию стоит <span>auto</span>, это означает что ширина будет зависеть от других значений <span>Grow</span> или <span>Shrink</span>. Но для <span>Basis</span> могут задваться различные числовые значения, задающие изначальную ширину колонки. Например у второй колонки <span>Flex: 0 1 500px;</span>:
+    </p>
+        
+        <div class="block">
+            <div class="block__row1">
+                <div class="block__column" style="Flex: 0 1 auto;">
+                    <div class="block__item">1</div>
+                </div>
+                <div class="block__column" style="Flex: 0 1 500px;">
+                    <div class="block__item">2</div>
+                </div>
+                <div class="block__column" style="Flex: 0 1 auto;">
+                    <div class="block__item">3</div>
+                </div>
+            </div>
+        </div>    
+
+    <p style="color:rgb(255, 255, 255); padding: 5px;">    
+        <span>Grow</span> отвечает за то, может ли ширина колонки превышать значение <span>Basis</span>, по умолчанию стоит 0, что означает что ширина колонки не превысит указанное в <span>Basis</span> значение. Но так же <span>Grow</span> может принимать и любые другие значение больше нуля, если у других колонок значения <span>Grow</span> будут равны 0, то независимо от значения, колонка растянется на всю ширину родителя, делая остальные колонки максимально узкими. Например у второй колонки <span>Flex: 1 1 500px;</span>:
+    </p>    
+
+        <div class="block">
+            <div class="block__row1">
+                <div class="block__column" style="Flex: 0 1 auto;">
+                    <div class="block__item">1</div>
+                </div>
+                <div class="block__column" style="Flex: 1 1 auto;">
+                    <div class="block__item">2</div>
+                </div>
+                <div class="block__column" style="Flex: 0 1 auto;">
+                    <div class="block__item">3</div>
+                </div>
+            </div>
+        </div>
+        
+    <p style="color:rgb(255, 255, 255); padding: 5px;">
+        Но если у нескольких колонок указан <span>Grow</span>, то они будут иметь пропорциональную друг другу ширину, пока им это позволяет делать ширина родителя. Например 1 к 3 к 6.
+    </p>
+
+        <div class="block">
+            <div class="block__row1">
+                <div class="block__column" style="Flex: 1 1 auto;">
+                    <div class="block__item">1</div>
+                </div>
+                <div class="block__column" style="Flex: 3 1 auto;">
+                    <div class="block__item">2</div>
+                </div>
+                <div class="block__column" style="Flex: 6 1 auto;">
+                    <div class="block__item">3</div>
+                </div>
+            </div>
+        </div>
+
+    <p style="color:rgb(255, 255, 255); padding: 5px;">
+        <span>Shrink</span> отвечает за то, может ли ширина колонки становится меньше чем значение <span>Basis</span>, по умолчанию стоит 1, что означает что ширина колонки может становиться меньше чем значение <span>Basis</span>. Например у второй колонки <span>Flex: 0 1 500px;</span>, тогда как у 1 и 3 <span>Flex: 0 0 500px;</span>:
+    </p>
+
+    <div class="block">
+        <div class="block__row1">
+            <div class="block__column" style="Flex: 0 0 500px;">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column" style="Flex: 0 1 500px;">
+                <div class="block__item">2</div>
+            </div>
+            <div class="block__column" style="Flex: 0 0 500px;">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: rgb(61, 55, 55);">
+    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>Flex-direction: значение;</span> - задает с какой осью мы будем работать по умолчанию. Изначально по умолчанию стоит значение <span>Row</span>. Это то самое значение с которым мы работали выше, но существуют так же значения:
+    </p>
+
+    <p style="color:rgb(255, 255, 255); padding: 5px;">
+        <span>Flex-direction: row-reverse;</span>
+    </p>
+
+    <div class="block">
+        <div class="block__row1" style="flex-direction: row-reverse;">
+            <div class="block__column">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">2</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+
+    <p style="color:rgb(255, 255, 255); padding: 5px;">
+        <span>Flex-direction: column;</span>
+    </p>
+
+    <div class="block">
+        <div class="block__row1" style="flex-direction: column;">
+            <div class="block__column">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">2</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+
+    <p style="color:rgb(255, 255, 255); padding: 5px;">
+        <span>Flex-direction: column-reverse;</span>
+    </p>
+
+    <div class="block">
+        <div class="block__row1" style="flex-direction: column-reverse;">
+            <div class="block__column">
+                <div class="block__item">1</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">2</div>
+            </div>
+            <div class="block__column">
+                <div class="block__item">3</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
   </body>
 </html>
