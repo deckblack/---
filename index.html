@@ -47,6 +47,15 @@
     </p>
     </div>
 
+
+
+
+
+
+
+
+
+
     <h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">HTML теги для работы с контентом:</h2>
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
@@ -116,7 +125,17 @@
     </p>
     </div>
 
-/*------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
 
 <h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">Формы ввода:</h2>
 
@@ -222,7 +241,18 @@
     </p>
     </div>
 
-/*------------------------------------------------------------------------------------------------------*/
+
+    
+
+
+
+
+
+
+
+
+
+
 
 <h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">CSS - каскадные таблицы стилей:</h2>
 
@@ -254,7 +284,17 @@
     </p>
 </div>
 
-/*------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
 
 <h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">CSS параметры для работы со шрифтом и текстом:</h2>
 
@@ -364,7 +404,19 @@
     <p style="line-height: 40px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam harum itaque libero ad. Iusto a quibusdam cum ullam repellat error ut, consequuntur accusantium eaque alias fugiat doloremque consectetur sit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, aut eligendi. Ex architecto consequatur veniam reprehenderit illo possimus ipsam! In omnis optio dolore mollitia iusto laboriosam. Natus nam tenetur aut?</p>
 </p></div>
 
-/*------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">CSS параметры для работы с блоками:</h2>
 
@@ -488,7 +540,18 @@
     </p>
 </div>
 
-/*--------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 <h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">Свойства с стили оформления CSS блоков:</h2>
 
@@ -579,7 +642,18 @@
     </p>
 </div>
 
-/*----------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 <h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">CSS свойство Background:</h2>
 
@@ -742,6 +816,16 @@
     </ul>
 </div>
 
+
+
+
+
+
+
+
+
+
+
 <h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">CSS Псевдоклассы:</h2>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
@@ -867,6 +951,17 @@
         </div>
     </ul>
 </div>
+
+
+
+
+
+
+
+
+
+
+
 
 <h2  style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">CSS Псевдоэлементы:</h2>
 
@@ -1103,6 +1198,19 @@
         <li>Пример</li>
     </ul>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">Препроцессоры SASS, SCSS:</h2>
 
@@ -1420,6 +1528,19 @@
             </div>
         </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">FlexBox:</h2>
@@ -1894,5 +2015,56 @@
 
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+<h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">Адаптивная верстка:</h2>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Адаптивная верстка работает на двух правилах. <br> 
+        Первое правило, не использовать фиксированные значения <span>width</span> или <span>height</span> для блоков, тогда блоки смогут сужаться и растягиваться. <br>
+        Втрое правило использовать брейкпоинты, которые при определенных размерах окна браузера, смогут изменять верстку сайта. Вначале на сайте задается мета тег: </p>
+    <p><span>meta name="viewport" content="width=device-width"</span></p>
+    <p>Затем через <span>@media (условие срабатывания) {новые параметры};</span> переписываются правила для уже существующих тегов или классов.</p>
+    <p>Вначале указывается тип устройства к которому будет применяться условие срабатывания:</p>
+    <ul>
+        <li><span>All</span> - значение по умолчанию, не записывается, влияет на все устройства.</li>
+        <li><span>Print</span> - для устройств предварительной печати.</li>
+        <li><span>Screen</span> - для цветных экранов.</li>
+        <li><span>Speech</span> - для синтезаторов речи.</li>
+    </ul>
+    <p>Затем в скобках записывается само условие срабатывания:</p>
+    <ul>
+        <li><span>orientation: portrait</span> - если у устройства портретная ориентация.</li>
+        <li><span>orientation: landscape</span> - если у устройства ландшафтная ориентация.</li>
+        <li><span>resolution: 300dpi</span> - если у устройства ди пи ай равен указанному значению.</li>
+        <li><span>max-resolution: 300dpi</span> - если ди пи ай устройства меньше чем max.</li>
+        <li><span>min-resolution: 300dpi</span> - если ди пи ай устройства больше чем min.</li>
+        <li><span>monochrome</span> - если устройство черно белое.</li>
+        <li><span>max-width: 900px</span> - если ширина окна устройства меньше чем max.</li>
+        <li><span>min-width: 900px</span> - если ширина окна устройства больше чем min.</li>
+        <li><span>max-height: 800px</span> - если высота окна устройства меньше чем max.</li>
+        <li><span>min-height: 800px</span> - если высота окна устройства больше чем min.</li>
+    </ul>
+    <p>Условия можно комбинировать между собой с помощью:</p>
+    <ul>
+        <li><span>and</span> - и.</li>
+        <li><span>or</span> - или.</li>
+    </ul>
+    <p>Так же после мета тега <span>meta name="viewport" content="width=device-width"</span> можно записать следующие теги через запятую:</p>
+    <ul>
+        <li><span>initial-scale=1.0</span> - задает начальный масштаб страницы.</li>
+        <li><span>maximum-scale=1.0</span> - задает максимальный масштаб страницы.</li>
+        <li><span>user-scalable=0</span> - запрещает пользователю менять масштаб страницы.</li>
+    </ul>
+</div>
   </body>
 </html>
