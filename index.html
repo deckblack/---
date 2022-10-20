@@ -20,25 +20,25 @@
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-      <span>Header</span> - используется на странице один раз, для верхней части
+      <span>header</span> - используется на странице один раз, для верхней части
       сайта, шапки.
     </p>
     </div>
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-      <span>Footer</span> - используется на странице один раз, для нижней части
+      <span>footer</span> - используется на странице один раз, для нижней части
       сайта, подвала.
     </p>
     </div>
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
-    <p><span>Nav</span> - используется на странице для меню навигации сайта.</p>
+    <p><span>nav</span> - используется на странице для меню навигации сайта.</p>
     </div>
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-      <span>Div</span> - элемент является блочным элементом и предназначен для
+      <span>div</span> - элемент является блочным элементом и предназначен для
       выделения фрагмента документа с целью изменения вида содержимого. Как
       правило, вид блока управляется с помощью стилей. Чтобы не описывать каждый
       раз стиль внутри тега, можно выделить стиль во внешнюю таблицу стилей, а
@@ -60,27 +60,27 @@
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-      <span>H1, H2, H3, H4, H5, H6</span> - теги заголовков, тег
-      <span>H1</span> используется один раз на странице, остальные теги можно
+      <span>h1, h2, h3, h4, h5, h6</span> - теги заголовков, тег
+      <span>h1</span> используется один раз на странице, остальные теги можно
       использовать многократно, не рекомендуется использовать более 3-х разных
       заголовков на странице.
     </p>
     </div>
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
-    <p><span>P</span> - тег абзаца, в него помещается обычный текст.</p>
+    <p><span>p</span> - тег абзаца, в него помещается обычный текст.</p>
     </div>
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-      <span>Span</span> - строчный тег для выделения текста и применения к нему
+      <span>span</span> - строчный тег для выделения текста и применения к нему
       каких либо атрибутов.
     </p>
     </div>
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-      <span>A</span> - тег создает ссылку которая
+      <span>a</span> - тег создает ссылку которая
       помещается в атрибут <span>href</span>. Внутри элемента может быть как
       текст так и картинка. <span>target="_blank"</span> открывает ссылку в
       новой вкладке. Атрибут <span>download</span> предлагает скачать то что
@@ -90,37 +90,37 @@
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-      <span>Img</span> элемент отвечающий за вставку картинки. Атрибут
+      <span>img</span> элемент отвечающий за вставку картинки. Атрибут
       <span>src=""</span> это ссылка на картинку, <span>alt=""</span> - описание
-      картинки.
+      картинки. Через CSS можно задать картинке <span>display: block;</span> и использовать на нее некоторые свойства для выравнивания <span>div</span> блоков.
     </p>
     </div>
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Ul</span> - маркированный список. Внутри располагается тег <span>Li</span>, в котором
+        <span>ul</span> - маркированный список. Внутри располагается тег <span>li</span>, в котором
         перечисляется содержимое списка.<br>
         <ul>
-            <Li>Пункт 1</Li>
-            <Li>Пункт 2</Li>
-            <Li>Пункт 3</Li>
+            <li>Пункт 1</li>
+            <li>Пункт 2</li>
+            <li>Пункт 3</li>
         </ul>
     </p>
     </div>
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
-    <p><span>Ol</span> - нумерованный список. Внутри располагается тег <span>Li</span>, в котором
+    <p><span>ol</span> - нумерованный список. Внутри располагается тег <span>li</span>, в котором
         перечисляется содержимое списка.<br>
         <ol>
-            <Li>Пункт 1</Li>
-            <Li>Пункт 2</Li>
-            <Li>Пункт 3</Li>
+            <li>Пункт 1</li>
+            <li>Пункт 2</li>
+            <li>Пункт 3</li>
         </ol>
     </p>
     </div>
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
-    <p><span>Br</span> - тег переноса строки.
+    <p><span>br</span> - тег переноса строки.
     <p>Пример <br> переноса <br> строки.</p>
     </p>
     </div>
@@ -142,10 +142,10 @@
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">  
 <p>
       Все теги для ввода данных помещаются внутри элемента
-      <span>Form</span> который имеет обязательный атрибут
-      <span>Action=""</span> в котором указывается ссылка на адрес сервера, где
+      <span>form</span> который имеет обязательный атрибут
+      <span>action=""</span> в котором указывается ссылка на адрес сервера, где
       будут храниться или обрабатываться введенные данные. Атрибут
-      <span>Method</span> указывает каким образом будут передаваться данные,
+      <span>method</span> указывает каким образом будут передаваться данные,
       открытым - <span>get</span> или скрытным - <span>post</span>. Только
       скрытным путем можно отправлять большие объемы данных и прикрепленные
       файлы. При это обязательно использовать
@@ -155,24 +155,24 @@
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-      <span>Input</span> - поле для ввода каких либо данных пользователем.
-      Содержит в себе атрибуты <span>Name</span> - название для элемента,
-      <span>Value</span> - значение элемента. Атрибут <span>Placeholder</span> задает для формы ввода отображаемое название подсказку.
+      <span>input</span> - поле для ввода каких либо данных пользователем.
+      Содержит в себе атрибуты <span>name</span> - название для элемента,
+      <span>value</span> - значение элемента. Атрибут <span>placeholder</span> задает для формы ввода отображаемое название подсказку.
       <br>
       Тип данных опредляется отдельным атрибутом <span>type=""</span>, который
       может содержать в себе: 
       <br>
       <ul>
         <li>
-            <span>Text</span> - если пользователь будет вводить текст. 
+            <span>text</span> - если пользователь будет вводить текст. 
         <br>
         <br>
             <input type="text" name="username" value="" placeholder="Введите текст">
         </li> <br>
-        <li><span>Tel</span> - если пользователь будет вводить цифры на телефоне, это
+        <li><span>tel</span> - если пользователь будет вводить цифры на телефоне, это
             переключит его раскладку автоматически на цифровую.
         </li> <br>
-        <li><span>Password</span> - если пользователь будет вводить пароль, это
+        <li><span>password</span> - если пользователь будет вводить пароль, это
             замажет вводимые в строке символы. 
         <br>
         <br>
@@ -180,15 +180,15 @@
         </li>
         <br>
         <li>
-            <span>Radio</span> - используя это значение атрибута, вы должны поместить
-            весь элемент <span>Input</span> в тектовый тег <span>P</span>, внутри
+            <span>radio</span> - используя это значение атрибута, вы должны поместить
+            весь элемент <span>input</span> в тектовый тег <span>p</span>, внутри
             которого будете задавать названия для кажого отдельного
             <span>radio</span>. Тем самым вы создадите подобие списка, который будет
-            объединятся в группу одинаково названным атрибутом <span>Name</span>, но
-            атрибут <span>Value</span> должен отличаться и соответствовать названию
-            указанному в атрибуте <span>P</span>. Этот элемент дает пользователю
-            выбирать только один пункт из списка. Атрибут <span>Checked</span> заданный у одного из
-            <span>Radio</span> делает этот пункт выбранным по умолчанию. 
+            объединятся в группу одинаково названным атрибутом <span>name</span>, но
+            атрибут <span>value</span> должен отличаться и соответствовать названию
+            указанному в атрибуте <span>p</span>. Этот элемент дает пользователю
+            выбирать только один пункт из списка. Атрибут <span>checked</span> заданный у одного из
+            <span>radio</span> делает этот пункт выбранным по умолчанию. 
         <br>
             <p><input type="radio" name="gender" value="male">Мужчина</p>
             <p><input checked type="radio" name="gender" value="female">Женщина</p>
@@ -196,13 +196,13 @@
         </li>
 
         <li>
-            <span>Checkbox</span> - тоже помещается в тег <span>P</span>. Но в отличии от <span>radio</span> объединяется одинаковым атрибутом <span>Value</span>, а атрибут <span>Name</span> для каждого пункта должен быть разным. Этот элемент позволяет выбирать сразу несколько пунктов. Атрибут <span>Checked</span> тут тоже работает.
+            <span>checkbox</span> - тоже помещается в тег <span>p</span>. Но в отличии от <span>radio</span> объединяется одинаковым атрибутом <span>value</span>, а атрибут <span>name</span> для каждого пункта должен быть разным. Этот элемент позволяет выбирать сразу несколько пунктов. Атрибут <span>checked</span> тут тоже работает.
             <p><input type="checkbox" name="strong" value="yes">Вы сильный?</p>
             <p><input type="checkbox" name="speed" value="yes">Вы быстрый?</p>
             <p><input checked type="checkbox" name="human" value="yes">Вы человек?</p>
         </li>
         <li>
-            <span>File</span> - позволяет прикреплять файлы и отправлять их на сервер. Атрибут <span>Value</span> тут не используется. 
+            <span>file</span> - позволяет прикреплять файлы и отправлять их на сервер. Атрибут <span>value</span> тут не используется. 
         <br> 
         <br>
         <input type="file" name="foto">
@@ -213,13 +213,13 @@
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
         <p>
-            <span>Textarea</span> - позволяет вводить многострочный текст. Атрибуты <span>Cols, Rows</span> можно не использовать если вы будете задавать размеры используя <span>CSS</span>. Атрибут <span>Placeholder</span> задает для формы ввода отображаемое название подсказку. <br> <br>
+            <span>textarea</span> - позволяет вводить многострочный текст. Атрибуты <span>cols, rows</span> можно не использовать если вы будете задавать размеры используя <span>CSS</span>. Атрибут <span>placeholder</span> задает для формы ввода отображаемое название подсказку. Чтобы ограничить в CSS изменени размера используют <span>resize: none;</span> <br> <br>
         <textarea name="text" placeholder="Введите сюда текст"></textarea></p>
     </div>
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
         <p>
-        <span>Select</span> - выпадающий список, должен содержать в себе тег <span>Option</span>, внутри которого перечисляются все пункты выпадающего списка. У <span>select</span> может быть атрибут <span>multiple</span> позволяющий выбирать из списка сразу несколько пунктов с зажатым ctrl. У <span>option</span> может быть атрибут <span>selected</span> который задает какой либо пункт списка по умолчанию. 
+        <span>select</span> - выпадающий список, должен содержать в себе тег <span>option</span>, внутри которого перечисляются все пункты выпадающего списка. У <span>select</span> может быть атрибут <span>multiple</span> позволяющий выбирать из списка сразу несколько пунктов с зажатым ctrl. У <span>option</span> может быть атрибут <span>selected</span> который задает какой либо пункт списка по умолчанию. 
         <br>
         <br>
         <select name="color">
@@ -232,10 +232,10 @@
     </div>
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
-    <p><Span>Button</Span> - создает кнопку. Тип кнопки задается атрибутом <span>Type</span> и может быть:
+    <p><Span>button</Span> - создает кнопку. Тип кнопки задается атрибутом <span>type</span> и может быть:
         <ul>
-            <li><span>Submit</span> - отправляет всю форму.</li>
-            <li><span>Reset</span> - сбрасывает все значения формы по умолчанию.</li>
+            <li><span>submit</span> - отправляет всю форму.</li>
+            <li><span>reset</span> - сбрасывает все значения формы по умолчанию.</li>
         </ul>
         <button type="reset">Сбросить</button>
     </p>
@@ -280,7 +280,7 @@
         </ul>
     </p>
     <p>
-        Подключаются CSS с помощью тега <span>Link</span> который располагается в <span>Head</span> и имеет атрибут <span>rel="stylesheet"</span> обозначающий что это CSS, а так же атрибут <span>href=""</span> указывающий ссылку на CSS файл.
+        Подключаются CSS с помощью тега <span>link</span> который располагается в <span>head</span> и имеет атрибут <span>rel="stylesheet"</span> обозначающий что это CSS, а так же атрибут <span>href=""</span> указывающий ссылку на CSS файл.
     </p>
 </div>
 
@@ -299,7 +299,7 @@
 <h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">CSS параметры для работы со шрифтом и текстом:</h2>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>Font-family: имяшрифта, "имя шрифта", тип шрифта;</span> - задает тексту шрифт, названия шрифтов перечисляются через запятую, если в названии есть проблел название заключается в кавычки. В конце указывается тип шрифта: serif, sans-serif, monospace, cursive, fantasy. <br>
+    <span>font-family: имяшрифта, "имя шрифта", тип шрифта;</span> - задает тексту шрифт, названия шрифтов перечисляются через запятую, если в названии есть проблел название заключается в кавычки. В конце указывается тип шрифта: serif, sans-serif, monospace, cursive, fantasy. <br>
     Атрибут <span>inherit</span> указывает наследуется ли шрифт от родительского элемента.
 </p>
 
@@ -308,13 +308,13 @@
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>Font-size: размер;</span> - указывается размер шрифта в различных единицах.
+    <span>font-size: размер;</span> - указывается размер шрифта в различных единицах.
 </p>
 
 <p style="font-size: 40px;">Размер шрифта.</p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>Font-style: стиль;</span> - указывает стиль шрифта:
+    <span>font-style: стиль;</span> - указывает стиль шрифта:
     <ul>
         <li style="font-style: italic;">italic - курсивный</li>
         <li style="font-style: oblique;">oblique - наклонный</li>
@@ -323,7 +323,7 @@
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>Font-weight: толщина;</span> - указывает на толщину шрифта, работает не со всеми шрифтами: 
+    <span>font-weight: толщина;</span> - указывает на толщину шрифта, работает не со всеми шрифтами: 
     <ul style="font-size: 20px;">
        <li style="font-weight: 100;">100 - thin</li>
        <li style="font-weight: 300;">300 - lite</li>
@@ -336,7 +336,7 @@
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>Color: цвет;</span> - указывает на цвет шрифта.
+    <span>color: цвет;</span> - указывает на цвет шрифта.
     <ul style="background-color: rgb(31, 31, 31);">
         <li style="color: #00FF00">#00FF00 - шестнадцатеричный код</li>
         <li style="color: rgb(255, 0, 0)">rgb(255, 0, 0) - rgb </li>
@@ -345,7 +345,7 @@
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>Text-align: выравнивание;</span> - горизонтальное выравнивание текста:
+    <span>text-align: выравнивание;</span> - горизонтальное выравнивание текста:
     <ul style="border: 1px solid #000; max-width: 400px; padding: 10px; margin: 30px; list-style-type: none;">
         <li style="text-align: center;"> <span>center</span> - по центру</li>
         <li style="text-align: justify;"> <span>justify</span> - по всей ширине блока, если в тексте достаточно слов. Три слова растягиваться по всей ширине блока не будут.</li>
@@ -355,7 +355,7 @@
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-<span>Text-decoration: значение1 значение2;</span> - декорирование текста, можно применять сразу несколько зачений:
+<span>text-decoration: значение1 значение2;</span> - декорирование текста, можно применять сразу несколько зачений:
 <ul>
     <li style="text-decoration: overline;">overline - линия проходит над текстом</li>
     <li style="text-decoration: line-through;">line-through - перечеркнутый текст</li>
@@ -365,12 +365,12 @@
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>Text-shadow: x y размытие цвет;</span> - создает тень у текста, например text-shadow: 1px 1px 10px #000000; Запятые ставить между значениями не надо!
+    <span>text-shadow: x y размытие цвет;</span> - создает тень у текста, например text-shadow: 1px 1px 10px #000000; Запятые ставить между значениями не надо!
     <p style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; text-shadow: 4px 4px 10px black;">Тень у текста</p>
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>Text-transform: значение;</span> - указывает прописные или строчные символы:
+    <span>text-transform: значение;</span> - указывает прописные или строчные символы:
     <ul>
         <li style="text-transform: capitalize;"> <span>capitalize</span> - Первый символ кажодого слова будет заглавным</li>
         <li style="text-transform: lowercase;"><span>lowercase</span> - Все символы строчные</li>
@@ -380,27 +380,27 @@
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>Text-indent: отступ;</span> - размер красной строки у текста.
+    <span>text-indent: отступ;</span> - размер красной строки у текста.
     <p style="text-indent: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam harum itaque libero ad. Iusto a quibusdam cum ullam repellat error ut, consequuntur accusantium eaque alias fugiat doloremque consectetur sit!</p>
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>Letter-spacing: значение;</span> - устанавливает отступы между символами.
+    <span>letter-spacing: значение;</span> - устанавливает отступы между символами.
     <p style="letter-spacing: 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam harum itaque libero ad. Iusto a quibusdam cum ullam repellat error ut, consequuntur accusantium eaque alias fugiat doloremque consectetur sit!</p>
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>Word-spacing: значение;</span> - устанавливает расстояние между словами.
+    <span>word-spacing: значение;</span> - устанавливает расстояние между словами.
     <p style="word-spacing: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam harum itaque libero ad. Iusto a quibusdam cum ullam repellat error ut, consequuntur accusantium eaque alias fugiat doloremque consectetur sit!</p>
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>White-space: nowrap;</span> - запрещает перенос строки, значение normal разрешает перенос строки.
+    <span>white-space: nowrap;</span> - запрещает перенос строки, значение normal разрешает перенос строки.
     <p style="white-space: nowrap;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam harum itaque libero ad. Iusto a quibusdam cum ullam repellat error ut, consequuntur accusantium eaque alias fugiat doloremque consectetur sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magni a corporis distinctio porro sunt animi pariatur laudantium. Non qui architecto eos totam voluptate neque voluptas tenetur amet ab ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto consequatur saepe quo omnis. Possimus adipisci error minima autem recusandae asperiores rem iure accusamus, quod beatae ad, ipsa earum exercitationem laboriosam!</p>
 </p></div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;"><p>
-    <span>Line-height: значение;</span> - устанавливает межстрочный интервал текста.
+    <span>line-height: значение;</span> - устанавливает межстрочный интервал текста.
     <p style="line-height: 40px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam harum itaque libero ad. Iusto a quibusdam cum ullam repellat error ut, consequuntur accusantium eaque alias fugiat doloremque consectetur sit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, aut eligendi. Ex architecto consequatur veniam reprehenderit illo possimus ipsam! In omnis optio dolore mollitia iusto laboriosam. Natus nam tenetur aut?</p>
 </p></div>
 
@@ -426,7 +426,7 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
 <p>
-    <span>Padding</span> - указывает внутренный отступ у блочного элемента и может записываться несколькими способами (единицы измерения могут быть разными): 
+    <span>padding</span> - указывает внутренный отступ у блочного элемента и может записываться несколькими способами (единицы измерения могут быть разными): 
     <br>
     <ul>
         <li> <span>padding: 10px, 10px, 10px, 10px;</span> - отступ сверху, справа, снизу, слева. </li>
@@ -440,21 +440,21 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
 <p>
-    <span>Margin</span> - указывает внешний отступ блочного элемента, записываятся по аналогии с padding.
+    <span>margin</span> - указывает внешний отступ блочного элемента, записываятся по аналогии с padding.
     <p style="border: 1px solid black; padding: 10px; margin: 45px 100px 35px 60px;">Пример отступа</p>
 </p>
 </div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
 <p>
-    <span>Width</span> - строго фиксирует ширину блочного элемента если используется точное числовое значение, не важно какой размер будет у окна браузера, границы блока не изменятся.
+    <span>width</span> - строго фиксирует ширину блочного элемента если используется точное числовое значение, не важно какой размер будет у окна браузера, границы блока не изменятся.
     <p style="border: 1px solid black; padding: 10px; margin-bottom: 5px; width: 2000px;">Пример фиксированной ширины в 2000px</p>
 </p>
 </div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Max-width</span> - устанавливает максимальную ширину блока, но в отличии от фиксированного width может принимать и меньшие значения, подстраиваясь под ширину окна браузера. 
+        <span>max-width</span> - устанавливает максимальную ширину блока, но в отличии от фиксированного width может принимать и меньшие значения, подстраиваясь под ширину окна браузера. 
         <p style="border: 1px solid black; padding: 10px; margin-bottom: 5px; max-width: 12100px;">
             Пример ограничения максимальной ширины в 12100px
         </p>
@@ -463,21 +463,21 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Min-width</span> - устанавливает минимальную ширину блока.
+        <span>min-width</span> - устанавливает минимальную ширину блока.
         <p style="border: 1px solid black; padding: 10px; margin-bottom: 5px; min-width: 2000px;">Пример ограничения минимальной ширины в 2000px</p>
     </p>
 </div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Height</span> - устанавливает фиксированную высоту для блока.
+        <span>height</span> - устанавливает фиксированную высоту для блока.
         <p style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 100px;">Фиксированная высота в 100px</p>
     </p>
 </div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Max-height</span> - устанавливает максимальную высоту для блока.
+        <span>max-height</span> - устанавливает максимальную высоту для блока.
         <p style="border: 1px solid black; padding: 10px; margin-bottom: 5px; max-height: 30px;">Максимальная высота в 30 px. <br>
              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi odit unde velit. Reprehenderit, debitis saepe voluptatem laborum hic quibusdam quasi tempora, aliquid asperiores reiciendis laboriosam, ad sequi obcaecati doloribus eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt et totam iusto laudantium possimus? Nobis odio hic perferendis omnis.</p>
     </p>
@@ -485,7 +485,7 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Min-height</span> - устанавливает минимальную высоту для блока.
+        <span>min-height</span> - устанавливает минимальную высоту для блока.
         <p style="border: 1px solid black; padding: 10px; margin-bottom: 5px; min-height: 30px;">Минимальная высота в 30 px. <br>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus perferendis eum enim pariatur est placeat hic reiciendis veniam sint ex, consequatur minus quasi in maiores quod ullam iure unde vero. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit esse nihil, maiores voluptates eligendi itaque dolore quos, tempora, quod natus inventore quae tempore magnam deleniti iste? Iste quisquam exercitationem nam?</p>
     </p>
@@ -493,22 +493,22 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Overflow: значение;</span> - может принимать такие значения:
+        <span>overflow: значение;</span> - может принимать такие значения:
         <ul>
             <li>
-                <span>Visible</span> - стандартное поведение блока.
+                <span>visible</span> - стандартное поведение блока.
                 <p style="border: 1px solid black; padding: 10px; margin-bottom: 15px; height: 20px; overflow: visible;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eaque alias aut tempore eos ullam architecto molestiae, dolores quasi, ad facere! Id, repellat. Adipisci id cumque autem iusto dolorem sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ea exercitationem? Quasi eum nesciunt praesentium commodi aspernatur, adipisci vel hic.</p>
             </li>
             <li>
-                <span>Hidden</span> - скрывает в блоке вылезающий текст, если он выходит за пределы блока.  
+                <span>hidden</span> - скрывает в блоке вылезающий текст, если он выходит за пределы блока.  
                 <p style="border: 1px solid black; padding: 10px; margin-bottom: 15px; height: 20px; overflow: hidden;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eaque alias aut tempore eos ullam architecto molestiae, dolores quasi, ad facere! Id, repellat. Adipisci id cumque autem iusto dolorem sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ea exercitationem? Quasi eum nesciunt praesentium commodi aspernatur, adipisci vel hic.</p>
             </li>
             <li>
-                <span>Scroll</span> - позволяет скролить не влезающий в блок текст по горизонтали и вертикали.
+                <span>scroll</span> - позволяет скролить не влезающий в блок текст по горизонтали и вертикали.
                 <p style="border: 1px solid black; padding: 10px; margin-bottom: 15px; height: 20px; overflow: scroll;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eaque alias aut tempore eos ullam architecto molestiae, dolores quasi, ad facere! Id, repellat. Adipisci id cumque autem iusto dolorem sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ea exercitationem? Quasi eum nesciunt praesentium commodi aspernatur, adipisci vel hic.</p>
             </li>
             <li>
-                <span>Auto</span> - делает тоже самое что и scroll, но в отличии от него не добавляет лишнюю полосу прокрутки если она не нужна.
+                <span>auto</span> - делает тоже самое что и scroll, но в отличии от него не добавляет лишнюю полосу прокрутки если она не нужна.
                 <p style="border: 1px solid black; padding: 10px; margin-bottom: 15px; height: 20px; overflow: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eaque alias aut tempore eos ullam architecto molestiae, dolores quasi, ad facere! Id, repellat. Adipisci id cumque autem iusto dolorem sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ea exercitationem? Quasi eum nesciunt praesentium commodi aspernatur, adipisci vel hic.</p>
             </li>
         </ul>
@@ -517,25 +517,25 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Box-sizing: border-box;</span> - по стандарту в браузерах расчет размеров блока расчитывается так: width + padding + margin + border. <br>
+        <span>box-sizing: border-box;</span> - по стандарту в браузерах расчет размеров блока расчитывается так: width + padding + margin + border. <br>
         Из за чего размеры коробок на самом деле больше чем вы им указываете. Если включить <span>box-sizing</span> то формула поменяется на: width + margin. <br>
         И вам придется учитывать меньшее количество переменных. <br>
         Это свойство не поддерживается по всех браузерах, в других браузерах оно записывается иначе:
         <ul>
-            <li> <span>-Webkit-box-sizing: border-box;</span> </li>
-            <li> <span>-Moz-box-sizing: border-box;</span> </li>
+            <li> <span>-webkit-box-sizing: border-box;</span> </li>
+            <li> <span>-moz-box-sizing: border-box;</span> </li>
         </ul>
     </p>
 </div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Display: зачение;</span> - принимает множество значений (пока что тут будут расписаны не все из них).
+        <span>display: зачение;</span> - принимает множество значений (пока что тут будут расписаны не все из них).
         <ul>
-            <li><span>Block</span> - превращает строчный элемент в блочный, тем самым позволяя влиять на него выше описанными стилями.</li>
-            <li><span>Inline</span> - превращает блочный элемент в строчный.</li>
-            <li><span>Inline-block</span> - строчный элемент остается строчным, но на него начинают влиять стили для блочных элементов.</li>
-            <li><span>None</span> - удаляет блок со страницы, перестраивая при этом верстку сайта так, как будто этого блока не существует.</li>
+            <li><span>block</span> - превращает строчный элемент в блочный, тем самым позволяя влиять на него выше описанными стилями.</li>
+            <li><span>inline</span> - превращает блочный элемент в строчный.</li>
+            <li><span>inline-block</span> - строчный элемент остается строчным, но на него начинают влиять стили для блочных элементов.</li>
+            <li><span>none</span> - удаляет блок со страницы, перестраивая при этом верстку сайта так, как будто этого блока не существует.</li>
         </ul>
     </p>
 </div>
@@ -557,19 +557,19 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Border: размер стиль цвет;</span> - устанавливает вокруг блочного элемента или картинки границу. Некоторые виды стилей у границ:
+        <span>border: размер стиль цвет;</span> - устанавливает вокруг блочного элемента или картинки границу. Некоторые виды стилей у границ:
         <ul>
-            <li style="border: 2px solid black; padding: 5px; margin-bottom: 5px; max-width: 250px;"><span>Solid</span></li>
-            <li style="border: 2px dotted black; padding: 5px; margin-bottom: 5px; max-width: 250px;"><span>Dotted</span></li>
-            <li style="border: 2px dashed black; padding: 5px; margin-bottom: 5px; max-width: 250px;"><span>Dashed</span></li>
+            <li style="border: 2px solid black; padding: 5px; margin-bottom: 5px; max-width: 250px;"><span>solid</span></li>
+            <li style="border: 2px dotted black; padding: 5px; margin-bottom: 5px; max-width: 250px;"><span>dotted</span></li>
+            <li style="border: 2px dashed black; padding: 5px; margin-bottom: 5px; max-width: 250px;"><span>dashed</span></li>
         </ul>
 
         <p>Так же граница может устанавливаться отдельно для каждой стороны:
             <ul>
-                <li style="border-top: 2px solid black; padding: 5px; margin-bottom: 5px; max-width: 250px;"><span>Border-top: 2px solid black;</span></li>
-                <li style="border-right: 2px solid black; padding: 5px; margin-bottom: 5px; max-width: 250px;"><span>Border-right: 2px solid black;</span></li>
-                <li style="border-bottom: 2px solid black; padding: 5px; margin-bottom: 5px; max-width: 250px;"><span>Border-bottom: 2px solid black;</span></li>
-                <li style="border-left: 2px solid black; padding: 5px; margin-bottom: 5px; max-width: 250px;"><span>Border-left: 2px solid black;</span></li>
+                <li style="border-top: 2px solid black; padding: 5px; margin-bottom: 5px; max-width: 250px;"><span>border-top: 2px solid black;</span></li>
+                <li style="border-right: 2px solid black; padding: 5px; margin-bottom: 5px; max-width: 250px;"><span>border-right: 2px solid black;</span></li>
+                <li style="border-bottom: 2px solid black; padding: 5px; margin-bottom: 5px; max-width: 250px;"><span>border-bottom: 2px solid black;</span></li>
+                <li style="border-left: 2px solid black; padding: 5px; margin-bottom: 5px; max-width: 250px;"><span>border-left: 2px solid black;</span></li>
             </ul>
         
             <p>И так же удаляться отдельно для каждой из сторон.</p>
@@ -578,8 +578,8 @@
                 <ul>
                     <li  style="border: 2px solid black; padding: 5px; margin-bottom: 5px; max-width: 250px; border-right: none;">
                         <span>
-                            Border: 2px solid black; <br>
-                            Border-right: none;
+                            border: 2px solid black; <br>
+                            border-right: none;
                         </span>
                     </li>
                 </ul>
@@ -590,43 +590,43 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Border-radius: радиус;</span> - закругляет концы блока или картинки. Радиус записывается по аналогии с отступами в 4 разных вариантах. <br>
+        <span>border-radius: радиус;</span> - закругляет концы блока или картинки. Радиус записывается по аналогии с отступами в 4 разных вариантах. <br>
         <div style="border: 1px solid black; border-radius: 40px; padding: 20px; max-width: 400px; display: block;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus assumenda beatae illo aliquam obcaecati dolores deleniti exercitationem vero magni officia nulla harum natus ratione nemo rerum sequi, libero, facilis dignissimos.</p></div>
         <img src="https://oboi-ma.ru/f/product/93582_4.jpg" alt="img" style="border-radius: 40px; max-width: 300px; margin-top: 15px;">
     </p>
     <p>
-        <span>Overflow: hidden;</span> - скрывает выступающие за границы буквы. Visible - делает их снова видимыми.
+        <span>overflow: hidden;</span> - скрывает выступающие за границы буквы. Visible - делает их снова видимыми.
         <div style="border: 1px solid black; border-radius: 150px; max-width: 400px; display: block; overflow:hidden;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus assumenda beatae illo aliquam obcaecati dolores deleniti exercitationem vero magni officia nulla harum natus ratione nemo rerum sequi, libero, facilis dignissimos.</p></div>
     </p>
 </div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Outline: размер стиль цвет;</span> - в отличии от border является внешней границей,указывается сразу для 4-х сторон. (Почему у них разная высота я не понял)
+        <span>outline: размер стиль цвет;</span> - в отличии от border является внешней границей,указывается сразу для 4-х сторон. (Почему у них разная высота я не понял)
     </p>
     <div style="outline: 2px solid black; width: 300px;">
         <p>
-            <p style="text-align: center;">Outline</p>
+            <p style="text-align: center;">outline</p>
         </p>
     </div>
     <div style="border: 2px solid black; width: 300px;">
         <p>
-            <p style="text-align: center;">Border</p>
+            <p style="text-align: center;">border</p>
         </p>
     </div>
 </div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Box-shadow: "x" "y" "радиус-тени" "расстояние-тени" "цвет";</span> - задает тень для блока. Расстояние является опциональным свойством. 
+        <span>box-shadow: "x" "y" "радиус-тени" "расстояние-тени" "цвет";</span> - задает тень для блока. Расстояние является опциональным свойством. 
         <div style="box-shadow: 0px 0px 15px black; padding: 10px; margin-bottom: 30px;">Пример тени у блока.</div>
-        <div style="box-shadow: inset 0px 0px 15px black; padding: 10px;">Если перед свойствами записать <span>Inset</span>, то тень будет падать внутрь блока.</div>
+        <div style="box-shadow: inset 0px 0px 15px black; padding: 10px;">Если перед свойствами записать <span>inset</span>, то тень будет падать внутрь блока.</div>
     </p>
 </div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Opacity: значение;</span> - задает прозрачность элемента от 0 до 1, где 0 полностью прозрачный, а 1 полностью видимый. С полностью прозрачными элементами все равно можно взаимодействовать.
+        <span>opacity: значение;</span> - задает прозрачность элемента от 0 до 1, где 0 полностью прозрачный, а 1 полностью видимый. С полностью прозрачными элементами все равно можно взаимодействовать.
         <div style="border: 10px solid black; padding: 10px; margin-bottom: 5px; opacity: 0.5;">
             <p>Прозрачность 0.5</p>
         </div>
@@ -635,7 +635,7 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Visibility: значение;</span> - блок может быть видимым <span>Visible</span> или полностью скрытым <span>Hidden</span>. С полностью скрытым блоком нельзя взаимодействовать и он не исчезает со страницы, занимая свое место.
+        <span>visibility: значение;</span> - блок может быть видимым <span>visible</span> или полностью скрытым <span>hidden</span>. С полностью скрытым блоком нельзя взаимодействовать и он не исчезает со страницы, занимая свое место.
         <div style="border: 10px solid black; padding: 10px; margin-bottom: 5px; visibility: hidden;">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci architecto libero eligendi quod delectus ipsum? Possimus, impedit at illo accusamus, magni sunt cumque deserunt aperiam beatae, eligendi eum perferendis alias.</p>
         </div>
@@ -659,11 +659,11 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Background: "цвет";</span> - устанавливает градиент для старых браузеров? <br>
-        <span>Background: -moz-linear-gradient("направление-градиента",  "цвет1" 1%, "цвет2" 70%, "цвет3" 100%);</span> - градиаент для FF3.6-15. % - это промежутки на которых цвет будет меняться, можно указывать любое количество точек в пределах 1-100%. <br>
-        <span>Background: -webkit-linear-gradient("направление-градиента",  "цвет1" 1%, "цвет2" 70%, "цвет3" 100%);</span> - градиент для Chrome10-25, Safari5.1-6. <br>
-        <span>Background: linear-gradient(to "направление-градиента",  "цвет1" 1%, "цвет2" 70%, "цвет3" 100%);</span> - градиент для W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+. <br>
-        <span>Filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=' "цвет1" ', endColorstr=' "цвет2" ',GradientType=1 );</span> - градиент для IE6-9. 
+        <span>background: "цвет";</span> - устанавливает градиент для старых браузеров? <br>
+        <span>background: -moz-linear-gradient("направление-градиента",  "цвет1" 1%, "цвет2" 70%, "цвет3" 100%);</span> - градиаент для FF3.6-15. % - это промежутки на которых цвет будет меняться, можно указывать любое количество точек в пределах 1-100%. <br>
+        <span>background: -webkit-linear-gradient("направление-градиента",  "цвет1" 1%, "цвет2" 70%, "цвет3" 100%);</span> - градиент для Chrome10-25, Safari5.1-6. <br>
+        <span>background: linear-gradient(to "направление-градиента",  "цвет1" 1%, "цвет2" 70%, "цвет3" 100%);</span> - градиент для W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+. <br>
+        <span>filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=' "цвет1" ', endColorstr=' "цвет2" ',GradientType=1 );</span> - градиент для IE6-9. 
     </p>
     <div style="
     background: #ffffff;
@@ -687,12 +687,12 @@
 </div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
-    <p>Все ниже рассмотренные примеры могут записываться двумя способами, либо с записыванием каждого параметра отдельно в виде <span>Background-свойство:</span> и потом записывать значение только для данного свойства. Либо через универсальной свойство <span>Background:</span> с дальнейшим приписыванием любых значений в любом порядке. Второй вариант является более предпочтительным.</p>
+    <p>Все ниже рассмотренные примеры могут записываться двумя способами, либо с записыванием каждого параметра отдельно в виде <span>background-свойство:</span> и потом записывать значение только для данного свойства. Либо через универсальной свойство <span>background:</span> с дальнейшим приписыванием любых значений в любом порядке. Второй вариант является более предпочтительным.</p>
 </div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span> Background-color: цвет;</span> или <span>Background: цвет;</span> - устанавливает у блока фон выбранным цветом. Цвет указывается словом, шестнадцатеричным кодом, rgb кодом или rgb кодом с альфа каналом.
+        <span> background-color: цвет;</span> или <span>background: цвет;</span> - устанавливает у блока фон выбранным цветом. Цвет указывается словом, шестнадцатеричным кодом, rgb кодом или rgb кодом с альфа каналом.
     </p>
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 150px; background: rgb(195, 199, 142);">
         Пример покраски фона.
@@ -701,32 +701,32 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Background-image: url("ссылка");</span> или <span>Background: url("ссылка");</span> - устанавливает на фон выбранную картинку.
+        <span>background-image: url("ссылка");</span> или <span>background: url("ссылка");</span> - устанавливает на фон выбранную картинку.
     </p>
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg');"> </div>
 
     <p>
-        <span>Background-repeat: no-repeat;</span> или <span>Background: url("ссылка") no-repeat;</span> - задает фоновой картинке свойство не повторяться.
+        <span>background-repeat: no-repeat;</span> или <span>background: url("ссылка") no-repeat;</span> - задает фоновой картинке свойство не повторяться.
     </p>
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') no-repeat;"> </div>
 
     <p>
-        <span>Background-repeat: repeat-x;</span> или <span>Background: url("ссылка") repeat-x;</span> - задает фоновой картинке свойство повторяться по оси x.
+        <span>background-repeat: repeat-x;</span> или <span>background: url("ссылка") repeat-x;</span> - задает фоновой картинке свойство повторяться по оси x.
     </p>
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') repeat-x;"> </div>
 
     <p>
-        <span>Background-repeat: repeat-y;</span> или <span>Background: url("ссылка") repeat-y;</span> - задает фоновой картинке свойство повторяться по оси y.
+        <span>background-repeat: repeat-y;</span> или <span>background: url("ссылка") repeat-y;</span> - задает фоновой картинке свойство повторяться по оси y.
     </p>
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') repeat-y;"> </div>
 
     <p>
-        <span>Background-repeat: space;</span> или <span>Background: url("ссылка") space;</span> - задает фоновой картинке свойство помещать картинку в пространство только целиком и вставлять между картинками пробелы.
+        <span>background-repeat: space;</span> или <span>background: url("ссылка") space;</span> - задает фоновой картинке свойство помещать картинку в пространство только целиком и вставлять между картинками пробелы.
     </p>
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') space;"> </div>
 
     <p>
-        <span>Background-repeat: round;</span> или <span>Background: url("ссылка") round;</span> - задает фоновой картинке свойство растягиваться и сужаться чтобы заполнить все пространство не обрезая картинку по краям.
+        <span>background-repeat: round;</span> или <span>background: url("ссылка") round;</span> - задает фоновой картинке свойство растягиваться и сужаться чтобы заполнить все пространство не обрезая картинку по краям.
     </p>
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') round;"> </div>
 </div>
@@ -734,19 +734,19 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Background-position: "x" "y";</span> или <span>Background: url("Ссылка") "x" "y" </span> no-repeat<span>;</span> - устанавливает положение картинки на экране.
+        <span>background-position: "x" "y";</span> или <span>background: url("Ссылка") "x" "y" </span> no-repeat<span>;</span> - устанавливает положение картинки на экране.
     </p>
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; height: 250px; background: url('NewCanvas1.jpg') 50% 50% no-repeat; "></div>
 </div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Background-attachment: прокрутка;</span> или <span>Background: url('ссылка') прокрутка;</span> - задает значения прокрутки для фона на странице сайта. По умолчанию стоит <span>Scroll</span> - фоновое изображение прокручивается вместе со страницей. Но существуют так же значения:
+        <span>background-attachment: прокрутка;</span> или <span>background: url('ссылка') прокрутка;</span> - задает значения прокрутки для фона на странице сайта. По умолчанию стоит <span>Scroll</span> - фоновое изображение прокручивается вместе со страницей. Но существуют так же значения:
     </p>
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
         <p>
-            <span>Background-attachment: fixed;</span> или <span>Background: url('ссылка') fixed;</span> - фон независимо от прокрутки страницы всегда находится на экране браузера в фиксированном месте.
+            <span>background-attachment: fixed;</span> или <span>background: url('ссылка') fixed;</span> - фон независимо от прокрутки страницы всегда находится на экране браузера в фиксированном месте.
         </p>
 
         <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; Background: url('NewCanvas1.jpg') fixed; height: 200px;">
@@ -755,7 +755,7 @@
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
         <p>
-            <span>Background-attachment: local;</span> или <span>Background: url('ссылка') local;</span> - фон фиксируется с учётом поведения элемента.
+            <span>background-attachment: local;</span> или <span>background: url('ссылка') local;</span> - фон фиксируется с учётом поведения элемента.
         </p>
 
         <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; Background: url('NewCanvas1.jpg') local; height: 200px; overflow: auto;">
@@ -766,21 +766,21 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>Background-size: "x" "y";</span> или <span>Background: url('ссылка') "x" "y" /"x" "y";</span> - позволяет задавать фоновому изображению размеры по ширине и высоте. У картинки должны быть заданы изначальные координаты.
+        <span>background-size: "x" "y";</span> или <span>background: url('ссылка') "x" "y" /"x" "y";</span> - позволяет задавать фоновому изображению размеры по ширине и высоте. У картинки должны быть заданы изначальные координаты.
     </p>
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; Background: url('NewCanvas1.jpg') 0 0 /30px 100px local; height: 200px;">
     </div>
  
     <p>
-        <span>Background-size: "x" "y";</span> или <span>Background: url('ссылка') "x" "y" / Contain;</span> - подстраивает картинку под контейнер по меньшей стороне контейнера.
+        <span>background-size: "x" "y";</span> или <span>background: url('ссылка') "x" "y" / contain;</span> - подстраивает картинку под контейнер по меньшей стороне контейнера.
     </p>
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; Background: url('NewCanvas1.jpg') 0 0/ contain; height: 200px;">
     </div>
 
     <p>
-        <span>Background-size: "x" "y";</span> или <span>Background: url('ссылка') "x" "y" / Cover;</span> - подстраивает картинку под контейнер по большей стороне контейнера.
+        <span>background-size: "x" "y";</span> или <span>background: url('ссылка') "x" "y" / cover;</span> - подстраивает картинку под контейнер по большей стороне контейнера.
     </p>
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; Background: url('NewCanvas1.jpg') 0 0/ cover; height: 200px;">
@@ -795,7 +795,7 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        Так же можно использовать фон для того чтобы сделать маркированный список более красивым. Для этого изображение с иконкой ставится на фон у тега <span>Li</span> и ставятся отступы <span>Padding</span>. А к <span>Ul</span> применяется <span>list-style-type: none;</span> чтобы убрать стандартные точки нумерованного списка.
+        Так же можно использовать фон для того чтобы сделать маркированный список более красивым. Для этого изображение с иконкой ставится на фон у тега <span>li</span> и ставятся отступы <span>padding</span>. А к <span>ul</span> применяется <span>list-style-type: none;</span> чтобы убрать стандартные точки нумерованного списка.
     </p>
 
     <p style="background-color: #aaa6b8; width:400px; padding: 10px; margin-bottom: 5px;">
@@ -831,7 +831,7 @@
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
         <span>
-            Тег или класс:HOVER {параметры}
+            Тег или класс:hover {параметры}
         </span> - этот псевдокласс начинает включать заданные параметры когда пользователь наводит на элемент мышью и перестает работать с параметрами когда мышь с элемента убирается.
     </p>
 
@@ -843,7 +843,7 @@
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
         <span>
-            Тег или класс:VISITED {параметры}
+            Тег или класс:visited {параметры}
         </span> - этот псевдокласс задает параметры по уже пройденным ссылкам.
     </p>
 
@@ -853,7 +853,7 @@
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
         <span>
-            Тег или класс:ACTIVE {параметры}
+            Тег или класс:active {параметры}
         </span> - псевдокласс срабатывает в момент нажатия мышью на элемент.
     </p>
 
@@ -865,7 +865,7 @@
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
         <span>
-            Тег или класс:FOCUS {параметры}
+            Тег или класс:focus {параметры}
         </span> - псевдокласс срабатывает на элементах которые могут получить фокус путем нажатия кнопки TAB и работает пока они находятся в фокусе.
     </p>
 
@@ -876,7 +876,7 @@
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
         <span>
-            "Тег или класс" "Тег2":FIRST-CHILD {параметры}
+            "Тег или класс" "Тег2":first-child {параметры}
         </span> - позволяет применить параметры к первому Тегу2 из множества Тегов2 вложенных внутрь тега или класса. Не работает если внутри тега или класса, на первом месте перед Тегом2, находится еще какой то отличный от Тега2 элемент.
     </p>
 
@@ -891,7 +891,7 @@
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
         <span>
-            "Тег или класс" "Тег2":LAST-CHILD {параметры}
+            "Тег или класс" "Тег2":last-child {параметры}
         </span> - позволяет применить параметры к последнему Тегу2 из множества Тегов2 вложенных внутрь тега или класса. Не работает если внутри тега или класса, на последнем месте после Тега2, находится еще какой то отличный от Тега2 элемент.
     </p>
 
@@ -906,7 +906,7 @@
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
         <span>
-            "Тег или класс" "Тег2":NTH-CHILD('Значение') {параметры}
+            "Тег или класс" "Тег2":nth-child('Значение') {параметры}
         </span> - позволяет применить параметры к выбранному значению из множества Тегов2 вложенных внутрь тега или класса. Значения могут быть:
     </p>
 
@@ -968,7 +968,7 @@
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
         <span>
-            Тег или класс:FIRST-LINE {параметры}
+            Тег или класс:first-line {параметры}
         </span> - применяет параметры к первой строке в тексте. 
 
         <p class="first-line">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nam aliquam quidem nostrum debitis rem obcaecati, nobis alias earum architecto sunt laboriosam quisquam repellat iste excepturi enim odit provident repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sit nemo nobis, reiciendis maiores magni ratione omnis distinctio, nisi unde culpa debitis nihil, et libero iste totam ex voluptas atque.</p>
@@ -978,7 +978,7 @@
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
         <span>
-            Тег или класс:FIRST-LETTER {параметры}
+            Тег или класс:first-letter {параметры}
         </span> - применяет параметры к первому символу в тексте. 
 
         <p class="first-letter">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nam aliquam quidem nostrum debitis rem obcaecati, nobis alias earum architecto sunt laboriosam quisquam repellat iste excepturi enim odit provident repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sit nemo nobis, reiciendis maiores magni ratione omnis distinctio, nisi unde culpa debitis nihil, et libero iste totam ex voluptas atque.</p>
@@ -988,7 +988,7 @@
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
         <span>
-            Тег или класс:BEFORE {content: 'значение'; параметры}
+            Тег или класс:before {content: 'значение'; параметры}
         </span> - ставит перед обернутым тегом или классом значение content и применяет к нему параметры. Значение может быть пустым, как и параметры.
 
         <p>Например к классу <span>before</span> у списка, можно применить <span>.before li:before {content: '$ '; }</span></p>
@@ -1005,7 +1005,7 @@
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
         <span>
-            Тег или класс:AFTER {content: 'значение'; параметры}
+            Тег или класс:after {content: 'значение'; параметры}
         </span> - ставит после обернутого тега или класса значение content и применяет к нему параметры. Значение может быть пустым, как и параметры.
 
         <p>Например к классу <span>after</span> у списка, можно применить: <br>
@@ -1042,17 +1042,17 @@
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
         <span>
-            Position: значение;
-        </span> - задает для контейнера свойство расположения на сайте. По умолчанию у всех контейнеров значение <span>Static</span>, но существуют так же значения:
+            position: значение;
+        </span> - задает для контейнера свойство расположения на сайте. По умолчанию у всех контейнеров значение <span>static</span>, но существуют так же значения:
     </p>
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
         <p>
-            <span>Position: Relative; <br>
-                Top: 0; <br>
-                Left: 0; <br> 
-                Right: 0; <br>
-                Bottom: 0; <br>
+            <span>position: relative; <br>
+                top: 0; <br>
+                left: 0; <br> 
+                right: 0; <br>
+                bottom: 0; <br>
             </span> Позволяет сдвигать блок сверху, слева, справа с снизу на указанную длину относительно его изначального расположения. Все 4 стороны применять не обязательно, достаточно только двух по оси x и y. При этом изначальное место занимаемое блоком, все равно считается занятым им же, но визуально блок начинает располагаться в другом месте.
         </p>
 
@@ -1060,7 +1060,7 @@
             <div style="border: 1px solid black; height: 50px; background-color: #8f354a;"></div>
             <div style="border: 1px solid black; height: 50px; background-color: #77358b; Position: Relative; Top: 20px; Left: 40px;">
                 <p style="text-align: center;">
-                    <span>Position: Relative; Top: 20px; Left: 40px;</span>
+                    <span>position: relative; top: 20px; left: 40px;</span>
                 </p>
             </div>
             <div style="border: 1px solid black; height: 50px; background-color: #448d75;"></div>
@@ -1070,20 +1070,20 @@
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
         <p>
             <span>
-                Z-index: значение;
-            </span> - используется со свойством <span>Position</span> и задает для блока слой по оси <span>Z</span> на котором он будет находится. Чем больше, тем выше будет расположен блок.
+                z-index: значение;
+            </span> - используется со свойством <span>position</span> и задает для блока слой по оси <span>z</span> на котором он будет находится. Чем больше, тем выше будет расположен блок.
         </p>
 
         <div style="border: 1px solid black; margin-bottom: 5px; width:500px;">
             <div style="border: 1px solid black; height: 50px; background-color: #8f354a;"></div>
             <div style="border: 1px solid black; height: 50px; background-color: #77358b; Position: Relative; Top: 20px; Left: 40px;">
                 <p style="text-align: center;">
-                    <span>Position: Relative; Top: 20px; Left: 40px;</span>
+                    <span>position: relative; top: 20px; left: 40px;</span>
                 </p>
             </div>
             <div style="border: 1px solid black; height: 50px; background-color: #448d75; position: relative; z-index: 1;">
                 <p style="text-align: center;">
-                    <span>Position: Relative; Z-index: 1;</span>
+                    <span>position: relative; z-index: 1;</span>
                 </p>
             </div>
         </div>
@@ -1091,11 +1091,11 @@
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
         <p>
-            <span>Position: Absolute; <br>
-                Top: 0; <br>
-                Left: 0; <br> 
-                Right: 0; <br>
-                Bottom: 0; <br>
+            <span>position: absolute; <br>
+                top: 0; <br>
+                left: 0; <br> 
+                right: 0; <br>
+                bottom: 0; <br>
             </span> Полностью вынимает блок из верстки, сдвигая все блоки ниже на его место. Сам же блок прилипает к выбранным координатам на сайте поверх остального содержимого и становится строчным блоком. <p style="background-color:rgb(219, 164, 164)">В примере ниже, блок не прилип к верхушке сайта только потому что находится внутри блока который сам по себе имеет параметр <span>position: relative;</span></p>
         </p>
 
@@ -1103,7 +1103,7 @@
             <div style="border: 1px solid black; height: 50px; background-color: #8f354a;"></div>
             <div style="border: 1px solid black; height: 50px; background-color: #77358b; Position: Absolute; Top: 5px; Left: 5px;">
                 <p style="text-align: center;">
-                    <span>Position: Absolute; Top: 5px; Left: 5px;</span>
+                    <span>position: absolute; top: 5px; left: 5px;</span>
                 </p>
             </div>
             <div style="border: 1px solid black; height: 50px; background-color: #448d75;"></div>
@@ -1112,12 +1112,12 @@
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
         <p>
-            <span>Position: Fixed; <br>
-                Top: 0; <br>
-                Left: 0; <br> 
-                Right: 0; <br>
-                Bottom: 0; <br>
-            </span> Полностью вынимает блок из верстки, сдвигая все блоки ниже на его место. Сам же блок прилипает к выбранным координатам на странице браузера поверх остального содержимого и становится строчным блоком. Теперь при прокрутке страницы, блок всегда будет закрплен в окне браузера. <p style="background-color:rgb(219, 164, 164)">В примере ниже, блок не прилип к окну браузера только потому что тут используется не настоящий <span>position: fixed;</span>, вместо него используется другой параметр о котором речь будет идти ниже. Если использовать настоящий <span>position: fixed;</span> то блок бы прилип ко всему сайту, так как параметр <span>Position: Relative;</span> у родителя, никак не влияет на параметр <span>Fixed</span>.</p>
+            <span>position: fixed; <br>
+                top: 0; <br>
+                left: 0; <br> 
+                right: 0; <br>
+                bottom: 0; <br>
+            </span> Полностью вынимает блок из верстки, сдвигая все блоки ниже на его место. Сам же блок прилипает к выбранным координатам на странице браузера поверх остального содержимого и становится строчным блоком. Теперь при прокрутке страницы, блок всегда будет закрплен в окне браузера. <p style="background-color:rgb(219, 164, 164)">В примере ниже, блок не прилип к окну браузера только потому что тут используется не настоящий <span>position: fixed;</span>, вместо него используется другой параметр о котором речь будет идти ниже. Если использовать настоящий <span>position: fixed;</span> то блок бы прилип ко всему сайту, так как параметр <span>position: relative;</span> у родителя, никак не влияет на параметр <span>fixed</span>.</p>
         </p>
 
         <p style="width: 550px; text-align: center;"><span>Окно браузера:</span></p>
@@ -1126,7 +1126,7 @@
             <div style="border: 1px solid black; margin-bottom: 5px; width:550px; position: relative; Overflow: auto;">
                 <div style="border: 1px solid black; height: 50px; background-color: #8f354a; width: 500px; Position: Sticky; Top: 0; Left: 0;">
                     <p style="text-align: center;">
-                        <span>Position: Fixed; Top: 0; Left: 0;</span>
+                        <span>position: fixed; top: 0; left: 0;</span>
                     </p>
                 </div>
                 <div style="border: 1px solid black; height: 50px; background-color: #77358b; width: 500px;">
@@ -1139,18 +1139,18 @@
 
     <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
         <p>
-            <span>Position: Sticky; <br>
-                Top: 0; <br>
-                Left: 0; <br> 
-                Right: 0; <br>
-                Bottom: 0; <br>
-            </span> Блок начинает прилипать к окну браузера по аналогии с <span>Fixed</span> во время того как страница скролится. Линии прилипания задаются сверху, слева, справа или снизу.
+            <span>position: sticky; <br>
+                top: 0; <br>
+                left: 0; <br> 
+                right: 0; <br>
+                bottom: 0; <br>
+            </span> Блок начинает прилипать к окну браузера по аналогии с <span>fixed</span> во время того как страница скролится. Линии прилипания задаются сверху, слева, справа или снизу.
         </p>
 
         <div style="border: 1px solid black; margin-bottom: 5px; width:500px; position: relative;">
             <div style="border: 1px solid black; height: 50px; background-color: #8f354a; Position: Sticky; top: 0px;">
                 <p style="text-align: center;">
-                    <span>Position: Sticky; Top: 0px;</span>
+                    <span>position: sticky; top: 0px;</span>
                 </p>
             </div>
             <div style="border: 1px solid black; height: 50px; background-color: #77358b;"></div>
@@ -1158,7 +1158,7 @@
             <div style="border: 1px solid black; height: 50px; background-color: #538d44;"></div>
             <div style="border: 1px solid black; height: 50px; background-color: #8f4573; Position: Sticky; bottom: 0px;">
                 <p style="text-align: center;">
-                    <span>Position: Sticky; Bottom: 0px;</span>
+                    <span>position: sticky; bottom: 0px;</span>
                 </p>
             </div>
         </div>
@@ -1168,7 +1168,7 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        Например, используя позиционирование, можно добавлять к спискам иконки. Каждому тегу <span>Li</span> внутри <span>Ul</span> следует не забыть задать <span>Position: Relative;</span> А после воспользоваться псевдоэлементом <span>Before</span>. <br> 
+        Например, используя позиционирование, можно добавлять к спискам иконки. Каждому тегу <span>li</span> внутри <span>ul</span> следует не забыть задать <span>position: relative;</span> А после воспользоваться псевдоэлементом <span>before</span>. <br> 
         Выглядит это будет так:
     </p>
 
@@ -1547,8 +1547,8 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: rgb(61, 55, 55);">
 
-    <p style="color:rgb(255, 255, 255); padding: 5px;">Все свойства <span>FlexBox</span> будут применяться на данном ниже примере, состоящим из невидимой обертки дива <span>Block</span>, содержащим в себе один див <span style="color: #ece89d;">Row</span> внутри которого находятся три дива 
-    <span style="color: #8166b4;">Column</span>, каждый из которых содержит в себе див <span style="color: #18b5a4;">Item</span>.</p>
+    <p style="color:rgb(255, 255, 255); padding: 5px;">Все свойства <span>flexbox</span> будут применяться на данном ниже примере, состоящим из невидимой обертки дива <span>block</span>, содержащим в себе один див <span style="color: #ece89d;">row</span> внутри которого находятся три дива 
+    <span style="color: #8166b4;">column</span>, каждый из которых содержит в себе див <span style="color: #18b5a4;">item</span>.</p>
 
     <div class="block">
         <div class="block__row">
@@ -1567,7 +1567,7 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: rgb(61, 55, 55);">
 
-    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>Display: flex;</span> - параметр примененный к диву <span style="color: #ece89d;">Row</span>. Выстраивает все блочные элементы внутри в колонку, сам <span style="color: #ece89d;">Row</span> при этом все еще остается блочным элементом и растягивается на всю ширину экрана.</p>
+    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>display: flex;</span> - параметр примененный к диву <span style="color: #ece89d;">row</span>. Выстраивает все блочные элементы внутри в колонку, сам <span style="color: #ece89d;">row</span> при этом все еще остается блочным элементом и растягивается на всю ширину экрана.</p>
 
     <div class="block">
         <div class="block__row1">
@@ -1587,7 +1587,7 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: rgb(61, 55, 55);">
 
-    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>Display: inline-flex;</span> - параметр примененный к диву <span style="color: #ece89d;">Row</span>. Выстраивает все блочные элементы внутри в колонку, при этом <span style="color: #ece89d;">Row</span> становится блочно строчным элементом.</p>
+    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>display: inline-flex;</span> - параметр примененный к диву <span style="color: #ece89d;">row</span>. Выстраивает все блочные элементы внутри в колонку, при этом <span style="color: #ece89d;">row</span> становится блочно строчным элементом.</p>
 
     <div class="block">
         <div class="block__row2">
@@ -1603,7 +1603,7 @@
         </div>
     </div>
 
-    <p style="color:rgb(255, 255, 255); padding: 5px;">Если теперь применить к диву <span>Block</span> например <span>text-align: center;</span> то весь <span style="color: #ece89d;">Row</span> выровняется по центру.</p>
+    <p style="color:rgb(255, 255, 255); padding: 5px;">Если теперь применить к диву <span>block</span> например <span>text-align: center;</span> то весь <span style="color: #ece89d;">row</span> выровняется по центру.</p>
 
     <div class="block2">
         <div class="block__row2">
@@ -1841,8 +1841,8 @@
 </div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: rgb(61, 55, 55);">
-    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>Align-self: зачение;</span> - позволяет точечно поменять у одной нужной <span style="color:#8166b4">Column</span> параметр <span>align-items: значение;</span>. <br>
-    <span>Align-self</span> имеет все те же значения что и <span>align-items</span>. <br>
+    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>align-self: зачение;</span> - позволяет точечно поменять у одной нужной <span style="color:#8166b4">column</span> параметр <span>align-items: значение;</span>. <br>
+    <span>align-self</span> имеет все те же значения что и <span>align-items</span>. <br>
     Вот один из примеров: <span>align-self: stretch;</span></p>
 
     <div class="block">
@@ -1862,7 +1862,7 @@
 </div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: rgb(61, 55, 55);">
-    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>Order: номер;</span> - позволяет точечно поменять у <span style="color:#8166b4">Column</span> порядковый номер расположения в верстке. Этот параметр обязательно должен применяться ко всем <span style="color:#8166b4">Column</span> если применен хотя бы к одной. Выглядит это так:</p>
+    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>order: номер;</span> - позволяет точечно поменять у <span style="color:#8166b4">column</span> порядковый номер расположения в верстке. Этот параметр обязательно должен применяться ко всем <span style="color:#8166b4">column</span> если применен хотя бы к одной. Выглядит это так:</p>
 
     <div class="block">
         <div class="block__row1">
@@ -1881,8 +1881,8 @@
 </div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: rgb(61, 55, 55);">
-    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>Flex: grow shrink basis;</span> <br> 
-        <span>Basis</span> отвечает за базовую ширину колонки, по умолчанию стоит <span>auto</span>, это означает что ширина будет зависеть от других значений <span>Grow</span> или <span>Shrink</span>. Но для <span>Basis</span> могут задваться различные числовые значения, задающие изначальную ширину колонки. Например у второй колонки <span>Flex: 0 1 500px;</span>:
+    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>flex: grow shrink basis;</span> <br> 
+        <span>basis</span> отвечает за базовую ширину колонки, по умолчанию стоит <span>auto</span>, это означает что ширина будет зависеть от других значений <span>grow</span> или <span>shrink</span>. Но для <span>basis</span> могут задваться различные числовые значения, задающие изначальную ширину колонки. Например у второй колонки <span>flex: 0 1 500px;</span>:
     </p>
         
         <div class="block">
@@ -1900,7 +1900,7 @@
         </div>    
 
     <p style="color:rgb(255, 255, 255); padding: 5px;">    
-        <span>Grow</span> отвечает за то, может ли ширина колонки превышать значение <span>Basis</span>, по умолчанию стоит 0, что означает что ширина колонки не превысит указанное в <span>Basis</span> значение. Но так же <span>Grow</span> может принимать и любые другие значение больше нуля, если у других колонок значения <span>Grow</span> будут равны 0, то независимо от значения, колонка растянется на всю ширину родителя, делая остальные колонки максимально узкими. Например у второй колонки <span>Flex: 1 1 500px;</span>:
+        <span>grow</span> отвечает за то, может ли ширина колонки превышать значение <span>basis</span>, по умолчанию стоит 0, что означает что ширина колонки не превысит указанное в <span>basis</span> значение. Но так же <span>grow</span> может принимать и любые другие значение больше нуля, если у других колонок значения <span>grow</span> будут равны 0, то независимо от значения, колонка растянется на всю ширину родителя, делая остальные колонки максимально узкими. Например у второй колонки <span>flex: 1 1 500px;</span>:
     </p>    
 
         <div class="block">
@@ -1918,7 +1918,7 @@
         </div>
         
     <p style="color:rgb(255, 255, 255); padding: 5px;">
-        Но если у нескольких колонок указан <span>Grow</span>, то они будут иметь пропорциональную друг другу ширину, пока им это позволяет делать ширина родителя. Например 1 к 3 к 6.
+        Но если у нескольких колонок указан <span>grow</span>, то они будут иметь пропорциональную друг другу ширину, пока им это позволяет делать ширина родителя. Например 1 к 3 к 6.
     </p>
 
         <div class="block">
@@ -1936,7 +1936,7 @@
         </div>
 
     <p style="color:rgb(255, 255, 255); padding: 5px;">
-        <span>Shrink</span> отвечает за то, может ли ширина колонки становится меньше чем значение <span>Basis</span>, по умолчанию стоит 1, что означает что ширина колонки может становиться меньше чем значение <span>Basis</span>. Например у второй колонки <span>Flex: 0 1 500px;</span>, тогда как у 1 и 3 <span>Flex: 0 0 500px;</span>:
+        <span>shrink</span> отвечает за то, может ли ширина колонки становится меньше чем значение <span>basis</span>, по умолчанию стоит 1, что означает что ширина колонки может становиться меньше чем значение <span>basis</span>. Например у второй колонки <span>flex: 0 1 500px;</span>, тогда как у 1 и 3 <span>flex: 0 0 500px;</span>:
     </p>
 
     <div class="block">
@@ -1956,11 +1956,11 @@
 </div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: rgb(61, 55, 55);">
-    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>Flex-direction: значение;</span> - задает с какой осью мы будем работать по умолчанию. Изначально по умолчанию стоит значение <span>Row</span>. Это то самое значение с которым мы работали выше, но существуют так же значения:
+    <p style="color:rgb(255, 255, 255); padding: 5px;"><span>flex-direction: значение;</span> - задает с какой осью мы будем работать по умолчанию. Изначально по умолчанию стоит значение <span>row</span>. Это то самое значение с которым мы работали выше, но существуют так же значения:
     </p>
 
     <p style="color:rgb(255, 255, 255); padding: 5px;">
-        <span>Flex-direction: row-reverse;</span>
+        <span>flex-direction: row-reverse;</span>
     </p>
 
     <div class="block">
@@ -1978,7 +1978,7 @@
     </div>
 
     <p style="color:rgb(255, 255, 255); padding: 5px;">
-        <span>Flex-direction: column;</span>
+        <span>flex-direction: column;</span>
     </p>
 
     <div class="block">
@@ -1996,7 +1996,7 @@
     </div>
 
     <p style="color:rgb(255, 255, 255); padding: 5px;">
-        <span>Flex-direction: column-reverse;</span>
+        <span>flex-direction: column-reverse;</span>
     </p>
 
     <div class="block">
@@ -2032,14 +2032,14 @@
     <p>Адаптивная верстка работает на двух правилах. <br> 
         Первое правило, не использовать фиксированные значения <span>width</span> или <span>height</span> для блоков, тогда блоки смогут сужаться и растягиваться. <br>
         Втрое правило использовать брейкпоинты, которые при определенных размерах окна браузера, смогут изменять верстку сайта. Вначале на сайте задается мета тег: </p>
-    <p><span>meta name="viewport" content="width=device-width"</span></p>
+    <p class="code-color"><span>meta name="viewport" content="width=device-width"</span></p>
     <p>Затем через <span>@media (условие срабатывания) {новые параметры};</span> переписываются правила для уже существующих тегов или классов.</p>
     <p>Вначале указывается тип устройства к которому будет применяться условие срабатывания:</p>
     <ul>
-        <li><span>All</span> - значение по умолчанию, не записывается, влияет на все устройства.</li>
-        <li><span>Print</span> - для устройств предварительной печати.</li>
-        <li><span>Screen</span> - для цветных экранов.</li>
-        <li><span>Speech</span> - для синтезаторов речи.</li>
+        <li><span>all</span> - значение по умолчанию, не записывается, влияет на все устройства.</li>
+        <li><span>print</span> - для устройств предварительной печати.</li>
+        <li><span>screen</span> - для цветных экранов.</li>
+        <li><span>speech</span> - для синтезаторов речи.</li>
     </ul>
     <p>Затем в скобках записывается само условие срабатывания:</p>
     <ul>
@@ -2066,5 +2066,674 @@
         <li><span>user-scalable=0</span> - запрещает пользователю менять масштаб страницы.</li>
     </ul>
 </div>
-  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">CSS переходы - transitions:</h2>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p><span>Transition</span> - это свойство CSS позволяющее анимировать элементы странички путем задвания им различных значений перехода от одного состояния в другое. Ниже будут представлены кнопки которые имеют 2 класса, один обычный, а второй в состоянии <span>hover</span>, чтобы между ними совершался плавный переход, надо чтобы в обоих классах были какие то одинаковые параметры с разными значениями. Если записывать параметр <span>transition</span> в обычном классе, то он будет применятся и при наведении мышью и после того как вы мышь убираете. Если повесить только на <span>hover</span>, то соответственно срабатывать он будет только при наведении мышью. Все примеры ниже только с <span>hover</span>.</p>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p><span>transition-duration: время;</span> - задает время в течении которого будет совершаться переход. Время записывается с указанием секунд или милисекунд: <span>0.5s, 500ms</span>:</p>
+
+        <p class="code-color"><span>transition-duration: 2s;</span></p>
+
+        <a href="" class="button-transition">Наведи на меня</a>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p><span>transition-property: css параметры;</span> - по умолчанию применяется ко всем параметрам. Но если вам надо чтобы <span>transition-duration</span> применялась только к определенным css параметрам, можно через запятую вписать нужные параметры.</p>
+
+        <p class="code-color"><span>transition-property: background-color;</span></p>
+
+        <a href="" class="button-transition button-transition2">Наведи на меня</a>
+
+        <p>С данным параметром становится возможно вписывать в <span>transition-duration</span> несколько временных значений, для каждого зачения <span>transition-property</span>.</p>
+
+        <p class="code-color"><span>
+            transition-property: background-color, top; <br>
+            transition-duration: 2s, 1s;
+        </span></p>
+
+        <a href="" class="button-transition button-transition3">Наведи на меня</a>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p><span>transition-delay: время;</span> - указывает задержку применения анимации. Например со значением 2s, только по истечении 2 секунд начнется проигрываться <span>transition-duration</span>.</p>
+
+        <p class="code-color"><span>transition-delay: 1s;</span></p>
+
+        <a href="" class="button-transition button-transition4">Наведи на меня</a>
+
+        <p>Так же используя <span>transition-property</span> можно указывать задержку для каждого параметра отдельно.</p>
+
+        <p class="code-color"><span>
+            transition-property: background-color, top, box-shadow; <br>
+            transition-duration: 1s, 1s, 1s; <br>
+            transition-delay: 0s, 1s, 1s;
+        </span></p>
+
+        <a href="" class="button-transition button-transition5">Наведи на меня</a>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p><span>transition-timing-function: значение;</span> - задает кривую анимации перехода.</p>
+
+        <a href="" class="ttf ttf1">ease</a>
+        <a href="" class="ttf ttf2">ease-in</a>
+        <a href="" class="ttf ttf3">ease-out</a>
+        <a href="" class="ttf ttf4">ease-in-out</a>
+        <a href="" class="ttf ttf5">linear</a>
+        <a href="" class="ttf ttf6">steps(int, start/end)</a>
+        <a href="" class="ttf ttf7">cubic-bezier(x1, y1, x2, y2)</a>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>Существует универсальное свойство объединяющее в себе все вышеперечисленные:</p>
+        <p class="code-color"><span>transition: property duration timing-function delay;</span></p>
+        <p>Например:</p>
+        <p class="code-color"><span>transition: all 1s ease 0s;</span></p>
+        <p>Или</p>
+        <p class="code-color"><span>transition: color 2s ease 0s, padding 1s ease-in 1s;</span></p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">CSS animation and keyframes - анимация и ключевые кадры:</h2>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Анимация в CSS создается с помощью <span>keyframes</span>. Выглядит это так:</p>
+    <p class="code-color"><span>@keyframes имя-анимации { <br>
+        0% { <br>
+            параметры начальные <br>
+        } <br>
+        100% { <br>
+            параметры конечные <br>
+        } <br>
+    } 
+    </span></p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p><span>animation-name: имя-анимации;</span> - подключает к анимируемому CSS классу ту анимацию которую вы хотите воспроизвести. Выглядит это так:</p>
+    <p class="code-color"><span>
+        .circle { <br>
+            animation-name: имя-анимации; <br>
+        }
+    </span></p>
+    <p>Так же анимаций можно подключать несколько:</p>
+    <p class="code-color"><span>
+        .circle { <br>
+            animation-name: имя-анимации1, имя-анимации2; <br>
+        }
+    </span></p>
+    <p>Как вы можете видеть, пока что никакой анимации у нас нет.</p>
+    <div class="circle-container">
+        <div class="circle"><p style="padding: 9px 0 0 0; margin: 0;">Наведи на меня</p></div>
+    </div>
+    <p>Чтобы подготовить основу для анимации, надо записать для анимируемого класса в <span>keyframes</span>, какие то параметры, например:</p>
+    <p class="code-color"><span>
+        @keyframes имя-анимации { <br>
+            0% { <br>
+                left: 0px; <br>
+            } <br>
+            100% { <br>
+                left: 500px; <br>
+            } <br>
+        } 
+    </span></p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p><span>animation-duration: время;</span> - указывает в течении какого времени будет воспроизводится анимация. Например:</p>
+    <p class="code-color"><span>animation-duration: 2s;</span></p>
+    <div class="circle-container">
+        <div class="circle animation1"><p style="padding: 9px 0 0 0; margin: 0;">Наведи на меня</p></div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p><span>animation-timing-function: значение;</span> - работает по аналогии с <span>transition</span>.</p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p><span>animation-iteration-count: значение;</span> - указывает сколько раз будет повторяться анимация, можно указывать как числовые значения так значение бесконечности <span>infinite</span>.</p>
+    <p class="code-color"><span>animation-iteration-count: infinite;</span></p>
+    <div class="circle-container">
+        <div class="circle animation2"><p style="padding: 9px 0 0 0; margin: 0;">Наведи на меня</p></div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Так же в <span>keyframes</span> кроме 0% и 100% можно указывать любые другие промежуточные значения и задавать им свои параметры. Например:</p>
+    <p class="code-color"><span>
+        @keyframes имя-анимации { <br>
+        0% { <br>
+            left: 0px; <br>
+        } <br>
+        50% { <br>
+            border-radius: 0; <br>
+            background-color: #31234b; <br>
+        } <br>
+        100% { <br>
+            left: 500px; <br>
+        } <br>
+    } </span></p>
+    <div class="circle-container">
+        <div class="circle2 animation2"><p style="padding: 9px 0 0 0; margin: 0;">Наведи на меня</p></div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p><span>animation-direction: значение;</span> - задает для анимации направление анимации. Изначально по умолчанию стоит <span>normal</span>, но существуют так же значения:</p>
+    <p class="code-color"><span>animation-direction: alternate;</span></p>
+    <div class="circle-container">
+        <div class="circle animation3"><p style="padding: 9px 0 0 0; margin: 0;">Наведи на меня</p></div>
+    </div>
+    <p class="code-color"><span>animation-direction: alternate-reverse;</span></p>
+    <div class="circle-container">
+        <div class="circle animation4"><p style="padding: 9px 0 0 0; margin: 0;">Наведи на меня</p></div>
+    </div>
+    <p class="code-color"><span>animation-direction: reverse;</span></p>
+    <div class="circle-container">
+        <div class="circle animation5"><p style="padding: 9px 0 0 0; margin: 0;">Наведи на меня</p></div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p><span>animation-play-state: значение;</span> - позволяет запускать или приостанавливать анимацию по определенному значению. По умолчанию указано значение:</p>
+    <p class="code-color"><span>animation-play-state: running;</span></p>
+    <div class="circle-container">
+        <div class="circle animation6"><p style="padding: 9px 0 0 0; margin: 0;">Можно не наводить</p></div>
+    </div>
+    <p>Но если в <span>hover</span>, контейнера содержащего овал, указать <span>paused</span>, то анимация будет приостанавливаться:</p>
+    <p class="code-color"><span>animation-play-state: paused;</span></p>
+    <div class="circle-container">
+        <div class="circle3 animation6"><p style="padding: 9px 0 0 0; margin: 0;">Наведи на меня</p></div>
+    </div>
+    <p>Чтобы сбросить анимацию на исходное значение используется:</p>
+    <p class="code-color"><span>animation-name: none;</span></p>
+    <div class="circle-container">
+        <div class="circle4 animation6"><p style="padding: 9px 0 0 0; margin: 0;">Наведи на меня</p></div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p><span>animation-delay: время;</span> - задает задержку перед началом анимации.</p>
+    <p class="code-color"><span>animation-delay: 1s;</span></p>
+    <div class="circle-container">
+        <div class="circle animation7"><p style="padding: 9px 0 0 0; margin: 0;">Наведи на меня</p></div>
+    </div>
+
+    <p>Так же можно указывать отрициальное значение. Например если <span>animation-duration</span> равно 2 секундам, а <span>animation-delay</span> указать как -1 секунда, то анимация начнется с половины:</p>
+    <p class="code-color"><span>animation-delay: -1s;</span></p>
+    <div class="circle-container">
+        <div class="circle animation8"><p style="padding: 9px 0 0 0; margin: 0;">Наведи на меня</p></div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p><span>animation-fill-mode: значение;</span> - указывает какие параметры будут применяться к анимации после ее завершения. По умолчанию стоит значение <span>none</span> и анимация возвращается в изначальное положение. Но существует так же значение позволяющее анимации оставаться в конечной точке:</p>
+    <p class="code-color"><span>animation-fill-mode: forwards;</span></p>
+    <div class="circle-container">
+        <div class="circle animation9"><p style="padding: 9px 0 0 0; margin: 0;">Наведи на меня</p></div>
+    </div>
+</div>
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p><span>animation: имя-анимации1 значение1 значение2 значение3, имя-анимации2 значение1;</span> - универсальное свойство позволяющее записывать любые выше перечисленные параметры в одном, при этом можно использовать любой порядок и любое их количество. При этом помните, <span>duration</span> будет всегда первым числом, а уже после будет идти <span>delay</span>:</p>
+    <p class="code-color"><span>animation: forwards 1s 0.5s 1;</span></p>
+    <div class="circle-container">
+        <div class="circle animation10"><p style="padding: 9px 0 0 0; margin: 0;">Наведи на меня</p></div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">Адаптивные изображения:</h2>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Изначально изображения добавленные на сайт через тег <span>img</span> имеют свои оригинальные размеры и могут либо не помещаться в блоки...</p>
+    <div class="block-for-image"><img src="./1300x200.jpg"></div>
+    <p>...либо быть меньше чем они.</p>
+    <div class="block-for-image"><img src="./800x400.jpg"></div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Если использовать на них <span>max-width</span>, то в случае с большей картинкой, она примет размер блока...</p>
+    <div class="block-for-image"><img class="image-mod" src="./1300x200.jpg"></div>
+    <p>...но меньшая картинка так и останется меньше чем ширина блока.</p>
+    <div class="block-for-image"><img class="image-mod" src="./800x400.jpg"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">Java Script и переменные:</h2>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p><span>Java Script</span> - пишется в отдельном файле, который затем подключается к <span>html</span>  страничке в конце тега <span>body</span> чтобы загружаться когда уже прогрузился весь сайт. <br> Подключается <span>java script</span> через тег <span>script src="путь к файлу"</span>. <br>
+    В самом верху <span>java script</span> файла записывается надпись <span>"use strict"</span>, она позволяет использовать новые функции языка <span>java script</span>, которые по умолчанию выключены.</p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <h3>Переменные:</h3>
+    <p>Это оболочки которые могут содержать в себе различные присвояемые им значения, которые потом можно использовать многократно в коде.</p>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>Переменная объявляется таким образом:</p>
+        <p class="code-color"><span>let имяПеременной;</span></p>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>К переменной применяются такие правила:
+        <ul>
+            <li>Имя может состоять из латинских букв, цифр, знака _ и $</li>
+            <li>Цифры нельзя ставить вначале имени, как нельзя и разделять слова знаком -</li>
+            <li>Имя переменной желательно записывать используя регистр lowerCamelCase</li>
+            <li>Нельзя использовать в качестве имени зарезервированные имена на подобии let, for</li>
+        </ul>
+    </p>
+    </div>
+
+    <h3>LET:</h3>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>После того как мы объявили переменную ей можно присвоить значение:</p>
+        <p class="code-color"><span>let randomName;</span> <br>
+        <span>randomName = 90;</span></p>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>Присваивать значения можно и сразу же при объявлении переменной:</p>
+        <p class="code-color"><span>let randomName = 90;</span></p>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>Несколько переменных можно присваивать несколькими способами:</p>
+        <p class="code-color"><span>let a = 1, b = 2, c = 3;</span></p>
+        <p class="code-color"><span>
+            let a = 1, <br>
+            b = 2, <br>
+            c = 3;
+        </span></p>
+        <p class="code-color"><span>
+            let a = 1; <br>
+            let b = 2; <br>
+            let c = 3;
+        </span></p>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>Переменным можно переприсваивать значение:</p>
+        <p class="code-color"><span>
+            let a = 10; <br>
+            a = 15; <br>
+            a = 30;
+        </span></p>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>От одной переменной можно передавать значение другой:</p>
+        <p class="code-color"><span>
+            let a = 10; <br>
+            let b = 15; <br>
+            b = a;
+        </span></p>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>Видимость переменной ограничена инструкциями в коде. Например в примере ниже, объявленная переменная вне инструкции не будет в ней видна, браузер выдаст ошибку.</p>
+        <p class="code-color"><span>
+            let a = 10; <br>
+            function test() { <br>
+            console.log (a); <br>
+            }
+        </span></p>
+
+        <p>Тоже самое случится если объявить переменную внутри инструкции но попытаться использовать ее вне.</p>
+        <p class="code-color"><span>
+            console.log (a); <br>
+            function test() { <br>
+            let a = 10; <br>
+            }
+        </span></p>
+
+        <p>Это означает что в разных инструкциях можно использовать одинаковые имена переменных и это не будет считаться ошибкой.</p>
+        <p class="code-color"><span>
+            function test1() { <br>
+            let a = 10; <br>
+            } <br>
+            function test2() { <br>
+            let a = 30; <br>
+            }
+        </span></p>
+    </div>
+
+    <h3>CONST:</h3>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>Кроме <span>let</span> в <span>java script</span> существует так же переменная <span>const</span>. Она задает переменной значение которой впоследствии нельзя изменить:</p>
+        <p class="code-color"><span>
+            const NAME = 40;
+        </span></p>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>Если попытаться в последствии изменить это значение то браузер выдаст ошибку:</p>
+        <p class="code-color"><span>
+            const NAME = 40; <br>
+            NAME = 30;
+        </span></p>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>Имя констант которые известны заранее принято писать большими буквами разделяя слова нижним подчеркиванием:</p>
+        <p class="code-color"><span>
+            const RANDOM_NAME = 40; 
+        </span></p>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>Не смотря на то что значения констант изменять нельзя, есть исключения где это правило не работает, это типы данных <span>объект</span> и <span>массив</span>:</p>
+        <p class="code-color"><span>
+            const information = { a = 1, b = 2, c = 3 } <br>
+            information.b = 4;
+        </span></p>
+    </div>
+
+    <h3>VAR:</h3>
+
+    <p>Еще один способ объявления переменной существовавший до <span>let</span> и <span>const</span>, сейчас не используется, но имеет некоторые свойства недоступные другим переменным.</p>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>Позволяет присваивать значение переменной до ее объявления:</p>
+        <p class="code-color"><span>
+            a = 30; <br>
+            console.log (a); <br>
+            var a;
+        </span></p>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>Область видимости расширена, например переменная объявленная в условии, может использовать вне его:</p>
+        <p class="code-color"><span>
+            if (true) { <br>
+                var a = 30; <br>
+            } <br>
+            console.log (a);
+        </span></p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">Типы данных Java Script:</h2>
+
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p><span>Java script</span> - динамически типизируемый язык программирования. Это значит что тип данных у переменной будет изменяться в завимости от присвоенного ей значения.</p>
+    <p class="code-color"><span>
+        let x; <br>
+        x = 50; // Число <br>
+        x = 'name'; // Строка
+    </span></p>
+    <p>Узнать какой сейчас тип у переменной можно таким образом:</p>
+    <p class="code-color"><span>
+        console.log (typeof x);
+    </span></p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>В <span>java script</span> существует 9 типов данных:
+            <ul style="font-weight: bold;">
+                <li>Undefined</li>
+                <li>Null</li>
+                <li>Boolean</li>
+                <li>Number</li>
+                <li>BigInt</li>
+                <li>String</li>
+                <li>Symbol</li>
+                <li>Object</li>
+                <li>Function</li>
+            </ul>
+    </p>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p><span>Undefined</span> - этот тип данных присваивается переменной если она объявлена, но ей не задано никакое значение. Обычно используется для проверки задавали ли переменной значение или нет.</p>
+        <p class="code-color"><span>
+            let x; <br>
+            console.log(typeof x); <br>
+            <br>
+            // undefined
+        </span></p>
+        <p>Или</p>
+        <p class="code-color"><span>  
+            let x; <br>
+            console.log(x); <br>
+            <br>
+            // undefined
+        </span></p>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p><span>Null</span> - переменная с присвоенным ей значеним "пусто".</p>
+        <p class="code-color"><span>
+            let x = null; <br>
+            console.log(x); <br>
+            <br>
+            // null
+        </span></p>
+        <p>Если запросить у <span>null</span> тип данных, то вместо ожидаемого <span>null</span> мы увидим:</p>
+        <p class="code-color"><span>
+            let x = null; <br>
+            console.log(typeof x); <br>
+            <br>
+            // object
+        </span></p>
+        <p>Это ошибка <span>java script</span> которую в последствии не стали исправлять чтобы сохранить совместимость.</p>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p><span>Booolean</span> - тип данных принимающий значение <span>true</span> или <span>false</span>. Например:</p>
+        <p class="code-color"><span>
+            let x = true; <br>
+            console.log(typeof x); <br>
+            console.log(x); <br>
+            <br>
+            // boolean <br>
+            // true
+        </span></p>
+        <p>Или</p>
+        <p class="code-color"><span>
+            let x = 50 > 10; <br>
+            console.log(x); <br>
+            <br>
+            // true
+        </span></p>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p><span>Number</span> - тип данных содержащих в себе целые числа и числа с плавающей запятой.</p>
+        <p class="code-color"><span>
+            let x = 10.1; <br>
+            console.log(typeof x); <br>
+            console.log(x); <br>
+            <br>
+            // number <br>
+            // 10.1
+        </span></p>
+        <p>Так же этот тип данных может содержать значения <span>infinity</span>, <span>-infinity</span>, <span>NaN</span>.
+        <ul>
+            <li><span>infinity</span> - получается когда положительное число делят на 0 или задают целенаправленно значение infinity.</li>
+            <li><span>-infinity</span> - получается когда отрицательное число делят на 0 или задают целенаправленно значение -infinity.</li>
+            <li><span>NaN</span> - получается когда происходит ошибка вычисления, например строку делят на число.</li>
+        </ul></p>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p><span>BigInt</span> - это тип данных использующийся для огромных чисел превышающих положительное или отрицательное значение 9007199254740991. Записывается в виде 90071992547409910n, с <span>n</span> на конце.</p>
+        <p class="code-color"><span>
+            let x = 90071992547409910n; <br>
+            console.log(typeof x); <br>
+            console.log(x); <br>
+            <br>
+            // bigint <br>
+            // 90071992547409910n
+        </span></p>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p><span>String</span> - это тип данных содержащий в себе строки, для того чтобы записать такой тип данных надо заключить его в кавычки '' или "". Например:</p>
+        <p class="code-color"><span>
+            let x = 'first'; <br>
+            let y = "second"; <br>
+            console.log(typeof x); <br>
+            console.log(x); <br>
+            <br>
+            // string <br>
+            // first
+        </span></p>
+        <p>Так же существую обратные кавычки `` позволяющие использовать некоторые дополнительные функции:</p>
+        <p class="code-color"><span>
+            let x = 30; <br>
+            let y = `number: ${x}`; <br>
+            console.log(y); <br>
+            <br>
+            // number: 30
+        </span></p>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p><span>Object</span> - это тип данных содержащий в себе простые типы данных, которые записываются в виде <span>ключ: значение</span> и разделяются между собой запятой. Например:</p>
+        <p class="code-color"><span>
+            let x = { <br>
+                number: 30, <br>
+                name: 'string' <br>
+            } <br>
+            console.log(typeof x); <br>
+            console.log(x); <br>
+            <br>
+            // object <br>
+            // {number: 30, name: 'string'}
+        </span></p>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p><span>Symbol</span> - уникальный идентификатор <span>объекта</span>.</p>
+        <p class="code-color"><span>
+            let x = Symbol("x"); <br>
+            console.log(typeof x); <br>
+            <br>
+            // symbol
+        </span></p>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p><span>Function</span> - ?</p>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>В <span>java script</span> можно преобразовывать один тип данных в другой.</p>
+    <p class="code-color"><span>
+        let x = 50; <br>
+        console.log (typeof x); <br>
+        <br>
+        // number <br>
+        <br>
+        x = String(x); <br>
+        console.log (typeof x); <br>
+        <br>
+        // string
+    </span></p>
+    <p>Или</p>
+    <p class="code-color"><span>
+        let x = "50"; <br>
+        console.log (typeof x); <br>
+        <br>
+        // string <br>
+        <br>
+        x = Number(x); <br>
+        console.log (typeof x); <br>
+        <br>
+        // number
+    </span></p>
+    <p>Существует так же автоматическое преобразование:</p>
+    <p class="code-color"><span>
+        let x = "50" + "30"; <br>
+        console.log (typeof x); <br>
+        <br>
+        // number 
+    </span></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
 </html>
