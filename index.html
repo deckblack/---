@@ -2334,11 +2334,304 @@
 </div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
-    <p>Если использовать на них <span>max-width</span>, то в случае с большей картинкой, она примет размер блока...</p>
+    <p>Если использовать на них <span>max-width: 100%;</span>, то в случае с большей картинкой, она примет размер блока...</p>
     <div class="block-for-image"><img class="image-mod" src="./1300x200.jpg"></div>
     <p>...но меньшая картинка так и останется меньше чем ширина блока.</p>
     <div class="block-for-image"><img class="image-mod" src="./800x400.jpg"></div>
 </div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Поместив изображения в 3 flex колонки зададим им <span>width: 100%;</span> чтобы растянуть их в колонках на всю длину.</p>
+
+    <div class="image-row">
+
+        <div class="image-col">
+            <div class="image-items">
+                
+                    <img src="./800x400.jpg" alt="img">
+                    <p class="image-items__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quasi et nulla recusandae esse dicta distinctio culpa dolorum dolor atque. Provident culpa doloremque corporis soluta mollitia consequatur accusamus quod facere?</p>
+                
+            </div>
+        </div>
+
+        <div class="image-col">
+            <div class="image-items">
+                
+                    <img src="./400x600.jpg" alt="img">
+                    <p class="image-items__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quasi et nulla recusandae esse dicta distinctio culpa dolorum dolor atque. Provident culpa doloremque corporis soluta mollitia consequatur accusamus quod facere?</p>
+                
+            </div>
+        </div>
+
+        <div class="image-col">
+            <div class="image-items">
+                
+                    <img src="./1300x200.jpg" alt="img">
+                    <p class="image-items__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quasi et nulla recusandae esse dicta distinctio culpa dolorum dolor atque. Provident culpa doloremque corporis soluta mollitia consequatur accusamus quod facere?</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Затем ограничим <span>height: 200px;</span>, мы получим вот такой внешний вид:</p>
+    <div class="image-row">
+
+        <div class="image-col">
+            <div class="image-items2">
+                
+                    <img src="./800x400.jpg" alt="img">
+                    <p class="image-items__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quasi et nulla recusandae esse dicta distinctio culpa dolorum dolor atque. Provident culpa doloremque corporis soluta mollitia consequatur accusamus quod facere?</p>
+                
+            </div>
+        </div>
+
+        <div class="image-col">
+            <div class="image-items2">
+                
+                    <img src="./400x600.jpg" alt="img">
+                    <p class="image-items__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quasi et nulla recusandae esse dicta distinctio culpa dolorum dolor atque. Provident culpa doloremque corporis soluta mollitia consequatur accusamus quod facere?</p>
+                
+            </div>
+        </div>
+
+        <div class="image-col">
+            <div class="image-items2">
+                
+                    <img src="./1300x200.jpg" alt="img">
+                    <p class="image-items__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quasi et nulla recusandae esse dicta distinctio culpa dolorum dolor atque. Provident culpa doloremque corporis soluta mollitia consequatur accusamus quod facere?</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Исправить внешний вид нам поможет это CSS свойство. По умолчанию оно равно:</p>
+    <h3>object-fit: fill;</h3>
+    <p>Из за этого никаких отличий от прошлого варианта нет, потому что оно растягивает изображение на максимальную длину и ширину контейнера.</p>
+
+    <div class="image-row">
+
+        <div class="image-col">
+            <div class="image-items3">
+                
+                    <img src="./800x400.jpg" alt="img">
+                    <p class="image-items__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quasi et nulla recusandae esse dicta distinctio culpa dolorum dolor atque. Provident culpa doloremque corporis soluta mollitia consequatur accusamus quod facere?</p>
+                
+            </div>
+        </div>
+
+        <div class="image-col">
+            <div class="image-items3">
+                
+                    <img src="./400x600.jpg" alt="img">
+                    <p class="image-items__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quasi et nulla recusandae esse dicta distinctio culpa dolorum dolor atque. Provident culpa doloremque corporis soluta mollitia consequatur accusamus quod facere?</p>
+                
+            </div>
+        </div>
+
+        <div class="image-col">
+            <div class="image-items3">
+                
+                    <img src="./1300x200.jpg" alt="img">
+                    <p class="image-items__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quasi et nulla recusandae esse dicta distinctio culpa dolorum dolor atque. Provident culpa doloremque corporis soluta mollitia consequatur accusamus quod facere?</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <h3>object-fit: contain;</h3>
+    <p>Полностью помещает внутрь контейнера изображение никак не изменяя его соотношение сторон.</p>
+
+    <div class="image-row">
+
+        <div class="image-col">
+            <div class="image-items4">
+                
+                    <img src="./800x400.jpg" alt="img">
+                    <p class="image-items__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quasi et nulla recusandae esse dicta distinctio culpa dolorum dolor atque. Provident culpa doloremque corporis soluta mollitia consequatur accusamus quod facere?</p>
+                
+            </div>
+        </div>
+
+        <div class="image-col">
+            <div class="image-items4">
+                
+                    <img src="./400x600.jpg" alt="img">
+                    <p class="image-items__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quasi et nulla recusandae esse dicta distinctio culpa dolorum dolor atque. Provident culpa doloremque corporis soluta mollitia consequatur accusamus quod facere?</p>
+                
+            </div>
+        </div>
+
+        <div class="image-col">
+            <div class="image-items4">
+                
+                    <img src="./1300x200.jpg" alt="img">
+                    <p class="image-items__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quasi et nulla recusandae esse dicta distinctio culpa dolorum dolor atque. Provident culpa doloremque corporis soluta mollitia consequatur accusamus quod facere?</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <h3>object-fit: none;</h3>
+    <p>Помещает изображение внутрь контейнера по центру изображение, никак не меняя его оригинальные размеры.</p>
+
+    <div class="image-row">
+
+        <div class="image-col">
+            <div class="image-items5">
+                
+                    <img src="./800x400.jpg" alt="img">
+                    <p class="image-items__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quasi et nulla recusandae esse dicta distinctio culpa dolorum dolor atque. Provident culpa doloremque corporis soluta mollitia consequatur accusamus quod facere?</p>
+                
+            </div>
+        </div>
+
+        <div class="image-col">
+            <div class="image-items5">
+                
+                    <img src="./400x600.jpg" alt="img">
+                    <p class="image-items__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quasi et nulla recusandae esse dicta distinctio culpa dolorum dolor atque. Provident culpa doloremque corporis soluta mollitia consequatur accusamus quod facere?</p>
+                
+            </div>
+        </div>
+
+        <div class="image-col">
+            <div class="image-items5">
+                
+                    <img src="./1300x200.jpg" alt="img">
+                    <p class="image-items__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quasi et nulla recusandae esse dicta distinctio culpa dolorum dolor atque. Provident culpa doloremque corporis soluta mollitia consequatur accusamus quod facere?</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <h3>object-fit: cover;</h3>
+    <p>Растягиваеет изображение по той стороне картинки, которая позволит поместить изображение внутрь контейнера полностью.</p>
+
+    <div class="image-row">
+
+        <div class="image-col">
+            <div class="image-items6">
+                
+                    <img src="./800x400.jpg" alt="img">
+                    <p class="image-items__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quasi et nulla recusandae esse dicta distinctio culpa dolorum dolor atque. Provident culpa doloremque corporis soluta mollitia consequatur accusamus quod facere?</p>
+                
+            </div>
+        </div>
+
+        <div class="image-col">
+            <div class="image-items6">
+                
+                    <img src="./400x600.jpg" alt="img">
+                    <p class="image-items__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quasi et nulla recusandae esse dicta distinctio culpa dolorum dolor atque. Provident culpa doloremque corporis soluta mollitia consequatur accusamus quod facere?</p>
+                
+            </div>
+        </div>
+
+        <div class="image-col">
+            <div class="image-items6">
+                
+                    <img src="./1300x200.jpg" alt="img">
+                    <p class="image-items__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quasi et nulla recusandae esse dicta distinctio culpa dolorum dolor atque. Provident culpa doloremque corporis soluta mollitia consequatur accusamus quod facere?</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Кроме <span>object-fit</span> существует так же:</p>
+    <h3>object-position: позиция;</h3>
+    <p>Например можно указать:</p>
+    
+    <div class="image-row">
+
+        <div class="image-col">
+            <div class="image-items7">
+                
+                    <img src="./400x600.jpg" alt="img">
+                    <p class="image-items__p"><span>object-position: top;</span></p>
+                
+            </div>
+        </div>
+
+        <div class="image-col">
+            <div class="image-items8">
+                
+                    <img src="./400x600.jpg" alt="img">
+                    <p class="image-items__p"><span>object-position: center;</span></p>
+                
+            </div>
+        </div>
+
+        <div class="image-col">
+            <div class="image-items9">
+                
+                    <img src="./400x600.jpg" alt="img">
+                    <p class="image-items__p"><span>object-position: bottom;</span></p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <h3>Отзывчивая высота:</h3>
+    <p>Для начала родителю картинки нужно задать: </p>
+    <p class="code-color">
+        <span>position: relative;</span> <br> 
+        <span>padding: 0 0 50% 0;</span>
+    </p>
+    <p>Затем для самой картинк:</p>
+    <p class="code-color">
+        <span>position: absolute; <br>
+        object-fit: cover; <br>
+        width: 100%; <br>
+        height: 100%; <br>
+        top: 0; <br>
+        left: 0;</span>
+    </p>
+    
+    <div class="image-row">
+
+        <div class="image-col">
+            <div class="image-items10">
+                
+                    <img src="./800x400.jpg" alt="img">
+                
+            </div>
+            <p class="image-items__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, sed, reiciendis nihil rem tempore voluptates ipsum, dignissimos beatae mollitia deserunt accusantium ducimus ex cumque consectetur quibusdam praesentium vitae alias earum?</p>
+        </div>
+
+        <div class="image-col">
+            <div class="image-items10">
+                
+                    <img src="./400x600.jpg" alt="img">
+                    
+            </div>
+            <p class="image-items__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, sed, reiciendis nihil rem tempore voluptates ipsum, dignissimos.</p>
+        </div>
+
+        <div class="image-col">
+            <div class="image-items10">
+                
+                    <img src="./1300x200.jpg" alt="img">
+                    
+            </div>
+            <p class="image-items__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, sed, reiciendis nihil rem tempore voluptates ipsum, dignissimos beatae mollitia deserunt accusantium ducimus ex cumque consectetur quibusdam praesentium vitae alias earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam tempora reprehenderit itaque laborum recusandae, voluptates quod harum quae animi ipsa ex optio ducimus quaerat quas dolores voluptatem aspernatur aliquid.</p>
+        </div>
+    </div>
+</div>
+
 
 
 
