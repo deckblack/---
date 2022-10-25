@@ -626,7 +626,7 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>
-        <span>opacity: значение;</span> - задает прозрачность элемента от 0 до 1, где 0 полностью прозрачный, а 1 полностью видимый. С полностью прозрачными элементами все равно можно взаимодействовать.
+        <span>opacity: значение;</span> - задает прозрачность элемента от 0 до 1, где 0 полностью прозрачный, а 1 полностью видимый. С полностью прозрачными элементами все равно можно взаимодействовать. Прозрачность наследуется от родителя. Если хотите чтобы не было наследования можно применять rgba цвет с альфа каналом.
         <div style="border: 10px solid black; padding: 10px; margin-bottom: 5px; opacity: 0.5;">
             <p>Прозрачность 0.5</p>
         </div>
@@ -2736,7 +2736,116 @@
     </div>
 </div>
 
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <h3>transform: skew ("x"deg, "y"deg);</h3>
 
+    <p class="code-color" style="font-weight: bold; letter-spacing: 1px; width: 400px;">
+        transform: skew (10deg, 10deg);
+    </p>
+
+    <div class="transform-container">
+        <div class="skew-qube" style="background-color: #703066;">Skew</div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Так же можно в одном <span>transform</span> перечислять несколько значений через пробел.</p>
+
+    <p class="code-color" style="font-weight: bold; letter-spacing: 1px; width: 800px;">
+        transform: translate(50px, 50px) scale(2) rotate(45deg) skew(10deg, 10deg);
+    </p>
+
+    <div class="transform-container">
+        <div class="matrix-cube" style="background-color: #6d7030;">Multi</div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <h3>transform-origin: значение;</h3>
+    <p>Позволяет менять изначальную точку относительно которой будет применятся трансформация.</p>
+
+    <p class="code-color" style="font-weight: bold; letter-spacing: 1px; width: 400px;">
+        transform-origin: 0 0;
+        transform: rotate(-30deg);
+    </p>
+
+    <div class="transform-container">
+        <div class="origin-qube" style="background-color: #323070;">Origin</div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Следующий параметр позволяет использовать 3д трансформирование, изначально нужно задать у обертки:</p>
+    <h3>
+        perspective-origin: значение; <br>
+        perspective: значение;
+    </h3>
+    <p>Например:</p>
+
+    <p class="code-color" style="font-weight: bold; letter-spacing: 1px; width: 400px;">
+        perspective-origin: center; <br>
+        perspective: 400px;
+    </p>
+
+    <p>А затем можно применять у элемента внутри обертки следующие трансформации:</p>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <h3>transform: translate3d(x, y, z);</h3>
+
+        <p>По сути объединяет в себе 2d translate и scale.</p>
+    
+        <p class="code-color" style="font-weight: bold; letter-spacing: 1px; width: 400px;">
+            transform: translate3d(40px, 20px, 120px);
+        </p>
+        
+        <div class="transform-container">
+            <div class="translate3d-cube" style="background-color: #306770;">Translate3d</div>
+        </div>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <h3>transform: rotate3d(x, y, z, "number"deg);</h3>
+        <p>X, y, z - включает или отключает ось к которой будет применятся 3д поворот. Принимает значения 0 - отключено, 1 - включено.</p>
+    
+        <p class="code-color" style="font-weight: bold; letter-spacing: 1px; width: 400px;">
+            transform: rotate3d(1, 0, 1, 45deg);
+        </p>
+        
+        <div class="transform-container">
+            <div class="rotate3d-cube" style="background-color: #703035;">Rotate3d</div>
+        </div>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>Так же можно в одном <span>transform</span> перечислять несколько значений через пробел.</p>
+    
+        <p class="code-color" style="font-weight: bold; letter-spacing: 1px; width: 800px;">
+            transform: translate3d(40px, 20px, 120px) rotate3d(1, 0, 1, 45deg);
+        </p>
+        
+        <div class="transform-container">
+            <div class="multi3d-cube" style="background-color: #70306e;">Multi3d</div>
+        </div>
+    </div>
+
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Следующий параметр следует задавать контейнеру. По умолчанию значение flat, но можно поменять на:</p>
+    <h3>transform-style: preserve-3d;</h3>
+    <div class="transform-container2">
+        <div class="preserve-cube" style="background-color: #5c631d;">Preserve3d</div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Данный параметр задается элементу, по умолчанию его значение visible, но можно поменять на:</p>
+    <h3>backface-visibility: hidden;</h3>
+    <p>Скрывает обратную сторону элемента.</p>
+    <div class="transform-container">
+        <div class="backface-cube" style="background-color: #56172b;">Backface</div>
+    </div>
+</div>
 
 
 
