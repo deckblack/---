@@ -2480,7 +2480,7 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <h3>object-fit: none;</h3>
-    <p>Помещает изображение внутрь контейнера по центру изображение, никак не меняя его оригинальные размеры.</p>
+    <p>Помещает изображение внутрь контейнера по центру, никак не меняя его оригинальные размеры.</p>
 
     <div class="image-row">
 
@@ -2515,7 +2515,7 @@
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <h3>object-fit: cover;</h3>
-    <p>Растягиваеет изображение по той стороне картинки, которая позволит поместить изображение внутрь контейнера полностью.</p>
+    <p>Растягиваеет изображение по той стороне картинки, которая позволит поместить изображение внутрь контейнера как можно большую часть картинки.</p>
 
     <div class="image-row">
 
@@ -2631,6 +2631,114 @@
         </div>
     </div>
 </div>
+
+<div  style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Так же изображения можно подвергать адаптивной верстке с помощью тега <span>picture</span>.</p>
+    <p class="code-color" style="font-weight: bold; letter-spacing: 1px; width: 700px;"> 
+        &lt picture &gt  <br>
+        &lt source srcset="./1300x200.jpg" type="image/jpeg" media="(min-width:1330px)" &gt  <br>
+        &lt source srcset="./800x400.jpg" type="image/jpeg" media="(min-width:992px)" &gt  <br>
+        &lt source srcset="./400x600.jpg" type="image/jpeg" media="(max-width:992px)" &gt  <br>
+        &lt img src="./1300x200.jpg" alt="name" &gt <br>
+        &lt picture &gt
+    </p>
+
+    <p>Попробуйте уменьшить ширину вашего браузера.</p>
+
+    <picture>
+        <source srcset="./1300x200.jpg" type="image/jpeg" media="(min-width: 1330px)">
+        <source srcset="./800x400.jpg" type="image/jpeg" media="(min-width: 992px)">
+        <source srcset="./400x600.jpg" type="image/jpeg" media="(max-width: 992px)">
+        <img src="./1300x200.jpg" alt="name">
+    </picture>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">CSS transform:</h2>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Позволяет перемещать элемент страницы по аналогии с позиционированием, визуально смещая его на странице, но не изменяя оригинальную верстку.</p>
+    <p>Данный параметр применим только к блочным, блочно-строчным элементам страницы. Если вы используете псевдоэлементы на блочных элементах, то все равно придется задавать такому элементу блочный или блочно-строчный элемент, потому что псевдоэлементы по умолчанию являются строчными.</p>
+    <p>Для красоты, в примерах ниже так же будет применен <span>transition</span>.</p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <h3>transform: translate (x, y);</h3>
+
+    <p class="code-color" style="font-weight: bold; letter-spacing: 1px; width: 400px;">
+        transform: translate (50px, 50px);
+    </p>
+
+    <div class="transform-container">
+        <div class="translate-qube" style="background-color: #705430;">Translate</div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <h3>transform: scale (x, y);</h3>
+
+    <p class="code-color" style="font-weight: bold; letter-spacing: 1px; width: 400px;">
+        transform: scale (1.5, 1.5);
+    </p>
+
+    <div class="transform-container">
+        <div class="scale-qube" style="background-color: #573070;">Scale</div>
+    </div>
+
+    <p class="code-color" style="font-weight: bold; letter-spacing: 1px; width: 400px;">
+        transform: scale (-1);
+    </p>
+
+    <div class="transform-container">
+        <div class="scale-qube2" style="background-color: #573070;">Scale</div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <h3>transform: rotate ("number"deg);</h3>
+
+    <p class="code-color" style="font-weight: bold; letter-spacing: 1px; width: 400px;">
+        transform: rotate (45deg);
+    </p>
+
+    <div class="transform-container">
+        <div class="rotate-qube" style="background-color: #307050;">Rotate</div>
+    </div>
+
+    <p class="code-color" style="font-weight: bold; letter-spacing: 1px; width: 400px;">
+        transform: rotate (-45deg);
+    </p>
+
+    <div class="transform-container">
+        <div class="rotate-qube2" style="background-color: #307050;">Rotate</div>
+    </div>
+</div>
+
+
+
+
 
 
 

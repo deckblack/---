@@ -461,3 +461,32 @@ span {
   top: 0;
   left: 0;
 }
+.transform-container {
+  width: 150px;
+  height: 150px;
+  transition-duration: 0.6s;
+}
+.translate-qube, .rotate-qube, .rotate-qube2, .scale-qube, .scale-qube2  {
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 150px;
+  width: 150px;
+  height: 150px;
+  transition-duration: 0.6s;
+}
+.transform-container:hover .translate-qube {
+  transform: translate(50px, 50px);
+}
+.transform-container:hover .scale-qube {
+  transform: scale(1.5, 1.5);
+}
+.transform-container:hover .scale-qube2 {
+  transform: scale(-1);
+}
+.transform-container:hover .rotate-qube {
+  transform: rotate(45deg);
+}
+.transform-container:hover .rotate-qube2 {
+  transform: rotate(-45deg);
+}
