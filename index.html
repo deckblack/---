@@ -433,6 +433,10 @@
         <li> <span>padding: 10px, 10px, 10px;</span> - отступ сверху, слева-справа, снизу.</li>
         <li> <span>padding: 10px, 10px;</span> - отступ сверху-снизу, справа-слева.</li>
         <li> <span>padding: 10px;</span> - отступ сверху-снизу-справа-слева.</li>
+        <li> <span>padding-top: 10px;</span> - отступ сверху.</li>
+        <li> <span>padding-right: 10px;</span> - отступ справа.</li>
+        <li> <span>padding-bottom: 10px;</span> - отступ снизу.</li>
+        <li> <span>padding-left: 10px;</span> - отступ слева.</li>
     </ul>
     <p style="border: 1px solid black; padding: 20px 20px 30px 40px; margin-bottom: 5px; width: 300px;">Пример отступа</p>
 </p>
@@ -443,6 +447,68 @@
     <span>margin</span> - указывает внешний отступ блочного элемента, записываятся по аналогии с padding.
     <p style="border: 1px solid black; padding: 10px; margin: 45px 100px 35px 60px;">Пример отступа</p>
 </p>
+
+<p>Может применятся для выравнивания по центру.</p>
+<p class="code-color"><span>margin: 0 auto;</span></p>
+<div style="margin: 0 auto; background-color:#306770; border: 1px solid black; width: 100px; height: 50px; color: white; text-align: center; line-height: 50px; margin-bottom: 30px;">Пример</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Может иметь отрицательные значения:</p> 
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Позволят сдвигать все блоки при сдвигании хотя бы одного, чего не позволяет делять позиционирование (<span>position</span>) и трансформирование (<span>transform</span>).</p>
+    <div style="width: 500px; height: 50px; background-color: #847223;"></div>
+    <div style="width: 500px; height: 50px; background-color: #218121; margin-top: -25px; color: white; text-align: center; line-height: 50px;"> margin-top: -25px;</div>
+    <div style="width: 500px; height: 50px; background-color: #712b7c;"></div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Позволяет делать отступы только у внутренних частей <span>Flex</span> конструкций.</p>
+
+    <div style="border: 1px solid black; padding: 0;">
+        <p style="margin-left: 20px;"> Контейнер имеет <span>margin: 5px 0;</span></p>
+    <div style="display: flex; margin: 5px 0;">
+        <div style="flex: 33.3333%; background-color: #799228; height: 100px; margin: 0 10px;"></div>
+        <div style="flex: 33.3333%; background-color: #799228; height: 100px; margin: 0 10px;"></div>
+        <div style="flex: 33.3333%; background-color: #799228; height: 100px; margin: 0 10px;"></div>
+    </div>
+
+    <p style="margin-left: 20px;"> Контейнер имеет <span>margin: 5px -10px;</span></p>
+
+    <div style="display: flex; margin: 5px -10px;">
+        <div style="flex: 33.3333%; background-color: #799228; height: 100px; margin: 0 10px;"></div>
+        <div style="flex: 33.3333%; background-color: #799228; height: 100px; margin: 0 10px;"></div>
+        <div style="flex: 33.3333%; background-color: #799228; height: 100px; margin: 0 10px;"></div>
+    </div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p> Первый пример: Круг с тенью внутри блока с <span>overflow: hidden;</span>.</p>
+    <div style="overflow: hidden;">
+        <div style="background-color:#60476e; border-radius: 50%; width: 50px; height: 50px; box-shadow: 0 0 15px 5px #60476e;"></div>
+    </div>
+    <div style="height: 40px;">
+        <p>Второй пример: Круг с тенью внутри блока с <span>overflow: hidden;</span> но с использованием у блока <span>padding: 25px; margin: -25px;</span></p>
+    </div>
+    <div style="overflow: hidden; padding: 25px; margin: -25px;">
+        <div style="background-color:#60476e; border-radius: 50%; width: 50px; height: 50px; box-shadow: 0 0 15px 5px #60476e;"></div>
+    </div>
+</div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>
+        <span>box-sizing: border-box;</span> - по стандарту в браузерах расчет размеров блока расчитывается так: width + padding + margin + border. <br>
+        Из за чего размеры коробок на самом деле больше чем вы им указываете. Если включить <span>box-sizing</span> то формула поменяется на: width + margin. <br>
+        И вам придется учитывать меньшее количество переменных. <br>
+        Это свойство не поддерживается по всех браузерах, в других браузерах оно записывается иначе:
+        <ul>
+            <li> <span>-webkit-box-sizing: border-box;</span> </li>
+            <li> <span>-moz-box-sizing: border-box;</span> </li>
+        </ul>
+    </p>
 </div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
@@ -511,19 +577,6 @@
                 <span>auto</span> - делает тоже самое что и scroll, но в отличии от него не добавляет лишнюю полосу прокрутки если она не нужна.
                 <p style="border: 1px solid black; padding: 10px; margin-bottom: 15px; height: 20px; overflow: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eaque alias aut tempore eos ullam architecto molestiae, dolores quasi, ad facere! Id, repellat. Adipisci id cumque autem iusto dolorem sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ea exercitationem? Quasi eum nesciunt praesentium commodi aspernatur, adipisci vel hic.</p>
             </li>
-        </ul>
-    </p>
-</div>
-
-<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
-    <p>
-        <span>box-sizing: border-box;</span> - по стандарту в браузерах расчет размеров блока расчитывается так: width + padding + margin + border. <br>
-        Из за чего размеры коробок на самом деле больше чем вы им указываете. Если включить <span>box-sizing</span> то формула поменяется на: width + margin. <br>
-        И вам придется учитывать меньшее количество переменных. <br>
-        Это свойство не поддерживается по всех браузерах, в других браузерах оно записывается иначе:
-        <ul>
-            <li> <span>-webkit-box-sizing: border-box;</span> </li>
-            <li> <span>-moz-box-sizing: border-box;</span> </li>
         </ul>
     </p>
 </div>
@@ -2846,6 +2899,150 @@
         <div class="backface-cube" style="background-color: #56172b;">Backface</div>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 style="border: 1px solid black; padding: 10px; margin-bottom: 5px; background-color: #d3a3a3;">CSS GRID:</h2>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+
+    <p><span>Grid</span> - это аналог <span>Flex</span> позволяющий разбивать контент на ячейки по обеим осям x и y.</p>
+    <p>Для того чтобы воспользоваться им, надо создать контейнер с CSS параметром <span>display: grid;</span> или <span>display: inline-grid;</span></p>
+    <p>После внутри контейнера нужно поместить столько ячееек (<span>div</span>) с контентом, сколько вам надо в верстке. Например вот <span>display: grid;</span> с 5 ячейками которым заданы некоторые CSS параметры для видимости на странице.</p>
+
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+    </div>
+
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Для управления ячейками используются параметры:</p>
+    <p class="code-color">
+        <span>
+            grid-template-columns: перечисления размеров колонок через пробел; <br>
+            grid-template-rows: перечисления размеров колонок через пробел;
+        </span>
+    </p>
+
+    <div style="display: flex;">
+
+        <div style="margin-right: 50px;">
+            <p>Например:</p>
+
+            <p class="code-color">
+                <span>
+                    grid-template-columns: 100px 200px; <br>
+                    grid-template-rows: 50px 100px;
+                </span>
+            </p>
+
+            <div class="grid-container gc-mod1">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+            </div>
+        </div>
+
+        <div>
+            <p>Или:</p>
+
+            <p class="code-color">
+                <span>
+                    grid-template-columns: 40% 60%; <br>
+                    grid-template-rows: 30% 70%;
+                </span>
+            </p>
+
+            <div class="grid-container gc-mod2">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+            </div>
+        </div>
+
+    </div>
+
+    <p>Как вы видите в обоих случаях размеры применяются только к первым 4 ячейкам (явная сетка), а размеры 5 ячейки определяются автоматически (неявная сетка). Чтобы задать 5 ячейке высоту используется параметр:</p>
+        <p class="code-color"><span>grid-auto-rows: 200px;</span></p>
+
+        <div class="grid-container gc-mod3">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+        </div>
+
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>У <span>grid</span> существует своя собственная единица измерения - <span>fr</span>. Работает она по аналогии с долями. Например:</p>
+    <p class="code-color">
+        <span>
+            grid-template-columns: 1fr 2fr 3fr;
+        </span>
+    </p>
+
+    <p>Это аналог отношения 1 к 2 к 3.</p>
+
+    <div class="grid-container gc-mod4">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+    </div>
+
+    <p>Так же <span>fr</span> можно применять и не целыми числами, например числами меньшими чем 1. В этом случае вся ширина  равна 1 и если все доли не равны или больше 1, то ширина <span>grid</span> сетки будет составлять определенный процент, например 0.7 = 70%</p>
+
+    <p class="code-color">
+        <span>
+            grid-template-columns: 0.1fr 0.4fr 0.2fr;
+        </span>
+    </p>
+
+    <div class="grid-container gc-mod5">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+    </div>
+</div>
+
+
+
+
+
+
+
 
 
 
