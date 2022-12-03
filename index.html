@@ -453,10 +453,6 @@
 <div style="margin: 0 auto; background-color:#306770; border: 1px solid black; width: 100px; height: 50px; color: white; text-align: center; line-height: 50px; margin-bottom: 30px;">Пример</div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
-    <p>Может иметь отрицательные значения:</p> 
-</div>
-
-<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
     <p>Позволят сдвигать все блоки при сдвигании хотя бы одного, чего не позволяет делять позиционирование (<span>position</span>) и трансформирование (<span>transform</span>).</p>
     <div style="width: 500px; height: 50px; background-color: #847223;"></div>
     <div style="width: 500px; height: 50px; background-color: #218121; margin-top: -25px; color: white; text-align: center; line-height: 50px;"> margin-top: -25px;</div>
@@ -509,6 +505,32 @@
             <li> <span>-moz-box-sizing: border-box;</span> </li>
         </ul>
     </p>
+    <p>Для текста это выглядит так:</p>
+    <p style="font-weight: bold; background-color:rgb(106, 106, 106); width: 300px; padding: 5px; margin: 5px; border: 2px solid black;">
+        box-sizing: border-box; <span style="color:rgb(184, 16, 16);">выключен</span>. <br>
+        width: 300px; <br>
+        padding: 5px; <br>
+        margin; 5px; <br>
+        border: 2px solid black;
+    </p>
+    <p style="font-weight: bold; background-color:rgb(99, 99, 99); width: 300px; padding: 5px; margin: 5px; border: 2px solid black; box-sizing: border-box;">
+        box-sizing: border-box; <span style="color:rgb(28, 188, 71);">включен</span>. <br>
+        width: 300px; <br>
+        padding: 5px; <br>
+        margin; 5px; <br>
+        border: 2px solid black;
+    </p>
+    <p>Для изображений это выглядит так:</p>
+    <div style="display: flex; width: 610px; justify-content: space-between;">
+        <div style="border: 1px solid black; max-width: 300px; max-height: 300px;">
+            <img src="./300x300.gif" alt="gif">
+        </div>
+        <div style="border: 1px solid black;  max-width: 300px; max-height: 300px;">
+            <img style="box-sizing: border-box; padding: 15px; max-width: 300px;" src="./300x300.gif" alt="gif">
+        </div>
+    </div>
+    <p>К первой картинке ничего не применяется. Ко второй картинке применили: <span>box-sizing: border-box; padding: 15px; max-width: 300px;</span></p>
+
 </div>
 
 <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
@@ -2644,7 +2666,7 @@
         <span>position: relative;</span> <br> 
         <span>padding: 0 0 50% 0;</span>
     </p>
-    <p>Затем для самой картинк:</p>
+    <p>Затем для самой картинки:</p>
     <p class="code-color">
         <span>position: absolute; <br>
         object-fit: cover; <br>
@@ -3020,7 +3042,7 @@
         <div class="grid-item">5</div>
     </div>
 
-    <p>Так же <span>fr</span> можно применять и не целыми числами, например числами меньшими чем 1. В этом случае вся ширина  равна 1 и если все доли не равны или больше 1, то ширина <span>grid</span> сетки будет составлять определенный процент, например 0.7 = 70%</p>
+    <p>Так же <span>fr</span> можно применять и не целыми числами, например числами меньшими чем 1. В этом случае вся ширина  равна 1 и если все суммы долей меньше чем 1, то ширина <span>grid</span> сетки будет составлять определенный процент от 1, например 0.7 = 70%</p>
 
     <p class="code-color">
         <span>
@@ -3037,8 +3059,387 @@
     </div>
 </div>
 
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Так же для размеров столбцов и колонок можно задавать максимальную и минимальную ширину с помощью <span>minmax(мин-размер, макс-размер).</span> Например: </p>
 
+    <p class="code-color">
+        <span>
+            grid-template-columns: 100px minmax(150px, 1fr) 200px;
+        </span>
+    </p>
 
+    <div class="grid-container gc-mod6">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Еще один способ регулировать размеры это использовать вместо числовых значений значения <span>auto</span> и <span>fit-content(размер)</span>.</p>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p><span>auto</span> - автоматически расширяется или сужается в зависимости от того, каким контентом наполнены другие ячейки. Например:</p>
+
+        <p class="code-color">
+            <span>
+                grid-template-columns: auto auto 150px;
+            </span>
+        </p>
+
+        <div class="grid-container gc-mod7">
+            <div class="grid-item">1</div>
+            <div class="grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ea.</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+        </div>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p><span>fit-content(размер)</span> - работает идентично <span>auto</span> но ограничивает максимальный размер заданным значением. Например:</p>
+
+        <p class="code-color">
+            <span>
+                grid-template-columns: auto fit-content(500px) 150px;
+            </span>
+        </p>
+
+        <div class="grid-container gc-mod8">
+            <div class="grid-item">1</div>
+            <div class="grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ea.</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+        </div>
+    </div>
+
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Эта запись:</p>
+
+    <p class="code-color">
+        <span>
+            grid-template-columns: 1fr 1fr 1fr;
+        </span>
+    </p>
+
+    <p>Идентична этой:</p>
+
+    <p class="code-color">
+        <span>
+            grid-template-columns: repeat(1fr);
+        </span>
+    </p>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p><span>grid-template: размеры rows / размеры columns;</span> - короткая запись.</p>
+
+    <p class="code-color">
+        <span>
+            grid-template: 100px 200px 50px / 100px 300px;
+        </span>
+    </p>
+
+    <div class="grid-container gc-mod11">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+    </div>
+
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p><span>grid-area: имя;</span> - позволяет присваивать ячейке имя используемое в <span>grid-template-areas</span></p>
+    <p>Например у нас существует 5 ячеек с такой записью:</p>
+
+    <p class="code-color">
+        <span>
+            grid-template-columns: 100px 400px; <br>
+            grid-template-rows: 100px 200px 100px;
+        </span>
+    </p>
+
+    <div class="grid-container gc-mod9">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+    </div>
+
+    <p>Если присвоить каждой ячейке имя с помощью <span>grid-area: имя;</span> а затем добавить в запись <span>grid-template-areas</span> с такими значениями имен...</p>
+
+    <p class="code-color">
+        <span>
+            grid-template-columns: 100px 400px; <br>
+            grid-template-rows: 100px 200px 100px; <br>
+            grid-template-areas:    <br>
+            "one one" <br>
+            "two three" <br>
+            "four five";
+        </span>
+    </p>
+    
+    <p>То получится такой результат:</p>
+
+    <div class="grid-container gc-mod10">
+        <div class="grid-item" style="grid-area: one;">1</div>
+        <div class="grid-item" style="grid-area: two;" >2</div>
+        <div class="grid-item" style="grid-area: three;">3</div>
+        <div class="grid-item" style="grid-area: four;">4</div>
+        <div class="grid-item" style="grid-area: five;">5</div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Короткая запись выглядит так:</p>
+
+    <p class="code-color">
+        <span>
+            grid-template: <br>
+            [start] "one one" 100px [row2] <br>
+            [row2] "two three" 200px [row3] <br>
+            [row3] "four five" 100px [row-end] / 100px 400px;
+        </span>
+    </p>
+
+    <div class="grid-container gc-mod12">
+        <div class="grid-item" style="grid-area: one;">1</div>
+        <div class="grid-item" style="grid-area: two;" >2</div>
+        <div class="grid-item" style="grid-area: three;">3</div>
+        <div class="grid-item" style="grid-area: four;">4</div>
+        <div class="grid-item" style="grid-area: five;">5</div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Если задать ячейке (не сетке) <span>margin</span>, то между ячейками не будет происходить схлопывание, то есть расстояние между каждой ячейкой будет равно двойному <span>margin</span>.</p>
+
+    <p>В данном случае <span>margin</span> равен <span>15px</span>.</p>
+
+    <p style="background-color:#306770; color: white; padding: 5px;">Процентное соотношение лучше не указывать, так как разные браузеры высчитывают это по разному (нужна проверка).</p>
+
+    <div class="grid-container gc-mod13">
+        <div class="grid-item" style="margin: 15px;">1</div>
+        <div class="grid-item" style="margin: 15px;">2</div>
+        <div class="grid-item" style="margin: 15px;">3</div>
+        <div class="grid-item" style="margin: 15px;">4</div>
+        <div class="grid-item" style="margin: 15px;">5</div>
+        <div class="grid-item" style="margin: 15px;">6</div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>С помощью следующих параметров записываемых у ячеек можно управлять их расположением в сетке.</p>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>Например данная запись указывает ячейке <span>номер 2</span> где она должна начинаться и где заканчиваться.</p>
+
+        <p class="code-color">
+            <span>
+                grid-row-start: 2; <br>
+                grid-row-end: 4;  <br>
+                grid-column-start: 2;   <br>
+                grid-column-end: 4;
+            </span>
+        </p>
+        
+        <div class="grid-container gc-mod14">
+            <span class="numeration" style="top: -15px; left: -20px;">1</span>
+            <span class="numeration" style="top: 30px; left: -20px;">2</span>
+            <span class="numeration" style="top: 72px; left: -20px;">3</span>
+            <span class="numeration" style="top: 118px; left: -20px;">4</span>
+
+            <span class="numeration" style="top: -20px; right: -16px;">4</span>
+            <span class="numeration" style="top: -20px; right: 32.66%;">3</span>
+            <span class="numeration" style="top: -20px; right: 66%;">2</span>
+
+            <div class="grid-item">1</div>
+            <div class="grid-item grid-item--mod">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>Если записывать запись без <span>start</span>, это будет выглядеть так.</p>
+
+        <p class="code-color">
+            <span>
+                grid-row-end: 4;  <br>
+                grid-column-end: 4;
+            </span>
+        </p>
+
+        <div class="grid-container gc-mod15">
+            <div class="grid-item">1</div>
+            <div class="grid-item grid-item--mod2">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>Если записывать запись без <span>end</span>, это будет выглядеть так.</p>
+
+        <p class="code-color">
+            <span>
+                grid-row-start: 3;  <br>
+                grid-column-start: 2;
+            </span>
+        </p>
+
+        <div class="grid-container gc-mod15">
+            <div class="grid-item">1</div>
+            <div class="grid-item grid-item--mod3">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>Если для ячейки <span>номер 2</span> указать такие параметры, то она начнет расширяться на количество указанных ячеек.</p>
+
+        <p class="code-color">
+            <span>
+                grid-row-start: span 3;  <br>
+                grid-column-start: span 2;
+            </span>
+        </p>
+
+        <div class="grid-container gc-mod15">
+            <div class="grid-item">1</div>
+            <div class="grid-item grid-item--mod4">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p>Существует короткая форма записи <span>grid-row</span> и <span>grid-column</span>.</p>
+
+        <p class="code-color">
+            <span>
+                grid-row: 2 / 3; <br>
+                grid-column: 1 / 3;
+            </span>
+        </p>
+
+        <div class="grid-container gc-mod15">
+            <div class="grid-item">1</div>
+            <div class="grid-item grid-item--mod5">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>С помощью параметра <span>order: порядковый номер;</span> можно задавать порядок вывода ячеек в сетке, но при этом этот параметр надо указывать у каждой ячейки.</p>
+
+    <p class="code-color">
+        <span>
+            order: 1;
+        </span>
+    </p>
+
+    <div class="grid-container gc-mod15">
+        <div class="grid-item" style="order: 4;">1</div>
+        <div class="grid-item" style="order: 2;">2</div>
+        <div class="grid-item" style="order: 5;">3</div>
+        <div class="grid-item" style="order: 3;">4</div>
+        <div class="grid-item" style="order: 6;">5</div>
+        <div class="grid-item" style="order: 1;">6</div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>По умолчанию контент в ячейках растянут на всю возможную длинну ячеек. За это отвечают параметры <span>justify-items: stretch;</span> (горизонтальное) и <span>align-items: stretch;</span> (вертикальное). Эти параметры применяются ко всей сетке, для всех ячеек.</p>
+
+    <p>Есть аналогичные параметры для настройки каждой отдельной ячейки. <span>justify-self</span> и <span>align-self</span>. Выглядят они так:</p>
+
+    <div class="grid-container gc-mod16">
+        <div class="grid-item" style="justify-self: start;">justify-self: start;</div>
+        <div class="grid-item" style="justify-self: center;">justify-self: center;</div>
+        <div class="grid-item" style="justify-self: end;">justify-self: end;</div>
+        <div class="grid-item" style="align-self: start;">align-self: start;</div>
+        <div class="grid-item" style="align-self: center;">align-self: center;</div>
+        <div class="grid-item" style="align-self: end;">align-self: end;</div>
+        <div class="grid-item" style="margin: auto;">margin: auto;</div>
+    </div>
+</div>
+
+<div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+    <p>Промежутки между строками задаются сетке параметрами:</p>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p class="code-color">
+            <span>
+                row-gap: 20px;
+            </span>
+        </p>
+    
+        <div class="grid-container gc-mod17">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p class="code-color">
+            <span>
+                column-gap: 20px;
+            </span>
+        </p>
+    
+        <div class="grid-container gc-mod18">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+    </div>
+
+    <div style="border: 1px solid black; padding: 10px; margin-bottom: 5px;">
+        <p class="code-color">
+            <span>
+                gap: 20px;
+            </span>
+        </p>
+    
+        <div class="grid-container gc-mod19">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+        </div>
+    </div>
+</div>
 
 
 
